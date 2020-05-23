@@ -8,12 +8,62 @@
 % ~/bin/sicstus -l main.pl
 
 
+%:- [paragem_autocarros_oeiras_processado].
+
+
 %--------------------------------- - - - - - - - - - -  -  -  -  -   -
 % SICStus PROLOG: Declaracoes iniciais
 
 :- set_prolog_flag( discontiguous_warnings,off ).
 :- set_prolog_flag( single_var_warnings,off ).
 :- set_prolog_flag( unknown,fail ).
+
+%:- use_module(library(codesio)).
+
+%read_from_codes("lista_adjacencias_paragens.ods", Lista).
+
+% Predicado paragem. Este predicado recebe como argumento o seu identificador (gid) e as suas características
+paragem().
+
+% Predicado caracteristicas
+%   Este predicado recebe caracteriza todas as características 
+caracteristicas().
+
+percurso(CARREIRA, PARAGEM_INICIO, PARAGEM_FIM)
+
+% FORMA USADA NA FICHA 9
+%-----------------------------------------------------
+
+g(grafo([a,b,c,d,e,f,g], [aresta(a,b),aresta(c,d),aresta(c,f),aresta(d,f),aresta(f,g)])).	
+
+g1(grafo([a,b,c,d,e,f,g], [aresta(a,b),aresta(c,d),aresta(c,f),aresta(d,f),aresta(f,g), aresta(f,e), aresta(e,d)])).	
+
+
+% Iremos usar a representação b)
+
+% 1
+adjacente(X,Y,grafo(_,Es)) :- member(aresta(X,Y),Es).
+adjacente(X,Y,grafo(_,Es)) :- member(aresta(Y,X),Es).
+
+
+% 2
+caminho(G, A, B, P) :- caminho1(G, A, [B], P).
+
+caminho1(G, A, [A|P1], [A|P1]).
+caminho1(G, A, [Y|P1], P) :- 
+    adjacente(X, Y, G),
+    \+ member(X, [Y|P1]),  % \+ é igual a not
+    caminho1(G, A, [X, Y|P1], P).
+
+
+% 3
+ciclo(G, A, P) :- 
+    adjacente(B, A, G),
+    caminho(G, A, B, P1), 
+    length(P1, L),
+    L > 2,
+    append(P1, [A], P).
+
 
 %---------------------------------  dados do problema ---------
 
