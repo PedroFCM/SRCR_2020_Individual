@@ -8,7 +8,8 @@
 % ~/bin/sicstus -l main.pl
 
 
-%:- [paragem_autocarros_oeiras_processado].
+:- [paragens].
+:- [viagens].
 
 
 %--------------------------------- - - - - - - - - - -  -  -  -  -   -
@@ -18,18 +19,20 @@
 :- set_prolog_flag( single_var_warnings,off ).
 :- set_prolog_flag( unknown,fail ).
 
+
+
 %:- use_module(library(codesio)).
 
 %read_from_codes("lista_adjacencias_paragens.ods", Lista).
 
 % Predicado paragem. Este predicado recebe como argumento o seu identificador (gid) e as suas características
-paragem().
+%paragem().
 
 % Predicado caracteristicas
 %   Este predicado recebe caracteriza todas as características 
-caracteristicas().
+%caracteristicas().
 
-percurso(CARREIRA, PARAGEM_INICIO, PARAGEM_FIM)
+%percurso(CARREIRA, PARAGEM_INICIO, PARAGEM_FIM)
 
 % FORMA USADA NA FICHA 9
 %-----------------------------------------------------

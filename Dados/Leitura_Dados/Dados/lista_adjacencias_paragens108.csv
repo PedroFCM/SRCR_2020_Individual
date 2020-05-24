@@ -1,50 +1,47 @@
 gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
-946,-103055.33836526402,-95462.37048401365,Bom,Fechado dos Lados,No,Carris,108,25,Estrada de Alfragide,
-590,-103055.84,-95605.42,Bom,Sem Abrigo,No,LT,108,25,Estrada de Alfragide,Carnaxide e Queijas
-591,-103097.89,-95148.46,Razoavel,Fechado dos Lados,Yes,LT,108,25,Estrada de Alfragide,Carnaxide e Queijas
-592,-103100.09,-95100.64,Razoavel,Fechado dos Lados,Yes,LT,108,25,Estrada de Alfragide,Carnaxide e Queijas
-173,-103441.79,-96114.45,Bom,Fechado dos Lados,No,LT,108,276,Estrada da Amadora,Carnaxide e Queijas
-174,-103456.83,-96098.84,Bom,Fechado dos Lados,No,LT,108,276,Estrada da Amadora,Carnaxide e Queijas
-175,-103543.27,-96685.43,Bom,Fechado dos Lados,Yes,LT,108,276,Estrada da Amadora,Carnaxide e Queijas
-176,-103550.21,-96609.89,Bom,Aberto dos Lados,Yes,LT,108,276,Estrada da Amadora,Carnaxide e Queijas
-177,-103782.94,-96828.11,Bom,Sem Abrigo,No,LT,108,1113,Avenida de Portugal,Carnaxide e Queijas
-178,-103793.26,-96821.2,Bom,Fechado dos Lados,Yes,LT,108,1113,Avenida de Portugal,Carnaxide e Queijas
-693,-103934.24,-96642.56,Bom,Fechado dos Lados,Yes,LT,108,1113,Avenida de Portugal,Carnaxide e Queijas
-692,-103960,-96640.32,Bom,Fechado dos Lados,Yes,Carris,108,1113,Avenida de Portugal,Carnaxide e Queijas
-817,-104091.69,-96778.69,Bom,Fechado dos Lados,No,LT,108,362,Largo da Pátria Nova,Carnaxide e Queijas
-813,-104117.95,-97049.09,Bom,Fechado dos Lados,Yes,LT,108,303,Rua Cinco de Outubro,Carnaxide e Queijas
-816,-104200.64,-96833.39,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-236,-104266.39,-96923.24,Bom,Sem Abrigo,No,LT,108,308,Estrada do Desvio,Carnaxide e Queijas
-1009,-104303.63612383851,-98554.7783833525,Bom,Sem Abrigo,No,LT,108,79,Rua dos Açores,Carnaxide e Queijas
-801,-104447.68,-98306.88,Bom,Sem Abrigo,No,LT,108,833,Rua Mouzinho da Silveira,Carnaxide e Queijas
-805,-104471.99,-98565.73,Bom,Fechado dos Lados,No,LT,108,83,Rua Angra do Heroísmo,Carnaxide e Queijas
-808,-104604.14,-97197.81,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-809,-104609.35,-97210.07,Bom,Sem Abrigo,No,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-800,-104618.82,-98507.86,Bom,Fechado dos Lados,No,LT,108,846,Rua da Quinta do Bonfim,Carnaxide e Queijas
-803,-104768.69,-98266.88,Bom,Fechado dos Lados,Yes,LT,108,813,Rua João XXI,Carnaxide e Queijas
-632,-104801.2,-98279.24,Bom,Fechado dos Lados,Yes,LT,108,813,Rua João XXI,Carnaxide e Queijas
-804,-104935.73,-98290.43,Bom,Fechado dos Lados,Yes,LT,108,813,Rua João XXI,Carnaxide e Queijas
-802,-104942.78,-98303.15,Bom,Fechado dos Lados,Yes,LT,108,813,Rua João XXI,Carnaxide e Queijas
-811,-104957.37,-97342.73,Bom,Fechado dos Lados,No,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-810,-104965.93,-97337.63,Bom,Sem Abrigo,No,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-841,-105119.12,-97474.49,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-842,-105122.88,-97490.88,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-837,-105155.04,-98252.49,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-835,-105181.29,-98229.14,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-836,-105254.68,-97686.43,Bom,Sem Abrigo,No,LT,108,1763,Rua Visconde Moreira de Rey,Carnaxide e Queijas
-838,-105277.7,-97707.8,Bom,Fechado dos Lados,Yes,LT,108,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
-320,-105649.56,-98984.75,Bom,Fechado dos Lados,Yes,LT,108,936,Largo da Quinta do Jardim,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-324,-105658.22,-98790.53,Bom,Fechado dos Lados,Yes,LT,108,1796,Rua das Tílias,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-325,-105660.54,-98769.86,Bom,Fechado dos Lados,No,LT,108,1796,Rua das Tílias,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-317,-105682.17,-99043.27,Bom,Fechado dos Lados,Yes,LT,108,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-319,-105790.91,-99107.05,Bom,Fechado dos Lados,Yes,LT,108,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-318,-105817.33,-99103.07,Bom,Fechado dos Lados,Yes,LT,108,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-327,-105824.71,-98610.29,Bom,Sem Abrigo,No,LT,108,830,Estrada Militar,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-326,-105971.01,-98597.24,Bom,Sem Abrigo,No,LT,108,830,Estrada Militar,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
-273,-106004.77,-99221.99,Bom,Sem Abrigo,No,LT,108,858,Rua Calvet de Magalhães,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-274,-106013.52,-99221.37,Bom,Fechado dos Lados,No,LT,108,858,Rua Calvet de Magalhães,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-431,-106095.33,-99310.37,Bom,Fechado dos Lados,Yes,LT,108,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-437,-106124.25,-99314.68,Bom,Sem Abrigo,No,LT,108,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-423,-106402.8,-99289.78,Bom,Fechado dos Lados,Yes,LT,108,1786,Rua de São João de Deus,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-439,-106462.23,-99301.85,Bom,Fechado dos Lados,No,LT,108,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
-409,-106998.97,-99255.62,Bom,Fechado dos Lados,Yes,LT,108,898,Estrada da Gibalta,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+946,-103055.33836526402,-95462.37048401365,Bom,Fechado dos Lados,No,Carris,114,25,Estrada de Alfragide,N/A
+590,-103055.84,-95605.42,Bom,Sem Abrigo,No,LT,114,25,Estrada de Alfragide,Carnaxide e Queijas
+591,-103097.89,-95148.46,Razoavel,Fechado dos Lados,Yes,LT,114,25,Estrada de Alfragide,Carnaxide e Queijas
+592,-103100.09,-95100.64,Razoavel,Fechado dos Lados,Yes,LT,114,25,Estrada de Alfragide,Carnaxide e Queijas
+173,-103441.79,-96114.45,Bom,Fechado dos Lados,No,LT,114,276,Estrada da Amadora,Carnaxide e Queijas
+174,-103456.83,-96098.84,Bom,Fechado dos Lados,No,LT,114,276,Estrada da Amadora,Carnaxide e Queijas
+175,-103543.27,-96685.43,Bom,Fechado dos Lados,Yes,LT,114,276,Estrada da Amadora,Carnaxide e Queijas
+176,-103550.21,-96609.89,Bom,Aberto dos Lados,Yes,LT,114,276,Estrada da Amadora,Carnaxide e Queijas
+950,-103725.69,-95975.2,Bom,Fechado dos Lados,Yes,LT,114,354,Rua Manuel Teixeira Gomes,Carnaxide e Queijas
+177,-103782.94,-96828.11,Bom,Sem Abrigo,No,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+178,-103793.26,-96821.2,Bom,Fechado dos Lados,Yes,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+947,-103879.91,-95751.23,Bom,Fechado dos Lados,No,LT,114,1116,Avenida Professor Dr. Reinaldo dos Santos,Carnaxide e Queijas
+792,-103922.82,-96235.62,Bom,Fechado dos Lados,Yes,LT,114,354,Rua Manuel Teixeira Gomes,Carnaxide e Queijas
+710,-103972.32,-95981.88,Bom,Fechado dos Lados,Yes,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+807,-104003.78,-96559.17,Bom,Fechado dos Lados,Yes,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+818,-104031.08,-96173.83,Bom,Fechado dos Lados,Yes,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+823,-104032.88,-96536.98,Bom,Fechado dos Lados,Yes,LT,114,1113,Avenida de Portugal,Carnaxide e Queijas
+952,-104058.98,-95839.14,Bom,Fechado dos Lados,Yes,LT,114,1137,Rua Tenente-General Zeferino Sequeira,Carnaxide e Queijas
+954,-104075.89,-95771.82,Bom,Fechado dos Lados,Yes,LT,114,1116,Avenida Professor Dr. Reinaldo dos Santos,Carnaxide e Queijas
+1002,-104226.49,-95797.22,Bom,Fechado dos Lados,Yes,LT,114,327,Avenida do Forte,Carnaxide e Queijas
+977,-104296.72,-95828.26,Bom,Fechado dos Lados,Yes,LT,114,327,Avenida do Forte,Carnaxide e Queijas
+986,-104675.71,-95821.42,Bom,Fechado dos Lados,Yes,LT,114,327,Avenida do Forte,Carnaxide e Queijas
+983,-104700.62,-95803.69,Bom,Fechado dos Lados,Yes,LT,114,327,Avenida do Forte,Carnaxide e Queijas
+354,-105043.39,-96109.56,Bom,Fechado dos Lados,Yes,LT,114,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+353,-105062.32,-96107.23,Bom,Fechado dos Lados,Yes,LT,114,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+863,-105210.86,-96382.34,Bom,Fechado dos Lados,Yes,LT,114,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+856,-105287.42,-96454.4,Bom,Fechado dos Lados,Yes,LT,114,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+857,-105326.62,-96569.43,Bom,Fechado dos Lados,Yes,LT,114,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+367,-105679.92,-96534.6,Bom,Fechado dos Lados,Yes,LT,114,1279,Avenida Tomás Ribeiro,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+333,-105712.14,-96154.74,Bom,Fechado dos Lados,Yes,LT,114,450,Rua Engenheiro José Frederico Ulrich,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+846,-105713.9,-96309.68,Bom,Aberto dos Lados,No,LT,114,1251,Rua Pedro Álvares Cabral,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+845,-105719.88,-96325.39,Bom,Aberto dos Lados,No,LT,114,1251,Rua Pedro Álvares Cabral,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+330,-105744.42,-96527.5,Bom,Fechado dos Lados,Yes,LT,114,1279,Avenida Tomás Ribeiro,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+364,-105749.92,-96128.02,Bom,Fechado dos Lados,Yes,LT,114,150,Rua Victor Duarte Pedroso,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+33,-105923.57,-95719.27,Bom,Fechado dos Lados,No,LT,114,150,Rua Victor Duarte Pedroso,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+32,-105942.11,-95669.45,Bom,Fechado dos Lados,No,LT,114,150,Rua Victor Duarte Pedroso,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+60,-106031.48,-95429.88,Bom,Sem Abrigo,No,LT,114,150,Rua Victor Duarte Pedroso,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+61,-106056.3,-95443.94,Bom,Fechado dos Lados,No,LT,114,150,Rua Victor Duarte Pedroso,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+64,-106263.4,-95432.65,Bom,Fechado dos Lados,Yes,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+63,-106281.59,-95428.61,Bom,Sem Abrigo,No,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+62,-106448.94,-95449.29,Bom,Fechado dos Lados,Yes,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+58,-106491,-95464.18,Bom,Fechado dos Lados,Yes,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+57,-106676.23,-95569.51,Bom,Fechado dos Lados,No,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+59,-106702.76,-95584.31,Bom,Sem Abrigo,No,LT,114,142,Avenida da República,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+654,-106946.7,-95556.57,Bom,Aberto dos Lados,No,Vimeca,114,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+81,-107028.61,-95211.28,Bom,Fechado dos Lados,Yes,LT,114,103,Rua Damião de Góis,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
