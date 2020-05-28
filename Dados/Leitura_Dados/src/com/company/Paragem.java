@@ -20,10 +20,10 @@ public class Paragem
 
     public String calculaTempo(Paragem pFIm)
     {
-        if (this.latitude.equals("N/A") || pFIm.latitude.equals("N/A")
-            || this.longitude.equals("N/A") || pFIm.longitude.equals("N/A"))
+        if (this.latitude.equals("'N/A'") || pFIm.latitude.equals("'N/A'")
+            || this.longitude.equals("'N/A'") || pFIm.longitude.equals("'N/A'"))
         {
-            return "N/A";
+            return "'N/A'";
         }
 
         float latI = Float.parseFloat(this.latitude);
@@ -31,6 +31,7 @@ public class Paragem
         float longI = Float.parseFloat(this.longitude);
         float longF = Float.parseFloat(pFIm.longitude);
 
-        return String.format(Locale.US, "%.2f", Math.sqrt( Math.pow(latF - latI, 2) + Math.pow(longI - longF, 2)));
+        // Resultado em minutos
+        return String.format(Locale.US, "%.2f", (Math.sqrt( Math.pow(latF - latI, 2) + Math.pow(longI - longF, 2)))/1000);
     }
 }

@@ -12,7 +12,7 @@
 :- [viagens].
 
 
-%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% -----------------------------------------------------------------------------------------
 % SICStus PROLOG: Declaracoes iniciais
 
 :- set_prolog_flag( discontiguous_warnings,off ).
@@ -21,18 +21,41 @@
 
 
 
-%:- use_module(library(codesio)).
+% -----------------------------------------------------------------------------------------
+% Predicados usados
 
-%read_from_codes("lista_adjacencias_paragens.ods", Lista).
+% paragem -> gid, latitude, longitude, estado de conservação, tipo de abrigo, abrigo com publicidade,
+%            codigo de rua, nome da rua, freguesia
 
-% Predicado paragem. Este predicado recebe como argumento o seu identificador (gid) e as suas características
-%paragem().
+% viagem -> carreira, paragemInicio(gid), paragemFim(gid), operadora, tempo de viagem (em minutos)
+% as viagens são entre paragens adjacentes
 
-% Predicado caracteristicas
-%   Este predicado recebe caracteriza todas as características 
-%caracteristicas().
 
-%percurso(CARREIRA, PARAGEM_INICIO, PARAGEM_FIM)
+% PESQUISA EM PROFUNDIDADE
+pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem) :-
+	profundidade_func(Origem, Destino, [Origem], Caminho, TempoViagem).
+
+profundidade_func(Destino, Destino, His, Caminho, T) :-
+	inverso(His, Caminho), 
+    T is 0.
+
+profundidade_func(Origem, Destino, His, Caminho, TempoViagem) :-
+    adjacente_func(Origem, Prox, T1),
+	\+ member(Prox, His),
+    ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
+    profundidade_func(Prox, Destino, [Prox|His], Caminho, T),                 
+    TempoViagem is T + TLimpo.
+
+adjacente_func(Nodo, ProxNodo, TempoViagem) :-
+    viagem(_, Nodo, ProxNodo, _, TempoViagem).
+
+% pesquisaProfundidade(183, 791, Caminho, Tempo).
+% pesquisaProfundidade(183, 595, Caminho, Tempo).
+
+
+
+
+
 
 % FORMA USADA NA FICHA 9
 %-----------------------------------------------------

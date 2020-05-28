@@ -57,6 +57,9 @@ public class Main
                         pInicio = new Paragem(data[0], data[1], data[2], data[6]);
                     }
 
+                    data[9] = data[9].replace("Á", "A");
+                    data[1] = data[1].replace("N/A", "'N/A'");
+                    data[2] = data[2].replace("N/A", "'N/A'");
 
                     // Para não haver paragens repetidas
                     if (!paragensId.contains(Integer.parseInt(data[0])))
@@ -66,9 +69,7 @@ public class Main
                         // paragem(gid, latitude, longitude, estado de conservação, tipo de abrigo, abrigo com publicidade,
                         //         codigo de rua, nome da rua, freguesia).
 
-                        data[9] = data[9].replace("Á", "A");
-
-                        paragem = "paragem(" + data[0] + ", '" + data[1] + "', '" + data[2] + "', '"
+                        paragem = "paragem(" + data[0] + ", " + data[1] + ", " + data[2] + ", '"
                                 + data[3] + "', '" + data[4] + "', '" + data[5] + "', " + data[8] + ", '" +
                                 data[9].replace("'", "") + "', '"
                                 + data[10].replace("\"", "") + "').";
@@ -82,10 +83,10 @@ public class Main
 
                     // viagem(carreira, paragemInicio, paragemFim, operadora, tempo de viagem).
                     viagem = "viagem(" + data[7] + ", " + pInicio.gid + ", " + pFim.gid + ", '" +
-                            pInicio.operadoraViagem + "', '" + tempoViagem + "').";
+                            pInicio.operadoraViagem + "', " + tempoViagem + ").";
 
-                    System.out.println(viagem);
-                    //System.out.println(paragem);
+                    //System.out.println(viagem);
+                    System.out.println(paragem);
 
                     pInicio = pFim;
 
