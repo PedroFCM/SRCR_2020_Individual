@@ -1,1481 +1,1523 @@
-:- dynamic viagem/5. 
-viagem(10, 183, 791, 'Vimeca', 0.09).
-viagem(10, 791, 595, 'Vimeca', 0.70).
-viagem(10, 595, 182, 'Vimeca', 0.42).
-viagem(10, 182, 181, 'SCoTTURB', 0.04).
-viagem(10, 181, 180, 'Vimeca', 0.13).
-viagem(10, 180, 594, 'Vimeca', 0.51).
-viagem(10, 594, 185, 'Vimeca', 0.49).
-viagem(10, 185, 89, 'SCoTTURB', 0.41).
-viagem(10, 89, 107, 'Vimeca', 0.66).
-viagem(10, 107, 250, 'Vimeca', 0.20).
-viagem(10, 250, 261, 'Vimeca', 0.36).
-viagem(10, 261, 597, 'Vimeca', 0.70).
-viagem(10, 597, 953, 'Vimeca', 0.07).
-viagem(10, 953, 605, 'Vimeca', 0.28).
-viagem(10, 605, 606, 'Vimeca', 0.03).
-viagem(10, 606, 609, 'Vimeca', 0.30).
-viagem(10, 609, 82, 'Vimeca', 0.56).
-viagem(10, 82, 604, 'Vimeca', 0.06).
-viagem(10, 604, 628, 'Vimeca', 1.05).
-viagem(10, 628, 39, 'Vimeca', 0.93).
-viagem(10, 39, 50, 'Vimeca', 0.95).
-viagem(10, 50, 599, 'Vimeca', 1.72).
-viagem(10, 599, 40, 'Vimeca', 0.78).
-viagem(10, 40, 622, 'Vimeca', 0.19).
-viagem(10, 622, 51, 'Vimeca', 0.59).
-viagem(10, 51, 38, 'Vimeca', 0.05).
-viagem(10, 38, 620, 'Vimeca', 0.30).
-viagem(10, 620, 45, 'Vimeca', 0.01).
-viagem(10, 45, 602, 'Vimeca', 0.20).
-viagem(10, 602, 601, 'Vimeca', 0.01).
-viagem(10, 601, 860, 'Vimeca', 1.59).
-viagem(10, 860, 861, 'Vimeca', 0.04).
-viagem(10, 861, 359, 'Vimeca', 0.11).
-viagem(10, 359, 349, 'Vimeca', 0.03).
-viagem(10, 349, 29, 'Vimeca', 0.70).
-viagem(10, 29, 646, 'Vimeca', 0.17).
-viagem(10, 646, 642, 'Vimeca', 0.03).
-viagem(10, 642, 30, 'Vimeca', 0.21).
-viagem(10, 30, 17, 'Vimeca', 0.30).
-viagem(10, 17, 643, 'Vimeca', 0.50).
-viagem(10, 643, 20, 'Vimeca', 0.05).
-viagem(10, 20, 36, 'Vimeca', 0.46).
-viagem(10, 36, 638, 'Vimeca', 0.64).
-viagem(10, 638, 637, 'Vimeca', 0.02).
-viagem(10, 637, 361, 'Vimeca', 1.04).
-viagem(10, 361, 362, 'Vimeca', 0.03).
-viagem(10, 362, 37, 'Vimeca', 0.32).
-viagem(10, 37, 26, 'Vimeca', 0.01).
-viagem(10, 26, 27, 'Vimeca', 0.19).
-viagem(10, 27, 28, 'Vimeca', 0.03).
-viagem(10, 28, 641, 'Vimeca', 0.88).
-viagem(10, 641, 635, 'Vimeca', 0.06).
-viagem(10, 635, 679, 'Vimeca', 0.38).
-viagem(10, 679, 688, 'Vimeca', 0.04).
-viagem(10, 688, 675, 'Vimeca', 0.21).
-viagem(10, 675, 72, 'Vimeca', 0.05).
-viagem(10, 72, 75, 'Vimeca', 0.22).
-viagem(10, 75, 671, 'Vimeca', 0.02).
-viagem(10, 671, 657, 'Vimeca', 0.22).
-viagem(10, 657, 70, 'Vimeca', 0.10).
-viagem(10, 70, 526, 'Vimeca', 0.26).
-viagem(02, 745, 736, 'Vimeca', 0.16).
-viagem(02, 736, 147, 'Vimeca', 0.23).
-viagem(02, 147, 156, 'Vimeca', 0.03).
-viagem(02, 156, 734, 'Vimeca', 0.31).
-viagem(02, 734, 161, 'Vimeca', 0.29).
-viagem(02, 161, 162, 'Vimeca', 0.03).
-viagem(02, 162, 172, 'Vimeca', 0.58).
-viagem(02, 172, 171, 'SCoTTURB', 0.01).
-viagem(02, 171, 595, 'Vimeca', 3.08).
-viagem(02, 595, 594, 'Vimeca', 0.27).
-viagem(02, 594, 185, 'Vimeca', 0.49).
-viagem(02, 185, 107, 'SCoTTURB', 0.26).
-viagem(02, 107, 237, 'Vimeca', 0.58).
-viagem(02, 237, 250, 'Vimeca', 0.39).
-viagem(02, 250, 261, 'Vimeca', 0.36).
-viagem(02, 261, 597, 'Vimeca', 0.70).
-viagem(02, 597, 953, 'Vimeca', 0.07).
-viagem(02, 953, 248, 'Vimeca', 1.01).
-viagem(02, 248, 244, 'Vimeca', 0.63).
-viagem(02, 244, 245, 'Vimeca', 0.02).
-viagem(02, 245, 243, 'Vimeca', 0.35).
-viagem(02, 243, 247, 'Vimeca', 0.23).
-viagem(02, 247, 609, 'Vimeca', 1.04).
-viagem(02, 609, 799, 'Vimeca', 2.52).
-viagem(02, 799, 599, 'Vimeca', 2.48).
-viagem(02, 599, 1010, 'Vimeca', 2.73).
-viagem(02, 1010, 246, 'Vimeca', 1.57).
-viagem(02, 246, 260, 'Vimeca', 0.02).
-viagem(02, 260, 227, 'Vimeca', 1.63).
-viagem(02, 227, 230, 'Vimeca', 0.33).
-viagem(02, 230, 234, 'Vimeca', 0.26).
-viagem(02, 234, 224, 'Vimeca', 0.26).
-viagem(02, 224, 239, 'Vimeca', 1.12).
-viagem(02, 239, 238, 'Vimeca', 0.01).
-viagem(02, 238, 226, 'SCoTTURB', 1.30).
-viagem(02, 226, 1001, 'Vimeca', 2.69).
-viagem(02, 1001, 607, 'Vimeca', 0.03).
-viagem(02, 607, 232, 'Vimeca', 2.46).
-viagem(02, 232, 52, 'SCoTTURB', 0.03).
-viagem(02, 52, 233, 'Vimeca', 0.13).
-viagem(02, 233, 231, 'Vimeca', 0.01).
-viagem(02, 231, 241, 'Vimeca', 0.96).
-viagem(02, 241, 240, 'Vimeca', 0.01).
-viagem(02, 240, 859, 'Vimeca', 1.23).
-viagem(02, 859, 858, 'Vimeca', 0.02).
-viagem(02, 858, 332, 'Vimeca', 1.37).
-viagem(02, 332, 331, 'Vimeca', 0.02).
-viagem(02, 331, 315, 'Vimeca', 0.76).
-viagem(02, 315, 312, 'Vimeca', 0.04).
-viagem(02, 312, 360, 'SCoTTURB', 1.85).
-viagem(02, 360, 313, 'Vimeca', 1.30).
-viagem(02, 313, 323, 'Vimeca', 0.03).
-viagem(02, 323, 351, 'Vimeca', 1.25).
-viagem(02, 351, 352, 'Vimeca', 0.12).
-viagem(02, 352, 339, 'Vimeca', 0.21).
-viagem(02, 339, 347, 'Vimeca', 0.07).
-viagem(02, 347, 86, 'Vimeca', 0.15).
-viagem(02, 86, 85, 'Vimeca', 0.02).
-viagem(02, 85, 341, 'Vimeca', 0.16).
-viagem(02, 341, 342, 'Vimeca', 0.03).
-viagem(02, 342, 346, 'Vimeca', 0.21).
-viagem(02, 346, 343, 'Vimeca', 0.05).
-viagem(02, 343, 345, 'Vimeca', 0.12).
-viagem(02, 345, 344, 'Vimeca', 0.04).
-viagem(02, 344, 363, 'Vimeca', 0.29).
-viagem(02, 363, 335, 'Vimeca', 0.02).
-viagem(02, 335, 457, 'Vimeca', 0.30).
-viagem(02, 457, 458, 'Vimeca', 0.09).
-viagem(02, 458, 490, 'Vimeca', 0.41).
-viagem(02, 490, 491, 'Vimeca', 0.05).
-viagem(02, 491, 56, 'Vimeca', 0.31).
-viagem(02, 56, 655, 'Vimeca', 0.01).
-viagem(02, 655, 654, 'Vimeca', 0.16).
-viagem(02, 654, 78, 'Vimeca', 0.09).
-viagem(02, 78, 80, 'Vimeca', 0.28).
-viagem(06, 745, 736, 'Vimeca', 0.16).
-viagem(06, 736, 147, 'Vimeca', 0.23).
-viagem(06, 147, 156, 'Vimeca', 0.03).
-viagem(06, 156, 161, 'Vimeca', 0.60).
-viagem(06, 161, 162, 'Vimeca', 0.03).
-viagem(06, 162, 172, 'Vimeca', 0.58).
-viagem(06, 172, 171, 'SCoTTURB', 0.01).
-viagem(06, 171, 799, 'Vimeca', 1.13).
-viagem(06, 799, 1010, 'Vimeca', 0.24).
-viagem(06, 1010, 227, 'Vimeca', 0.13).
-viagem(06, 227, 230, 'Vimeca', 0.33).
-viagem(06, 230, 234, 'Vimeca', 0.26).
-viagem(06, 234, 224, 'Vimeca', 0.26).
-viagem(06, 224, 226, 'Vimeca', 0.20).
-viagem(06, 226, 232, 'Vimeca', 0.28).
-viagem(06, 232, 52, 'SCoTTURB', 0.03).
-viagem(06, 52, 233, 'Vimeca', 0.13).
-viagem(06, 233, 231, 'Vimeca', 0.01).
-viagem(06, 231, 886, 'Vimeca', 1.81).
-viagem(06, 886, 473, 'Vimeca', 0.33).
-viagem(06, 473, 470, 'Vimeca', 0.02).
-viagem(06, 470, 483, 'Vimeca', 0.20).
-viagem(06, 483, 482, 'Vimeca', 0.01).
-viagem(06, 482, 476, 'SCoTTURB', 0.45).
-viagem(06, 476, 904, 'Vimeca', 0.02).
-viagem(06, 904, 472, 'Vimeca', 0.23).
-viagem(06, 472, 902, 'Vimeca', 0.05).
-viagem(06, 902, 893, 'Vimeca', 0.51).
-viagem(06, 893, 465, 'Vimeca', 0.08).
-viagem(06, 465, 186, 'Vimeca', 0.67).
-viagem(06, 186, 652, 'Vimeca', 0.32).
-viagem(06, 652, 6, 'Vimeca', 0.03).
-viagem(06, 6, 466, 'Vimeca', 0.77).
-viagem(06, 466, 9, 'Vimeca', 0.85).
-viagem(06, 9, 467, 'Vimeca', 0.86).
-viagem(06, 467, 78, 'Vimeca', 0.59).
-viagem(7, 183, 791, 'Vimeca', 0.09).
-viagem(7, 791, 595, 'Vimeca', 0.70).
-viagem(7, 595, 182, 'Vimeca', 0.42).
-viagem(7, 182, 181, 'SCoTTURB', 0.04).
-viagem(7, 181, 180, 'Vimeca', 0.13).
-viagem(7, 180, 594, 'Vimeca', 0.51).
-viagem(7, 594, 185, 'Vimeca', 0.49).
-viagem(7, 185, 89, 'SCoTTURB', 0.41).
-viagem(7, 89, 90, 'Vimeca', 0.03).
-viagem(7, 90, 107, 'Vimeca', 0.66).
-viagem(7, 107, 250, 'Vimeca', 0.20).
-viagem(7, 250, 597, 'Vimeca', 0.34).
-viagem(7, 597, 953, 'Vimeca', 0.07).
-viagem(7, 953, 609, 'Vimeca', 0.15).
-viagem(7, 609, 599, 'Vimeca', 0.08).
-viagem(7, 599, 1001, 'Vimeca', 0.38).
-viagem(7, 1001, 607, 'Vimeca', 0.03).
-viagem(13, 128, 745, 'Vimeca', 0.19).
-viagem(13, 745, 736, 'Vimeca', 0.16).
-viagem(13, 736, 147, 'Vimeca', 0.23).
-viagem(13, 147, 156, 'Vimeca', 0.03).
-viagem(13, 156, 734, 'Vimeca', 0.31).
-viagem(13, 734, 161, 'Vimeca', 0.29).
-viagem(13, 161, 162, 'Vimeca', 0.03).
-viagem(13, 162, 172, 'Vimeca', 0.58).
-viagem(13, 172, 171, 'SCoTTURB', 0.01).
-viagem(13, 171, 183, 'Vimeca', 2.46).
-viagem(13, 183, 791, 'Vimeca', 0.09).
-viagem(13, 791, 595, 'Vimeca', 0.70).
-viagem(13, 595, 182, 'Vimeca', 0.42).
-viagem(13, 182, 181, 'SCoTTURB', 0.04).
-viagem(13, 181, 180, 'Vimeca', 0.13).
-viagem(13, 180, 594, 'Vimeca', 0.51).
-viagem(13, 594, 185, 'Vimeca', 0.49).
-viagem(13, 185, 89, 'SCoTTURB', 0.41).
-viagem(13, 89, 90, 'Vimeca', 0.03).
-viagem(13, 90, 107, 'Vimeca', 0.66).
-viagem(13, 107, 250, 'Vimeca', 0.20).
-viagem(13, 250, 597, 'Vimeca', 0.34).
-viagem(13, 597, 953, 'Vimeca', 0.07).
-viagem(13, 953, 248, 'Vimeca', 1.01).
-viagem(13, 248, 243, 'Vimeca', 0.27).
-viagem(13, 243, 247, 'Vimeca', 0.23).
-viagem(13, 247, 609, 'Vimeca', 1.04).
-viagem(13, 609, 242, 'Vimeca', 0.78).
-viagem(13, 242, 255, 'Vimeca', 0.03).
-viagem(13, 255, 82, 'Vimeca', 1.31).
-viagem(13, 82, 604, 'Vimeca', 0.06).
-viagem(13, 604, 628, 'Vimeca', 1.05).
-viagem(13, 628, 799, 'Vimeca', 4.19).
-viagem(13, 799, 39, 'Vimeca', 3.26).
-viagem(13, 39, 50, 'Vimeca', 0.95).
-viagem(13, 50, 599, 'Vimeca', 1.72).
-viagem(13, 599, 40, 'Vimeca', 0.78).
-viagem(13, 40, 1010, 'Vimeca', 3.51).
-viagem(13, 1010, 246, 'Vimeca', 1.57).
-viagem(13, 246, 260, 'Vimeca', 0.02).
-viagem(13, 260, 985, 'Vimeca', 1.63).
-viagem(13, 985, 608, 'Vimeca', 0.02).
-viagem(13, 608, 249, 'Vimeca', 1.32).
-viagem(13, 249, 254, 'Vimeca', 0.16).
-viagem(13, 254, 227, 'Vimeca', 2.11).
-viagem(13, 227, 622, 'Vimeca', 3.71).
-viagem(13, 622, 230, 'Vimeca', 3.39).
-viagem(13, 230, 51, 'Vimeca', 3.98).
-viagem(13, 51, 44, 'Vimeca', 0.60).
-viagem(13, 44, 234, 'Vimeca', 3.64).
-viagem(13, 234, 38, 'Vimeca', 4.21).
-viagem(13, 38, 224, 'Vimeca', 3.96).
-viagem(13, 224, 620, 'Vimeca', 3.67).
-viagem(13, 620, 45, 'Vimeca', 0.01).
-viagem(13, 45, 614, 'Vimeca', 1.03).
-viagem(13, 614, 239, 'Vimeca', 1.51).
-viagem(13, 239, 238, 'Vimeca', 0.01).
-viagem(13, 238, 46, 'SCoTTURB', 1.52).
-viagem(13, 46, 226, 'Vimeca', 2.81).
-viagem(13, 226, 42, 'Vimeca', 2.89).
-viagem(13, 42, 600, 'Vimeca', 0.02).
-viagem(13, 600, 602, 'Vimeca', 1.16).
-viagem(13, 602, 601, 'Vimeca', 0.01).
-viagem(13, 601, 48, 'Vimeca', 0.69).
-viagem(13, 48, 49, 'Vimeca', 0.06).
-viagem(13, 49, 232, 'Vimeca', 3.06).
-viagem(13, 232, 52, 'SCoTTURB', 0.03).
-viagem(13, 52, 612, 'Vimeca', 2.63).
-viagem(13, 612, 613, 'Vimeca', 0.02).
-viagem(13, 613, 233, 'Vimeca', 2.65).
-viagem(13, 233, 231, 'Vimeca', 0.01).
-viagem(13, 231, 241, 'Vimeca', 0.96).
-viagem(13, 241, 240, 'Vimeca', 0.01).
-viagem(13, 240, 611, 'Vimeca', 1.78).
-viagem(13, 611, 610, 'Vimeca', 0.01).
-viagem(13, 610, 859, 'Vimeca', 0.55).
-viagem(13, 859, 858, 'Vimeca', 0.02).
-viagem(13, 858, 861, 'Vimeca', 0.07).
-viagem(13, 861, 332, 'Vimeca', 1.44).
-viagem(13, 332, 331, 'Vimeca', 0.02).
-viagem(13, 331, 315, 'Vimeca', 0.76).
-viagem(13, 315, 312, 'Vimeca', 0.04).
-viagem(13, 312, 313, 'SCoTTURB', 0.55).
-viagem(13, 313, 323, 'Vimeca', 0.03).
-viagem(13, 323, 351, 'Vimeca', 1.25).
-viagem(13, 351, 19, 'Vimeca', 0.61).
-viagem(13, 19, 371, 'Vimeca', 0.15).
-viagem(13, 371, 16, 'Vimeca', 0.27).
-viagem(13, 16, 339, 'Vimeca', 1.00).
-viagem(13, 339, 26, 'Vimeca', 1.05).
-viagem(13, 26, 27, 'Vimeca', 0.19).
-viagem(13, 27, 86, 'Vimeca', 0.93).
-viagem(13, 86, 338, 'Vimeca', 0.49).
-viagem(13, 338, 342, 'Vimeca', 0.41).
-viagem(13, 342, 345, 'Vimeca', 0.10).
-viagem(13, 345, 363, 'Vimeca', 0.33).
-viagem(13, 363, 492, 'Vimeca', 0.20).
-viagem(13, 492, 460, 'Vimeca', 0.21).
-viagem(13, 460, 468, 'Vimeca', 0.07).
-viagem(13, 468, 486, 'Vimeca', 0.15).
-viagem(13, 486, 487, 'Vimeca', 0.17).
-viagem(11, 859, 858, 'Vimeca', 0.02).
-viagem(11, 858, 360, 'Vimeca', 0.31).
-viagem(11, 360, 370, 'Vimeca', 0.40).
-viagem(11, 370, 351, 'SCoTTURB', 0.46).
-viagem(11, 351, 19, 'Vimeca', 0.61).
-viagem(11, 19, 371, 'Vimeca', 0.15).
-viagem(11, 371, 18, 'Vimeca', 0.17).
-viagem(11, 18, 352, 'Vimeca', 0.74).
-viagem(11, 352, 16, 'Vimeca', 0.84).
-viagem(11, 16, 339, 'Vimeca', 1.00).
-viagem(11, 339, 347, 'Vimeca', 0.07).
-viagem(11, 347, 362, 'Vimeca', 0.78).
-viagem(11, 362, 26, 'Vimeca', 0.32).
-viagem(11, 26, 27, 'Vimeca', 0.19).
-viagem(11, 27, 28, 'Vimeca', 0.03).
-viagem(11, 28, 86, 'Vimeca', 0.90).
-viagem(11, 86, 348, 'Vimeca', 0.76).
-viagem(11, 348, 85, 'Vimeca', 0.77).
-viagem(11, 85, 337, 'Vimeca', 0.51).
-viagem(11, 337, 338, 'Vimeca', 0.02).
-viagem(11, 338, 341, 'Vimeca', 0.43).
-viagem(11, 341, 342, 'Vimeca', 0.03).
-viagem(11, 342, 346, 'Vimeca', 0.21).
-viagem(11, 346, 345, 'Vimeca', 0.17).
-viagem(11, 345, 344, 'Vimeca', 0.04).
-viagem(11, 344, 363, 'Vimeca', 0.29).
-viagem(11, 363, 335, 'Vimeca', 0.02).
-viagem(11, 335, 492, 'Vimeca', 0.22).
-viagem(11, 492, 340, 'Vimeca', 0.03).
-viagem(11, 340, 468, 'Vimeca', 0.24).
-viagem(11, 468, 485, 'Vimeca', 0.16).
-viagem(11, 485, 486, 'Vimeca', 0.02).
-viagem(11, 486, 487, 'Vimeca', 0.17).
-viagem(11, 487, 488, 'Vimeca', 0.04).
-viagem(12, 712, 713, 'SCoTTURB', 0.02).
-viagem(12, 713, 714, 'Vimeca', 0.20).
-viagem(12, 714, 128, 'Vimeca', 0.04).
-viagem(12, 128, 745, 'Vimeca', 0.19).
-viagem(12, 745, 736, 'Vimeca', 0.16).
-viagem(12, 736, 147, 'Vimeca', 0.23).
-viagem(12, 147, 153, 'Vimeca', 0.27).
-viagem(12, 153, 149, 'Vimeca', 0.24).
-viagem(12, 149, 734, 'Vimeca', 0.05).
-viagem(12, 734, 159, 'Vimeca', 0.52).
-viagem(12, 159, 155, 'Vimeca', 0.04).
-viagem(12, 155, 741, 'Vimeca', 0.33).
-viagem(12, 741, 742, 'Vimeca', 0.02).
-viagem(12, 742, 686, 'Vimeca', 0.66).
-viagem(12, 686, 687, 'Vimeca', 0.01).
-viagem(12, 687, 87, 'Vimeca', 0.24).
-viagem(12, 87, 154, 'Vimeca', 0.03).
-viagem(12, 154, 709, 'Vimeca', 0.47).
-viagem(12, 709, 1014, 'Vimeca', 0.03).
-viagem(12, 1014, 68, 'Vimeca', 0.02).
-viagem(12, 68, 788, 'Vimeca', 0.29).
-viagem(12, 788, 170, 'Vimeca', 0.02).
-viagem(12, 170, 183, 'Vimeca', 1.28).
-viagem(12, 183, 791, 'Vimeca', 0.09).
-viagem(12, 791, 595, 'Vimeca', 0.70).
-viagem(12, 595, 182, 'Vimeca', 0.42).
-viagem(12, 182, 181, 'SCoTTURB', 0.04).
-viagem(12, 181, 180, 'Vimeca', 0.13).
-viagem(12, 180, 594, 'Vimeca', 0.51).
-viagem(12, 594, 185, 'Vimeca', 0.49).
-viagem(12, 185, 89, 'SCoTTURB', 0.41).
-viagem(12, 89, 90, 'Vimeca', 0.03).
-viagem(12, 90, 107, 'Vimeca', 0.66).
-viagem(12, 107, 250, 'Vimeca', 0.20).
-viagem(12, 250, 597, 'Vimeca', 0.34).
-viagem(12, 597, 953, 'Vimeca', 0.07).
-viagem(12, 953, 806, 'Vimeca', 1.34).
-viagem(12, 806, 609, 'Vimeca', 1.31).
-viagem(12, 609, 599, 'Vimeca', 0.08).
-viagem(12, 599, 860, 'Vimeca', 0.78).
-viagem(12, 860, 861, 'Vimeca', 0.04).
-viagem(12, 861, 359, 'Vimeca', 0.11).
-viagem(12, 359, 349, 'Vimeca', 0.03).
-viagem(12, 349, 643, 'Vimeca', 0.92).
-viagem(12, 643, 638, 'Vimeca', 0.19).
-viagem(12, 638, 637, 'Vimeca', 0.02).
-viagem(12, 637, 361, 'Vimeca', 1.04).
-viagem(12, 361, 362, 'Vimeca', 0.03).
-viagem(12, 362, 25, 'Vimeca', 0.83).
-viagem(12, 25, 37, 'Vimeca', 0.51).
-viagem(12, 37, 26, 'Vimeca', 0.01).
-viagem(12, 26, 24, 'Vimeca', 0.49).
-viagem(12, 24, 22, 'Vimeca', 0.31).
-viagem(12, 22, 27, 'Vimeca', 0.37).
-viagem(12, 27, 28, 'Vimeca', 0.03).
-viagem(12, 28, 34, 'Vimeca', 0.40).
-viagem(12, 34, 641, 'Vimeca', 0.49).
-viagem(12, 641, 635, 'Vimeca', 0.06).
-viagem(12, 635, 679, 'Vimeca', 0.38).
-viagem(12, 679, 688, 'Vimeca', 0.04).
-viagem(12, 688, 675, 'Vimeca', 0.21).
-viagem(12, 675, 72, 'Vimeca', 0.05).
-viagem(12, 72, 75, 'Vimeca', 0.22).
-viagem(12, 75, 671, 'Vimeca', 0.02).
-viagem(12, 671, 657, 'Vimeca', 0.22).
-viagem(12, 657, 70, 'Vimeca', 0.10).
-viagem(12, 70, 526, 'Vimeca', 0.26).
-viagem(15, 706, 703, 'Vimeca', 0.03).
-viagem(15, 703, 719, 'Vimeca', 0.35).
-viagem(15, 719, 718, 'Vimeca', 0.03).
-viagem(15, 718, 728, 'Vimeca', 0.29).
-viagem(15, 728, 729, 'Vimeca', 0.02).
-viagem(15, 729, 724, 'Vimeca', 0.57).
-viagem(15, 724, 129, 'Vimeca', 0.03).
-viagem(15, 129, 763, 'Vimeca', 0.70).
-viagem(15, 763, 754, 'Vimeca', 0.04).
-viagem(15, 754, 183, 'Vimeca', 4.99).
-viagem(15, 183, 791, 'Vimeca', 0.09).
-viagem(15, 791, 595, 'Vimeca', 0.70).
-viagem(15, 595, 182, 'Vimeca', 0.42).
-viagem(15, 182, 181, 'SCoTTURB', 0.04).
-viagem(15, 181, 180, 'Vimeca', 0.13).
-viagem(15, 180, 594, 'Vimeca', 0.51).
-viagem(15, 594, 185, 'Vimeca', 0.49).
-viagem(15, 185, 89, 'SCoTTURB', 0.41).
-viagem(15, 89, 90, 'Vimeca', 0.03).
-viagem(15, 90, 107, 'Vimeca', 0.66).
-viagem(15, 107, 250, 'Vimeca', 0.20).
-viagem(15, 250, 597, 'Vimeca', 0.34).
-viagem(15, 597, 953, 'Vimeca', 0.07).
-viagem(15, 953, 248, 'Vimeca', 1.01).
-viagem(15, 248, 243, 'Vimeca', 0.27).
-viagem(15, 243, 247, 'Vimeca', 0.23).
-viagem(15, 247, 609, 'Vimeca', 1.04).
-viagem(15, 609, 242, 'Vimeca', 0.78).
-viagem(15, 242, 255, 'Vimeca', 0.03).
-viagem(15, 255, 82, 'Vimeca', 1.31).
-viagem(15, 82, 604, 'Vimeca', 0.06).
-viagem(15, 604, 798, 'Vimeca', 6.52).
-viagem(15, 798, 628, 'Vimeca', 7.57).
-viagem(15, 628, 799, 'Vimeca', 4.19).
-viagem(15, 799, 39, 'Vimeca', 3.26).
-viagem(15, 39, 50, 'Vimeca', 0.95).
-viagem(15, 50, 599, 'Vimeca', 1.72).
-viagem(15, 599, 40, 'Vimeca', 0.78).
-viagem(15, 40, 1010, 'Vimeca', 3.51).
-viagem(15, 1010, 246, 'Vimeca', 1.57).
-viagem(15, 246, 260, 'Vimeca', 0.02).
-viagem(15, 260, 985, 'Vimeca', 1.63).
-viagem(15, 985, 608, 'Vimeca', 0.02).
-viagem(15, 608, 249, 'Vimeca', 1.32).
-viagem(15, 249, 254, 'Vimeca', 0.16).
-viagem(15, 254, 205, 'Vimeca', 5.20).
-viagem(15, 205, 622, 'Vimeca', 6.80).
-viagem(15, 622, 230, 'Vimeca', 3.39).
-viagem(15, 230, 51, 'Vimeca', 3.98).
-viagem(15, 51, 44, 'Vimeca', 0.60).
-viagem(15, 44, 234, 'Vimeca', 3.64).
-viagem(15, 234, 38, 'Vimeca', 4.21).
-viagem(15, 38, 224, 'Vimeca', 3.96).
-viagem(15, 224, 620, 'Vimeca', 3.67).
-viagem(15, 620, 45, 'Vimeca', 0.01).
-viagem(15, 45, 614, 'Vimeca', 1.03).
-viagem(15, 614, 239, 'Vimeca', 1.51).
-viagem(15, 239, 238, 'Vimeca', 0.01).
-viagem(15, 238, 46, 'SCoTTURB', 1.52).
-viagem(15, 46, 226, 'Vimeca', 2.81).
-viagem(15, 226, 42, 'Vimeca', 2.89).
-viagem(15, 42, 600, 'Vimeca', 0.02).
-viagem(15, 600, 602, 'Vimeca', 1.16).
-viagem(15, 602, 601, 'Vimeca', 0.01).
-viagem(15, 601, 48, 'Vimeca', 0.69).
-viagem(15, 48, 192, 'Vimeca', 6.50).
-viagem(15, 192, 190, 'Vimeca', 0.02).
-viagem(15, 190, 49, 'SCoTTURB', 6.48).
-viagem(15, 49, 232, 'Vimeca', 3.06).
-viagem(15, 232, 52, 'SCoTTURB', 0.03).
-viagem(15, 52, 612, 'Vimeca', 2.63).
-viagem(15, 612, 613, 'Vimeca', 0.02).
-viagem(15, 613, 193, 'Vimeca', 6.05).
-viagem(15, 193, 233, 'Vimeca', 3.40).
-viagem(15, 233, 231, 'Vimeca', 0.01).
-viagem(15, 231, 241, 'Vimeca', 0.96).
-viagem(15, 241, 240, 'Vimeca', 0.01).
-viagem(15, 240, 611, 'Vimeca', 1.78).
-viagem(15, 611, 610, 'Vimeca', 0.01).
-viagem(15, 610, 286, 'Vimeca', 6.07).
-viagem(15, 286, 332, 'SCoTTURB', 4.15).
-viagem(15, 332, 331, 'Vimeca', 0.02).
-viagem(15, 331, 315, 'Vimeca', 0.76).
-viagem(15, 315, 312, 'Vimeca', 0.04).
-viagem(15, 312, 314, 'SCoTTURB', 0.10).
-viagem(15, 314, 292, 'Vimeca', 3.86).
-viagem(15, 292, 295, 'Vimeca', 0.02).
-viagem(15, 295, 313, 'Vimeca', 4.50).
-viagem(15, 313, 270, 'Vimeca', 4.74).
-viagem(15, 270, 293, 'Vimeca', 0.52).
-viagem(15, 293, 323, 'Vimeca', 4.21).
-viagem(15, 323, 291, 'Vimeca', 4.20).
-viagem(15, 291, 278, 'Vimeca', 0.64).
-viagem(15, 278, 280, 'Vimeca', 0.03).
-viagem(106, 711, 125, 'LT', 0.02).
-viagem(106, 125, 127, 'LT', 0.20).
-viagem(106, 127, 715, 'LT', 0.04).
-viagem(106, 715, 744, 'LT', 0.19).
-viagem(106, 744, 152, 'LT', 0.16).
-viagem(106, 152, 732, 'LT', 0.23).
-viagem(106, 732, 780, 'LT', 1.17).
-viagem(106, 780, 752, 'LT', 1.50).
-viagem(106, 752, 751, 'LT', 0.01).
-viagem(106, 751, 779, 'LT', 1.48).
-viagem(106, 779, 775, 'Carris', 0.95).
-viagem(106, 775, 776, 'LT', 0.01).
-viagem(106, 776, 774, 'LT', 0.87).
-viagem(106, 774, 773, 'LT', 0.01).
-viagem(106, 773, 777, 'LT', 0.55).
-viagem(106, 777, 778, 'LT', 0.01).
-viagem(106, 778, 762, 'LT', 1.12).
-viagem(106, 762, 756, 'LT', 0.04).
-viagem(106, 756, 781, 'LT', 1.46).
-viagem(106, 781, 785, 'LT', 0.01).
-viagem(106, 785, 208, 'LT', 1.67).
-viagem(106, 208, 797, 'LT', 0.16).
-viagem(106, 797, 191, 'LT', 0.30).
-viagem(106, 191, 795, 'LT', 0.02).
-viagem(106, 795, 796, 'LT', 0.17).
-viagem(106, 796, 828, 'LT', 0.15).
-viagem(106, 828, 284, 'LT', 0.38).
-viagem(106, 284, 285, 'LT', 0.03).
-viagem(106, 285, 282, 'LT', 0.17).
-viagem(106, 282, 283, 'LT', 0.05).
-viagem(106, 283, 281, 'LT', 0.30).
-viagem(106, 281, 294, 'LT', 0.02).
-viagem(106, 294, 378, 'LT', 0.35).
-viagem(106, 378, 379, 'LT', 0.02).
-viagem(106, 379, 989, 'LT', 0.31).
-viagem(106, 989, 869, 'LT', 0.12).
-viagem(106, 869, 88, 'LT', 2.84).
-viagem(106, 88, 419, 'LT', 0.04).
-viagem(106, 419, 541, 'LT', 2.72).
-viagem(106, 541, 542, 'LT', 0.01).
-viagem(106, 542, 503, 'LT', 0.41).
-viagem(106, 503, 516, 'LT', 0.01).
-viagem(106, 516, 543, 'LT', 0.15).
-viagem(106, 543, 10, 'LT', 0.02).
-viagem(106, 10, 540, 'LT', 0.28).
-viagem(106, 540, 518, 'LT', 0.37).
-viagem(106, 518, 538, 'LT', 0.28).
-viagem(106, 538, 310, 'LT', 0.49).
-viagem(106, 310, 521, 'LT', 0.32).
-viagem(106, 521, 505, 'LT', 0.52).
-viagem(106, 505, 501, 'LT', 0.26).
-viagem(106, 501, 967, 'LT', 0.50).
-viagem(106, 967, 913, 'LT', 0.11).
-viagem(106, 913, 577, 'LT', 0.14).
-viagem(106, 577, 944, 'LT', 0.36).
-viagem(106, 944, 969, 'LT', 0.27).
-viagem(106, 969, 579, 'LT', 0.48).
-viagem(106, 579, 581, 'LT', 0.20).
-viagem(106, 581, 941, 'LT', 0.18).
-viagem(106, 941, 576, 'LT', 0.30).
-viagem(106, 576, 585, 'LT', 0.16).
-viagem(106, 585, 584, 'LT', 0.31).
-viagem(106, 584, 583, 'LT', 0.01).
-viagem(23, 706, 703, 'Vimeca', 0.03).
-viagem(23, 703, 100, 'Vimeca', 0.22).
-viagem(23, 100, 718, 'Vimeca', 0.24).
-viagem(23, 718, 729, 'Vimeca', 0.29).
-viagem(23, 729, 131, 'Vimeca', 0.30).
-viagem(23, 131, 129, 'Vimeca', 0.83).
-viagem(23, 129, 720, 'Vimeca', 0.57).
-viagem(101, 106, 711, 'LT', 1.39).
-viagem(101, 711, 125, 'LT', 0.02).
-viagem(101, 125, 1013, 'LT', 1.41).
-viagem(101, 1013, 103, 'LT', 0.20).
-viagem(101, 103, 127, 'LT', 1.15).
-viagem(101, 127, 715, 'LT', 0.04).
-viagem(101, 715, 102, 'LT', 1.23).
-viagem(101, 102, 101, 'LT', 0.03).
-viagem(101, 101, 134, 'LT', 0.15).
-viagem(101, 134, 744, 'LT', 1.00).
-viagem(101, 744, 135, 'LT', 0.81).
-viagem(101, 135, 136, 'LT', 0.02).
-viagem(101, 136, 152, 'LT', 0.68).
-viagem(101, 152, 732, 'LT', 0.23).
-viagem(101, 732, 740, 'LT', 0.03).
-viagem(101, 740, 146, 'LT', 0.16).
-viagem(101, 146, 737, 'LT', 0.40).
-viagem(101, 737, 145, 'LT', 0.44).
-viagem(101, 145, 160, 'LT', 0.46).
-viagem(101, 160, 148, 'LT', 0.19).
-viagem(101, 148, 733, 'LT', 0.01).
-viagem(102, 711, 125, 'LT', 0.02).
-viagem(102, 125, 127, 'LT', 0.20).
-viagem(102, 127, 715, 'LT', 0.04).
-viagem(102, 715, 744, 'LT', 0.19).
-viagem(102, 744, 152, 'LT', 0.16).
-viagem(102, 152, 732, 'LT', 0.23).
-viagem(102, 732, 733, 'LT', 0.32).
-viagem(102, 733, 151, 'LT', 0.05).
-viagem(102, 151, 743, 'LT', 0.52).
-viagem(102, 743, 739, 'LT', 0.04).
-viagem(102, 739, 158, 'Carris', 0.33).
-viagem(102, 158, 157, 'LT', 0.02).
-viagem(102, 157, 84, 'LT', 0.66).
-viagem(102, 84, 83, 'LT', 0.01).
-viagem(102, 83, 690, 'Carris', 0.24).
-viagem(102, 690, 738, 'LT', 0.03).
-viagem(102, 738, 708, 'LT', 0.47).
-viagem(102, 708, 1015, 'LT', 0.03).
-viagem(102, 1015, 1016, 'LT', 0.02).
-viagem(102, 1016, 169, 'LT', 0.29).
-viagem(102, 169, 789, 'LT', 0.02).
-viagem(102, 789, 817, 'LT', 1.24).
-viagem(102, 817, 815, 'LT', 0.63).
-viagem(102, 815, 814, 'LT', 0.02).
-viagem(102, 814, 813, 'LT', 0.35).
-viagem(102, 813, 235, 'LT', 0.08).
-viagem(102, 235, 816, 'LT', 0.28).
-viagem(102, 816, 236, 'LT', 0.11).
-viagem(102, 236, 223, 'LT', 1.39).
-viagem(102, 223, 1009, 'LT', 0.24).
-viagem(102, 1009, 801, 'LT', 0.29).
-viagem(102, 801, 805, 'LT', 0.26).
-viagem(102, 805, 808, 'LT', 1.37).
-viagem(102, 808, 809, 'LT', 0.01).
-viagem(102, 809, 800, 'LT', 1.30).
-viagem(102, 800, 229, 'LT', 0.68).
-viagem(102, 229, 803, 'LT', 0.43).
-viagem(102, 803, 632, 'LT', 0.03).
-viagem(102, 632, 804, 'LT', 0.13).
-viagem(102, 804, 802, 'LT', 0.01).
-viagem(102, 802, 811, 'LT', 0.96).
-viagem(102, 811, 810, 'LT', 0.01).
-viagem(102, 810, 841, 'LT', 0.21).
-viagem(102, 841, 842, 'LT', 0.02).
-viagem(102, 842, 837, 'LT', 0.76).
-viagem(102, 837, 835, 'LT', 0.04).
-viagem(102, 835, 836, 'LT', 0.55).
-viagem(102, 836, 838, 'LT', 0.03).
-viagem(102, 838, 454, 'LT', 1.50).
-viagem(102, 454, 455, 'LT', 0.01).
-viagem(102, 455, 453, 'LT', 0.17).
-viagem(108, 946, 590, 'Carris', 0.14).
-viagem(108, 590, 591, 'LT', 0.46).
-viagem(108, 591, 592, 'LT', 0.05).
-viagem(108, 592, 173, 'LT', 1.07).
-viagem(108, 173, 174, 'LT', 0.02).
-viagem(108, 174, 175, 'LT', 0.59).
-viagem(108, 175, 176, 'LT', 0.08).
-viagem(108, 176, 177, 'LT', 0.32).
-viagem(108, 177, 178, 'LT', 0.01).
-viagem(108, 178, 693, 'LT', 0.23).
-viagem(108, 693, 692, 'LT', 0.03).
-viagem(108, 692, 817, 'Carris', 0.19).
-viagem(108, 817, 813, 'LT', 0.27).
-viagem(108, 813, 816, 'LT', 0.23).
-viagem(108, 816, 236, 'LT', 0.11).
-viagem(108, 236, 1009, 'LT', 1.63).
-viagem(108, 1009, 801, 'LT', 0.29).
-viagem(108, 801, 805, 'LT', 0.26).
-viagem(108, 805, 808, 'LT', 1.37).
-viagem(108, 808, 809, 'LT', 0.01).
-viagem(108, 809, 800, 'LT', 1.30).
-viagem(108, 800, 803, 'LT', 0.28).
-viagem(108, 803, 632, 'LT', 0.03).
-viagem(108, 632, 804, 'LT', 0.13).
-viagem(108, 804, 802, 'LT', 0.01).
-viagem(108, 802, 811, 'LT', 0.96).
-viagem(108, 811, 810, 'LT', 0.01).
-viagem(108, 810, 841, 'LT', 0.21).
-viagem(108, 841, 842, 'LT', 0.02).
-viagem(108, 842, 837, 'LT', 0.76).
-viagem(108, 837, 835, 'LT', 0.04).
-viagem(108, 835, 836, 'LT', 0.55).
-viagem(108, 836, 838, 'LT', 0.03).
-viagem(108, 838, 320, 'LT', 1.33).
-viagem(108, 320, 324, 'LT', 0.19).
-viagem(108, 324, 325, 'LT', 0.02).
-viagem(108, 325, 317, 'LT', 0.27).
-viagem(108, 317, 319, 'LT', 0.13).
-viagem(108, 319, 318, 'LT', 0.03).
-viagem(108, 318, 327, 'LT', 0.49).
-viagem(108, 327, 326, 'LT', 0.15).
-viagem(108, 326, 273, 'LT', 0.63).
-viagem(108, 273, 274, 'LT', 0.01).
-viagem(108, 274, 431, 'LT', 0.12).
-viagem(108, 431, 437, 'LT', 0.03).
-viagem(108, 437, 423, 'LT', 0.28).
-viagem(108, 423, 439, 'LT', 0.06).
-viagem(108, 439, 409, 'LT', 0.54).
-viagem(114, 946, 590, 'Carris', 0.14).
-viagem(114, 590, 591, 'LT', 0.46).
-viagem(114, 591, 592, 'LT', 0.05).
-viagem(114, 592, 173, 'LT', 1.07).
-viagem(114, 173, 174, 'LT', 0.02).
-viagem(114, 174, 175, 'LT', 0.59).
-viagem(114, 175, 176, 'LT', 0.08).
-viagem(114, 176, 950, 'LT', 0.66).
-viagem(114, 950, 177, 'LT', 0.85).
-viagem(114, 177, 178, 'LT', 0.01).
-viagem(114, 178, 947, 'LT', 1.07).
-viagem(114, 947, 792, 'LT', 0.49).
-viagem(114, 792, 710, 'LT', 0.26).
-viagem(114, 710, 807, 'LT', 0.58).
-viagem(114, 807, 818, 'LT', 0.39).
-viagem(114, 818, 823, 'LT', 0.36).
-viagem(114, 823, 952, 'LT', 0.70).
-viagem(114, 952, 954, 'LT', 0.07).
-viagem(114, 954, 1002, 'LT', 0.15).
-viagem(114, 1002, 977, 'LT', 0.08).
-viagem(114, 977, 986, 'LT', 0.38).
-viagem(114, 986, 983, 'LT', 0.03).
-viagem(114, 983, 354, 'LT', 0.46).
-viagem(114, 354, 353, 'LT', 0.02).
-viagem(114, 353, 863, 'LT', 0.31).
-viagem(114, 863, 856, 'LT', 0.11).
-viagem(114, 856, 857, 'LT', 0.12).
-viagem(114, 857, 367, 'LT', 0.36).
-viagem(114, 367, 333, 'LT', 0.38).
-viagem(114, 333, 846, 'LT', 0.15).
-viagem(114, 846, 845, 'LT', 0.02).
-viagem(114, 845, 330, 'LT', 0.20).
-viagem(114, 330, 364, 'LT', 0.40).
-viagem(114, 364, 33, 'LT', 0.44).
-viagem(114, 33, 32, 'LT', 0.05).
-viagem(114, 32, 60, 'LT', 0.26).
-viagem(114, 60, 61, 'LT', 0.03).
-viagem(114, 61, 64, 'LT', 0.21).
-viagem(114, 64, 63, 'LT', 0.02).
-viagem(114, 63, 62, 'LT', 0.17).
-viagem(114, 62, 58, 'LT', 0.04).
-viagem(114, 58, 57, 'LT', 0.21).
-viagem(114, 57, 59, 'LT', 0.03).
-viagem(114, 59, 654, 'LT', 0.25).
-viagem(114, 654, 81, 'Vimeca', 0.35).
-viagem(111, 872, 391, 'LT', 0.11).
-viagem(111, 391, 871, 'LT', 0.22).
-viagem(111, 871, 407, 'LT', 0.05).
-viagem(111, 407, 873, 'LT', 0.11).
-viagem(111, 873, 394, 'LT', 0.02).
-viagem(111, 394, 403, 'LT', 0.10).
-viagem(111, 403, 404, 'LT', 0.04).
-viagem(111, 404, 408, 'LT', 0.16).
-viagem(111, 408, 390, 'LT', 0.03).
-viagem(111, 390, 874, 'LT', 0.15).
-viagem(111, 874, 875, 'LT', 0.01).
-viagem(111, 875, 398, 'LT', 0.18).
-viagem(111, 398, 399, 'LT', 0.03).
-viagem(111, 399, 548, 'LT', 0.19).
-viagem(111, 548, 549, 'LT', 0.01).
-viagem(111, 549, 570, 'LT', 0.82).
-viagem(111, 570, 564, 'LT', 0.91).
-viagem(111, 564, 551, 'LT', 0.15).
-viagem(111, 551, 565, 'LT', 0.15).
-viagem(111, 565, 553, 'LT', 0.34).
-viagem(111, 553, 552, 'LT', 0.18).
-viagem(111, 552, 554, 'LT', 0.18).
-viagem(111, 554, 540, 'LT', 0.09).
-viagem(111, 540, 567, 'LT', 0.14).
-viagem(111, 567, 919, 'LT', 0.54).
-viagem(111, 919, 533, 'LT', 0.47).
-viagem(111, 533, 920, 'LT', 0.37).
-viagem(111, 920, 566, 'LT', 0.23).
-viagem(111, 566, 534, 'LT', 0.15).
-viagem(111, 534, 531, 'Carris', 0.12).
-viagem(111, 531, 539, 'LT', 0.22).
-viagem(111, 539, 532, 'LT', 0.05).
-viagem(111, 532, 530, 'LT', 0.32).
-viagem(111, 530, 504, 'LT', 0.09).
-viagem(111, 504, 517, 'LT', 0.03).
-viagem(111, 517, 310, 'LT', 0.28).
-viagem(111, 310, 925, 'LT', 0.41).
-viagem(111, 925, 521, 'LT', 0.10).
-viagem(111, 521, 505, 'LT', 0.52).
-viagem(111, 505, 501, 'LT', 0.26).
-viagem(111, 501, 1025, 'LT', 0.48).
-viagem(114, 946, 590, 'Carris', 0.14).
-viagem(114, 590, 591, 'LT', 0.46).
-viagem(114, 591, 592, 'LT', 0.05).
-viagem(114, 592, 173, 'LT', 1.07).
-viagem(114, 173, 174, 'LT', 0.02).
-viagem(114, 174, 175, 'LT', 0.59).
-viagem(114, 175, 176, 'LT', 0.08).
-viagem(114, 176, 950, 'LT', 0.66).
-viagem(114, 950, 177, 'LT', 0.85).
-viagem(114, 177, 178, 'LT', 0.01).
-viagem(114, 178, 947, 'LT', 1.07).
-viagem(114, 947, 792, 'LT', 0.49).
-viagem(114, 792, 710, 'LT', 0.26).
-viagem(114, 710, 807, 'LT', 0.58).
-viagem(114, 807, 818, 'LT', 0.39).
-viagem(114, 818, 823, 'LT', 0.36).
-viagem(114, 823, 952, 'LT', 0.70).
-viagem(114, 952, 954, 'LT', 0.07).
-viagem(114, 954, 1002, 'LT', 0.15).
-viagem(114, 1002, 977, 'LT', 0.08).
-viagem(114, 977, 986, 'LT', 0.38).
-viagem(114, 986, 983, 'LT', 0.03).
-viagem(114, 983, 354, 'LT', 0.46).
-viagem(114, 354, 353, 'LT', 0.02).
-viagem(114, 353, 863, 'LT', 0.31).
-viagem(114, 863, 856, 'LT', 0.11).
-viagem(114, 856, 857, 'LT', 0.12).
-viagem(114, 857, 367, 'LT', 0.36).
-viagem(114, 367, 333, 'LT', 0.38).
-viagem(114, 333, 846, 'LT', 0.15).
-viagem(114, 846, 845, 'LT', 0.02).
-viagem(114, 845, 330, 'LT', 0.20).
-viagem(114, 330, 364, 'LT', 0.40).
-viagem(114, 364, 33, 'LT', 0.44).
-viagem(114, 33, 32, 'LT', 0.05).
-viagem(114, 32, 60, 'LT', 0.26).
-viagem(114, 60, 61, 'LT', 0.03).
-viagem(114, 61, 64, 'LT', 0.21).
-viagem(114, 64, 63, 'LT', 0.02).
-viagem(114, 63, 62, 'LT', 0.17).
-viagem(114, 62, 58, 'LT', 0.04).
-viagem(114, 58, 57, 'LT', 0.21).
-viagem(114, 57, 59, 'LT', 0.03).
-viagem(114, 59, 654, 'LT', 0.25).
-viagem(114, 654, 81, 'Vimeca', 0.35).
-viagem(119, 97, 98, 'LT', 0.02).
-viagem(119, 98, 99, 'LT', 0.23).
-viagem(119, 99, 707, 'LT', 0.01).
-viagem(119, 707, 717, 'LT', 0.25).
-viagem(119, 717, 716, 'LT', 0.03).
-viagem(119, 716, 726, 'LT', 0.29).
-viagem(119, 726, 727, 'LT', 0.02).
-viagem(119, 727, 725, 'LT', 0.30).
-viagem(119, 725, 132, 'LT', 0.11).
-viagem(119, 132, 722, 'LT', 0.84).
-viagem(119, 722, 723, 'LT', 0.03).
-viagem(119, 723, 130, 'LT', 0.62).
-viagem(119, 130, 731, 'LT', 0.02).
-viagem(119, 731, 749, 'LT', 0.21).
-viagem(119, 749, 750, 'LT', 0.05).
-viagem(119, 750, 752, 'LT', 0.55).
-viagem(119, 752, 751, 'LT', 0.01).
-viagem(119, 751, 775, 'LT', 0.54).
-viagem(119, 775, 776, 'LT', 0.01).
-viagem(119, 776, 777, 'LT', 0.32).
-viagem(119, 777, 778, 'LT', 0.01).
-viagem(119, 778, 748, 'LT', 1.19).
-viagem(119, 748, 757, 'LT', 0.05).
-viagem(119, 757, 762, 'LT', 0.06).
-viagem(119, 762, 756, 'LT', 0.04).
-viagem(119, 756, 782, 'LT', 1.39).
-viagem(119, 782, 786, 'LT', 0.09).
-viagem(119, 786, 784, 'LT', 0.03).
-viagem(119, 784, 772, 'LT', 0.08).
-viagem(119, 772, 783, 'LT', 0.11).
-viagem(119, 783, 694, 'LT', 0.89).
-viagem(119, 694, 213, 'LT', 0.12).
-viagem(119, 213, 259, 'LT', 0.23).
-viagem(119, 259, 222, 'LT', 0.25).
-viagem(119, 222, 109, 'LT', 0.21).
-viagem(119, 109, 108, 'LT', 0.03).
-viagem(119, 108, 257, 'LT', 0.20).
-viagem(119, 257, 258, 'LT', 0.02).
-viagem(119, 258, 276, 'Carris', 0.24).
-viagem(119, 276, 277, 'LT', 0.02).
-viagem(119, 277, 287, 'LT', 0.19).
-viagem(119, 287, 1004, 'LT', 0.03).
-viagem(119, 1004, 290, 'LT', 0.32).
-viagem(119, 290, 289, 'LT', 0.15).
-viagem(119, 289, 288, 'LT', 0.15).
-viagem(119, 288, 388, 'LT', 0.14).
-viagem(119, 388, 387, 'LT', 0.20).
-viagem(119, 387, 386, 'LT', 0.02).
-viagem(119, 386, 385, 'LT', 0.30).
-viagem(119, 385, 389, 'LT', 0.10).
-viagem(119, 389, 441, 'LT', 0.34).
-viagem(119, 441, 1018, 'LT', 0.49).
-viagem(115, 320, 324, 'LT', 0.19).
-viagem(115, 324, 325, 'LT', 0.02).
-viagem(115, 325, 317, 'LT', 0.27).
-viagem(115, 317, 319, 'LT', 0.13).
-viagem(115, 319, 318, 'LT', 0.03).
-viagem(115, 318, 327, 'LT', 0.49).
-viagem(115, 327, 326, 'LT', 0.15).
-viagem(115, 326, 273, 'LT', 0.63).
-viagem(115, 273, 274, 'LT', 0.01).
-viagem(115, 274, 431, 'LT', 0.12).
-viagem(115, 431, 437, 'LT', 0.03).
-viagem(115, 437, 411, 'LT', 1.17).
-viagem(115, 411, 442, 'LT', 0.02).
-viagem(115, 442, 421, 'LT', 0.15).
-viagem(115, 421, 420, 'LT', 0.02).
-viagem(115, 420, 432, 'LT', 0.90).
-viagem(115, 432, 413, 'LT', 1.18).
-viagem(115, 413, 429, 'LT', 0.84).
-viagem(115, 429, 428, 'LT', 0.02).
-viagem(115, 428, 418, 'LT', 0.88).
-viagem(115, 418, 439, 'LT', 1.38).
-viagem(115, 439, 424, 'LT', 0.33).
-viagem(115, 424, 436, 'LT', 0.55).
-viagem(115, 436, 435, 'LT', 0.01).
-viagem(115, 435, 415, 'LT', 0.51).
-viagem(115, 415, 414, 'LT', 0.02).
-viagem(115, 414, 426, 'LT', 0.77).
-viagem(115, 426, 427, 'LT', 0.01).
-viagem(115, 427, 425, 'LT', 0.46).
-viagem(115, 425, 412, 'LT', 1.26).
-viagem(115, 412, 1008, 'LT', 0.02).
-viagem(115, 1008, 401, 'LT', 0.41).
-viagem(115, 401, 402, 'LT', 0.01).
-viagem(115, 402, 441, 'LT', 0.40).
-viagem(115, 441, 564, 'LT', 0.90).
-viagem(115, 564, 551, 'LT', 0.15).
-viagem(115, 551, 565, 'LT', 0.15).
-viagem(115, 565, 562, 'LT', 0.55).
-viagem(115, 562, 553, 'LT', 0.89).
-viagem(115, 553, 552, 'LT', 0.18).
-viagem(115, 552, 558, 'LT', 0.59).
-viagem(115, 558, 554, 'LT', 0.77).
-viagem(115, 554, 563, 'LT', 0.48).
-viagem(115, 563, 540, 'LT', 0.57).
-viagem(115, 540, 1006, 'LT', 0.63).
-viagem(115, 1006, 934, 'LT', 0.68).
-viagem(115, 934, 518, 'LT', 0.29).
-viagem(115, 518, 568, 'LT', 0.44).
-viagem(115, 568, 310, 'LT', 0.74).
-viagem(115, 310, 535, 'LT', 0.51).
-viagem(115, 535, 521, 'LT', 0.82).
-viagem(115, 521, 505, 'LT', 0.52).
-viagem(115, 505, 501, 'LT', 0.26).
-viagem(115, 501, 577, 'LT', 0.51).
-viagem(116, 524, 987, 'LT', 0.05).
-viagem(116, 987, 569, 'LT', 0.31).
-viagem(116, 569, 1011, 'LT', 0.04).
-viagem(116, 1011, 555, 'LT', 0.20).
-viagem(116, 555, 525, 'LT', 0.03).
-viagem(116, 525, 546, 'LT', 0.38).
-viagem(116, 546, 547, 'LT', 0.03).
-viagem(116, 547, 935, 'LT', 0.23).
-viagem(116, 935, 545, 'LT', 0.02).
-viagem(117, 124, 123, 'LT', 0.03).
-viagem(117, 123, 117, 'LT', 0.23).
-viagem(117, 117, 116, 'LT', 0.04).
-viagem(117, 116, 119, 'Carris', 0.19).
-viagem(117, 119, 118, 'LT', 0.02).
-viagem(117, 118, 120, 'LT', 0.16).
-viagem(117, 120, 121, 'LT', 0.02).
-viagem(117, 121, 122, 'LT', 0.15).
-viagem(117, 122, 141, 'LT', 0.01).
-viagem(117, 141, 143, 'LT', 0.10).
-viagem(117, 143, 142, 'LT', 0.02).
-viagem(117, 142, 139, 'LT', 0.18).
-viagem(117, 139, 140, 'LT', 0.01).
-viagem(117, 140, 137, 'LT', 0.54).
-viagem(117, 137, 138, 'LT', 0.03).
-viagem(117, 138, 770, 'LT', 0.37).
-viagem(117, 770, 767, 'LT', 0.10).
-viagem(117, 767, 779, 'LT', 0.10).
-viagem(117, 779, 766, 'Carris', 0.26).
-viagem(117, 766, 691, 'LT', 0.02).
-viagem(117, 691, 774, 'LT', 0.32).
-viagem(117, 774, 773, 'LT', 0.01).
-viagem(117, 773, 765, 'LT', 0.50).
-viagem(117, 765, 764, 'LT', 0.02).
-viagem(117, 764, 768, 'LT', 0.10).
-viagem(117, 768, 769, 'LT', 0.01).
-viagem(117, 769, 781, 'LT', 0.67).
-viagem(117, 781, 785, 'LT', 0.01).
-viagem(117, 785, 771, 'LT', 0.74).
-viagem(117, 771, 787, 'LT', 0.01).
-viagem(117, 787, 217, 'LT', 0.44).
-viagem(117, 217, 218, 'LT', 0.02).
-viagem(117, 218, 216, 'LT', 0.24).
-viagem(117, 216, 215, 'LT', 0.05).
-viagem(117, 215, 214, 'LT', 0.28).
-viagem(117, 214, 452, 'LT', 0.42).
-viagem(117, 452, 322, 'LT', 0.20).
-viagem(117, 322, 321, 'LT', 0.06).
-viagem(117, 321, 320, 'LT', 0.19).
-viagem(117, 320, 317, 'LT', 0.07).
-viagem(117, 317, 319, 'LT', 0.13).
-viagem(117, 319, 318, 'LT', 0.03).
-viagem(117, 318, 299, 'LT', 0.24).
-viagem(117, 299, 273, 'LT', 0.19).
-viagem(117, 273, 274, 'LT', 0.01).
-viagem(117, 274, 444, 'LT', 0.37).
-viagem(117, 444, 446, 'LT', 0.25).
-viagem(117, 446, 445, 'LT', 0.25).
-viagem(117, 445, 448, 'LT', 0.26).
-viagem(117, 448, 431, 'LT', 0.72).
-viagem(117, 431, 437, 'LT', 0.03).
-viagem(117, 437, 423, 'LT', 0.28).
-viagem(117, 423, 447, 'LT', 0.70).
-viagem(117, 447, 439, 'LT', 0.71).
-viagem(117, 439, 449, 'LT', 0.29).
-viagem(117, 449, 450, 'LT', 0.02).
-viagem(117, 450, 88, 'LT', 0.35).
-viagem(117, 88, 419, 'LT', 0.04).
-viagem(117, 419, 409, 'LT', 0.31).
-viagem(158, 219, 220, 'LT', 0.20).
-viagem(158, 220, 221, 'LT', 0.03).
-viagem(158, 221, 300, 'LT', 0.18).
-viagem(158, 300, 301, 'LT', 0.02).
-viagem(158, 301, 308, 'LT', 0.52).
-viagem(158, 308, 307, 'LT', 0.14).
-viagem(158, 307, 320, 'LT', 0.35).
-viagem(158, 320, 317, 'LT', 0.07).
-viagem(158, 317, 833, 'LT', 1.20).
-viagem(158, 833, 826, 'LT', 2.49).
-viagem(158, 826, 1005, 'LT', 2.15).
-viagem(158, 1005, 302, 'LT', 0.31).
-viagem(158, 302, 319, 'LT', 1.17).
-viagem(158, 319, 304, 'LT', 0.81).
-viagem(158, 304, 311, 'LT', 0.63).
-viagem(158, 311, 318, 'LT', 0.19).
-viagem(158, 318, 303, 'LT', 0.85).
-viagem(158, 303, 299, 'LT', 0.61).
-viagem(158, 299, 306, 'LT', 1.18).
-viagem(158, 306, 297, 'LT', 0.62).
-viagem(158, 297, 305, 'LT', 0.37).
-viagem(158, 305, 316, 'LT', 0.62).
-viagem(158, 316, 296, 'LT', 0.71).
-viagem(158, 296, 273, 'LT', 0.40).
-viagem(158, 273, 274, 'LT', 0.01).
-viagem(158, 274, 396, 'LT', 1.95).
-viagem(158, 396, 397, 'LT', 0.02).
-viagem(158, 397, 884, 'LT', 1.83).
-viagem(158, 884, 437, 'LT', 0.03).
-viagem(158, 437, 388, 'LT', 1.77).
-viagem(158, 388, 433, 'LT', 1.14).
-viagem(158, 433, 434, 'LT', 0.10).
-viagem(158, 434, 380, 'LT', 2.32).
-viagem(158, 380, 405, 'LT', 0.87).
-viagem(158, 405, 381, 'LT', 0.82).
-viagem(158, 381, 406, 'LT', 0.83).
-viagem(158, 406, 411, 'LT', 0.83).
-viagem(158, 411, 442, 'LT', 0.02).
-viagem(158, 442, 421, 'LT', 0.15).
-viagem(158, 421, 872, 'LT', 1.38).
-viagem(158, 872, 420, 'LT', 1.37).
-viagem(158, 420, 387, 'LT', 0.75).
-viagem(158, 387, 386, 'LT', 0.02).
-viagem(158, 386, 413, 'LT', 0.45).
-viagem(158, 413, 443, 'LT', 0.71).
-viagem(158, 443, 423, 'LT', 0.62).
-viagem(158, 423, 391, 'LT', 2.32).
-viagem(158, 391, 418, 'LT', 0.93).
-viagem(158, 418, 395, 'LT', 0.73).
-viagem(158, 395, 400, 'LT', 0.01).
-viagem(158, 400, 439, 'LT', 2.12).
-viagem(158, 439, 430, 'LT', 0.69).
-viagem(158, 430, 436, 'LT', 0.19).
-viagem(158, 436, 435, 'LT', 0.01).
-viagem(158, 435, 449, 'LT', 1.15).
-viagem(158, 449, 450, 'LT', 0.02).
-viagem(158, 450, 438, 'LT', 0.51).
-viagem(158, 438, 415, 'LT', 1.13).
-viagem(158, 415, 414, 'LT', 0.02).
-viagem(158, 414, 426, 'LT', 0.77).
-viagem(158, 426, 427, 'LT', 0.01).
-viagem(158, 427, 385, 'LT', 1.07).
-viagem(158, 385, 88, 'LT', 1.61).
-viagem(158, 88, 419, 'LT', 0.04).
-viagem(158, 419, 389, 'LT', 1.54).
-viagem(158, 389, 412, 'LT', 0.24).
-viagem(158, 412, 1008, 'LT', 0.02).
-viagem(158, 1008, 401, 'LT', 0.41).
-viagem(158, 401, 402, 'LT', 0.01).
-viagem(158, 402, 410, 'LT', 1.86).
-viagem(158, 410, 275, 'LT', 0.04).
-viagem(158, 275, 440, 'LT', 1.52).
-viagem(158, 440, 558, 'LT', 0.47).
-viagem(158, 558, 298, 'LT', 'N/A').
-viagem(122, 746, 747, 'LT', 0.19).
-viagem(122, 747, 165, 'Carris', 0.18).
-viagem(122, 165, 163, 'LT', 0.15).
-viagem(122, 163, 164, 'LT', 0.01).
-viagem(122, 164, 761, 'LT', 0.34).
-viagem(122, 761, 760, 'LT', 0.01).
-viagem(122, 760, 759, 'LT', 0.16).
-viagem(122, 759, 758, 'LT', 0.04).
-viagem(122, 758, 166, 'LT', 0.24).
-viagem(122, 166, 204, 'LT', 0.09).
-viagem(122, 204, 203, 'LT', 0.01).
-viagem(122, 203, 198, 'LT', 0.21).
-viagem(122, 198, 199, 'LT', 0.04).
-viagem(122, 199, 207, 'LT', 0.18).
-viagem(122, 207, 212, 'LT', 0.17).
-viagem(122, 212, 206, 'LT', 0.17).
-viagem(122, 206, 201, 'LT', 0.14).
-viagem(122, 201, 200, 'LT', 0.14).
-viagem(122, 200, 202, 'LT', 0.15).
-viagem(122, 202, 211, 'LT', 0.06).
-viagem(122, 211, 194, 'LT', 0.30).
-viagem(122, 194, 195, 'LT', 0.01).
-viagem(122, 195, 197, 'LT', 0.15).
-viagem(122, 197, 196, 'LT', 0.06).
-viagem(122, 196, 189, 'LT', 0.42).
-viagem(122, 189, 188, 'LT', 0.02).
-viagem(122, 188, 269, 'LT', 0.21).
-viagem(122, 269, 268, 'LT', 0.02).
-viagem(122, 268, 830, 'LT', 0.31).
-viagem(122, 830, 832, 'LT', 0.02).
-viagem(122, 832, 827, 'LT', 0.24).
-viagem(122, 827, 831, 'LT', 0.52).
-viagem(122, 831, 266, 'LT', 0.57).
-viagem(122, 266, 829, 'LT', 0.57).
-viagem(122, 829, 282, 'LT', 0.24).
-viagem(122, 282, 283, 'LT', 0.05).
-viagem(122, 283, 281, 'LT', 0.30).
-viagem(122, 281, 294, 'LT', 0.02).
-viagem(122, 294, 378, 'LT', 0.35).
-viagem(122, 378, 989, 'LT', 0.33).
-viagem(122, 989, 869, 'LT', 0.12).
-viagem(122, 869, 541, 'LT', 0.42).
-viagem(122, 541, 542, 'LT', 0.01).
-viagem(122, 542, 503, 'LT', 0.41).
-viagem(122, 503, 516, 'LT', 0.01).
-viagem(122, 516, 543, 'LT', 0.15).
-viagem(122, 543, 10, 'LT', 0.02).
-viagem(122, 10, 540, 'LT', 0.28).
-viagem(122, 540, 538, 'LT', 0.41).
-viagem(122, 538, 310, 'LT', 0.49).
-viagem(122, 310, 925, 'LT', 0.41).
-viagem(122, 925, 521, 'LT', 0.10).
-viagem(122, 521, 505, 'LT', 0.52).
-viagem(122, 505, 501, 'LT', 0.26).
-viagem(122, 501, 1025, 'LT', 0.48).
-viagem(125, 97, 98, 'LT', 0.02).
-viagem(125, 98, 717, 'LT', 0.28).
-viagem(125, 717, 716, 'LT', 0.03).
-viagem(125, 716, 726, 'LT', 0.29).
-viagem(125, 726, 727, 'LT', 0.02).
-viagem(125, 727, 730, 'LT', 0.53).
-viagem(125, 730, 133, 'LT', 0.02).
-viagem(125, 133, 722, 'LT', 0.94).
-viagem(125, 722, 723, 'LT', 0.03).
-viagem(125, 723, 721, 'LT', 0.70).
-viagem(125, 721, 753, 'LT', 0.04).
-viagem(125, 753, 749, 'LT', 0.24).
-viagem(125, 749, 750, 'LT', 0.05).
-viagem(125, 750, 748, 'LT', 0.33).
-viagem(125, 748, 757, 'LT', 0.05).
-viagem(125, 757, 761, 'LT', 0.70).
-viagem(125, 761, 760, 'LT', 0.01).
-viagem(125, 760, 759, 'LT', 0.16).
-viagem(125, 759, 758, 'LT', 0.04).
-viagem(125, 758, 166, 'LT', 0.24).
-viagem(125, 166, 204, 'LT', 0.09).
-viagem(125, 204, 203, 'LT', 0.01).
-viagem(125, 203, 198, 'LT', 0.21).
-viagem(125, 198, 199, 'LT', 0.04).
-viagem(125, 199, 209, 'LT', 0.46).
-viagem(125, 209, 210, 'LT', 0.03).
-viagem(125, 210, 207, 'LT', 0.31).
-viagem(125, 207, 797, 'LT', 0.44).
-viagem(125, 797, 191, 'LT', 0.30).
-viagem(125, 191, 795, 'LT', 0.02).
-viagem(125, 795, 796, 'LT', 0.17).
-viagem(125, 796, 828, 'LT', 0.15).
-viagem(125, 828, 287, 'LT', 0.56).
-viagem(125, 287, 1004, 'LT', 0.03).
-viagem(125, 1004, 290, 'LT', 0.32).
-viagem(125, 290, 289, 'LT', 0.15).
-viagem(125, 289, 288, 'LT', 0.15).
-viagem(125, 288, 388, 'LT', 0.14).
-viagem(125, 388, 387, 'LT', 0.20).
-viagem(125, 387, 386, 'LT', 0.02).
-viagem(125, 386, 385, 'LT', 0.30).
-viagem(125, 385, 389, 'LT', 0.10).
-viagem(125, 389, 440, 'LT', 0.32).
-viagem(125, 440, 558, 'LT', 0.47).
-viagem(158, 219, 220, 'LT', 0.20).
-viagem(158, 220, 221, 'LT', 0.03).
-viagem(158, 221, 300, 'LT', 0.18).
-viagem(158, 300, 301, 'LT', 0.02).
-viagem(158, 301, 308, 'LT', 0.52).
-viagem(158, 308, 307, 'LT', 0.14).
-viagem(158, 307, 320, 'LT', 0.35).
-viagem(158, 320, 317, 'LT', 0.07).
-viagem(158, 317, 833, 'LT', 1.20).
-viagem(158, 833, 826, 'LT', 2.49).
-viagem(158, 826, 1005, 'LT', 2.15).
-viagem(158, 1005, 302, 'LT', 0.31).
-viagem(158, 302, 319, 'LT', 1.17).
-viagem(158, 319, 304, 'LT', 0.81).
-viagem(158, 304, 311, 'LT', 0.63).
-viagem(158, 311, 318, 'LT', 0.19).
-viagem(158, 318, 303, 'LT', 0.85).
-viagem(158, 303, 299, 'LT', 0.61).
-viagem(158, 299, 306, 'LT', 1.18).
-viagem(158, 306, 297, 'LT', 0.62).
-viagem(158, 297, 305, 'LT', 0.37).
-viagem(158, 305, 316, 'LT', 0.62).
-viagem(158, 316, 296, 'LT', 0.71).
-viagem(158, 296, 273, 'LT', 0.40).
-viagem(158, 273, 274, 'LT', 0.01).
-viagem(158, 274, 396, 'LT', 1.95).
-viagem(158, 396, 397, 'LT', 0.02).
-viagem(158, 397, 884, 'LT', 1.83).
-viagem(158, 884, 437, 'LT', 0.03).
-viagem(158, 437, 388, 'LT', 1.77).
-viagem(158, 388, 433, 'LT', 1.14).
-viagem(158, 433, 434, 'LT', 0.10).
-viagem(158, 434, 380, 'LT', 2.32).
-viagem(158, 380, 405, 'LT', 0.87).
-viagem(158, 405, 381, 'LT', 0.82).
-viagem(158, 381, 406, 'LT', 0.83).
-viagem(158, 406, 411, 'LT', 0.83).
-viagem(158, 411, 442, 'LT', 0.02).
-viagem(158, 442, 421, 'LT', 0.15).
-viagem(158, 421, 872, 'LT', 1.38).
-viagem(158, 872, 420, 'LT', 1.37).
-viagem(158, 420, 387, 'LT', 0.75).
-viagem(158, 387, 386, 'LT', 0.02).
-viagem(158, 386, 413, 'LT', 0.45).
-viagem(158, 413, 443, 'LT', 0.71).
-viagem(158, 443, 423, 'LT', 0.62).
-viagem(158, 423, 391, 'LT', 2.32).
-viagem(158, 391, 418, 'LT', 0.93).
-viagem(158, 418, 395, 'LT', 0.73).
-viagem(158, 395, 400, 'LT', 0.01).
-viagem(158, 400, 439, 'LT', 2.12).
-viagem(158, 439, 430, 'LT', 0.69).
-viagem(158, 430, 436, 'LT', 0.19).
-viagem(158, 436, 435, 'LT', 0.01).
-viagem(158, 435, 449, 'LT', 1.15).
-viagem(158, 449, 450, 'LT', 0.02).
-viagem(158, 450, 438, 'LT', 0.51).
-viagem(158, 438, 415, 'LT', 1.13).
-viagem(158, 415, 414, 'LT', 0.02).
-viagem(158, 414, 426, 'LT', 0.77).
-viagem(158, 426, 427, 'LT', 0.01).
-viagem(158, 427, 385, 'LT', 1.07).
-viagem(158, 385, 88, 'LT', 1.61).
-viagem(158, 88, 419, 'LT', 0.04).
-viagem(158, 419, 389, 'LT', 1.54).
-viagem(158, 389, 412, 'LT', 0.24).
-viagem(158, 412, 1008, 'LT', 0.02).
-viagem(158, 1008, 401, 'LT', 0.41).
-viagem(158, 401, 402, 'LT', 0.01).
-viagem(158, 402, 410, 'LT', 1.86).
-viagem(158, 410, 275, 'LT', 0.04).
-viagem(158, 275, 440, 'LT', 1.52).
-viagem(158, 440, 558, 'LT', 0.47).
-viagem(158, 558, 298, 'LT', 'N/A').
-viagem(162, 629, 626, 'LT', 0.02).
-viagem(162, 626, 630, 'LT', 0.28).
-viagem(162, 630, 616, 'LT', 0.05).
-viagem(162, 616, 639, 'LT', 1.15).
-viagem(162, 639, 636, 'LT', 0.02).
-viagem(162, 636, 12, 'LT', 0.20).
-viagem(162, 12, 634, 'LT', 0.06).
-viagem(162, 634, 678, 'LT', 0.38).
-viagem(162, 678, 669, 'LT', 0.04).
-viagem(162, 669, 76, 'LT', 0.21).
-viagem(162, 76, 668, 'LT', 0.05).
-viagem(162, 668, 674, 'LT', 0.22).
-viagem(162, 674, 73, 'LT', 0.02).
-viagem(162, 73, 658, 'LT', 0.22).
-viagem(162, 658, 666, 'LT', 0.10).
-viagem(162, 666, 528, 'LT', 0.29).
-viagem(201, 11, 650, 'Carris', 0.55).
-viagem(201, 650, 23, 'Carris', 0.17).
-viagem(201, 23, 13, 'Carris', 0.03).
-viagem(201, 13, 651, 'Carris', 0.21).
-viagem(201, 651, 15, 'Carris', 0.20).
-viagem(201, 15, 645, 'Carris', 0.05).
-viagem(201, 645, 54, 'Carris', 0.21).
-viagem(201, 54, 53, 'Carris', 0.02).
-viagem(201, 53, 640, 'Carris', 0.20).
-viagem(201, 640, 633, 'Carris', 0.06).
-viagem(201, 633, 677, 'Carris', 0.38).
-viagem(201, 677, 670, 'Carris', 0.04).
-viagem(201, 670, 676, 'Carris', 0.20).
-viagem(201, 676, 667, 'Carris', 0.06).
-viagem(201, 667, 673, 'Carris', 0.23).
-viagem(201, 673, 672, 'Carris', 0.02).
-viagem(201, 672, 656, 'Carris', 0.22).
-viagem(201, 656, 69, 'Carris', 0.10).
-viagem(201, 69, 1031, 'Carris', 0.23).
-viagem(201, 1031, 168, 'Carris', 0.09).
-viagem(171, 116, 119, 'Carris', 0.19).
-viagem(171, 119, 118, 'LT', 0.02).
-viagem(171, 118, 104, 'LT', 0.27).
-viagem(171, 104, 711, 'LT', 1.33).
-viagem(171, 711, 105, 'LT', 1.34).
-viagem(171, 105, 125, 'LT', 1.34).
-viagem(171, 125, 115, 'LT', 1.29).
-viagem(171, 115, 120, 'LT', 0.36).
-viagem(171, 120, 121, 'LT', 0.02).
-viagem(171, 121, 1012, 'LT', 0.34).
-viagem(171, 1012, 127, 'LT', 1.17).
-viagem(171, 127, 715, 'LT', 0.04).
-viagem(171, 715, 134, 'LT', 1.08).
-viagem(171, 134, 122, 'LT', 0.31).
-viagem(171, 122, 141, 'LT', 0.01).
-viagem(171, 141, 143, 'LT', 0.10).
-viagem(171, 143, 744, 'LT', 1.31).
-viagem(171, 744, 142, 'LT', 1.32).
-viagem(171, 142, 135, 'LT', 0.51).
-viagem(171, 135, 136, 'LT', 0.02).
-viagem(171, 136, 152, 'LT', 0.68).
-viagem(171, 152, 139, 'LT', 1.30).
-viagem(171, 139, 140, 'LT', 0.01).
-viagem(171, 140, 732, 'LT', 1.13).
-viagem(171, 732, 740, 'LT', 0.03).
-viagem(171, 740, 146, 'LT', 0.16).
-viagem(171, 146, 737, 'LT', 0.40).
-viagem(171, 737, 145, 'LT', 0.44).
-viagem(171, 145, 160, 'LT', 0.46).
-viagem(171, 160, 148, 'LT', 0.19).
-viagem(171, 148, 733, 'LT', 0.01).
-viagem(171, 733, 137, 'LT', 1.15).
-viagem(171, 137, 138, 'LT', 0.03).
-viagem(171, 138, 770, 'LT', 0.37).
-viagem(171, 770, 767, 'LT', 0.10).
-viagem(171, 767, 766, 'LT', 0.19).
-viagem(171, 766, 691, 'LT', 0.02).
-viagem(171, 691, 765, 'LT', 0.24).
-viagem(171, 765, 764, 'LT', 0.02).
-viagem(171, 764, 228, 'LT', 1.26).
-viagem(171, 228, 805, 'LT', 0.01).
-viagem(171, 805, 225, 'LT', 0.13).
-viagem(171, 225, 800, 'LT', 0.03).
-viagem(171, 800, 229, 'LT', 0.68).
-viagem(201, 11, 650, 'Carris', 0.55).
-viagem(201, 650, 23, 'Carris', 0.17).
-viagem(201, 23, 13, 'Carris', 0.03).
-viagem(201, 13, 651, 'Carris', 0.21).
-viagem(201, 651, 15, 'Carris', 0.20).
-viagem(201, 15, 645, 'Carris', 0.05).
-viagem(201, 645, 54, 'Carris', 0.21).
-viagem(201, 54, 53, 'Carris', 0.02).
-viagem(201, 53, 640, 'Carris', 0.20).
-viagem(201, 640, 633, 'Carris', 0.06).
-viagem(201, 633, 677, 'Carris', 0.38).
-viagem(201, 677, 670, 'Carris', 0.04).
-viagem(201, 670, 676, 'Carris', 0.20).
-viagem(201, 676, 667, 'Carris', 0.06).
-viagem(201, 667, 673, 'Carris', 0.23).
-viagem(201, 673, 672, 'Carris', 0.02).
-viagem(201, 672, 656, 'Carris', 0.22).
-viagem(201, 656, 69, 'Carris', 0.10).
-viagem(201, 69, 1031, 'Carris', 0.23).
-viagem(201, 1031, 168, 'Carris', 0.09).
-viagem(467, 825, 523, 'SCoTTURB', 0.21).
-viagem(467, 523, 824, 'SCoTTURB', 0.16).
-viagem(467, 824, 921, 'SCoTTURB', 0.17).
-viagem(467, 921, 495, 'SCoTTURB', 0.10).
-viagem(467, 495, 507, 'SCoTTURB', 0.24).
-viagem(467, 507, 509, 'SCoTTURB', 0.02).
-viagem(467, 509, 508, 'SCoTTURB', 0.57).
-viagem(467, 508, 924, 'SCoTTURB', 0.13).
-viagem(467, 924, 513, 'SCoTTURB', 0.31).
-viagem(470, 267, 513, 'SCoTTURB', 2.14).
-viagem(470, 513, 556, 'SCoTTURB', 0.24).
-viagem(470, 556, 522, 'SCoTTURB', 0.02).
-viagem(470, 522, 515, 'SCoTTURB', 0.40).
-viagem(470, 515, 500, 'SCoTTURB', 0.28).
-viagem(470, 500, 927, 'SCoTTURB', 0.16).
-viagem(470, 927, 511, 'SCoTTURB', 0.13).
-viagem(470, 511, 512, 'SCoTTURB', 0.01).
-viagem(470, 512, 372, 'SCoTTURB', 0.82).
-viagem(470, 372, 520, 'SCoTTURB', 0.77).
-viagem(470, 520, 519, 'SCoTTURB', 0.01).
-viagem(470, 519, 265, 'SCoTTURB', 0.39).
-viagem(470, 265, 264, 'SCoTTURB', 0.24).
-viagem(470, 264, 263, 'SCoTTURB', 0.36).
-viagem(470, 263, 824, 'SCoTTURB', 0.25).
-viagem(470, 824, 262, 'SCoTTURB', 0.22).
-viagem(470, 262, 825, 'SCoTTURB', 0.23).
-viagem(470, 267, 513, 'SCoTTURB', 2.14).
-viagem(470, 513, 556, 'SCoTTURB', 0.24).
-viagem(470, 556, 522, 'SCoTTURB', 0.02).
-viagem(470, 522, 515, 'SCoTTURB', 0.40).
-viagem(470, 515, 500, 'SCoTTURB', 0.28).
-viagem(470, 500, 927, 'SCoTTURB', 0.16).
-viagem(470, 927, 511, 'SCoTTURB', 0.13).
-viagem(470, 511, 512, 'SCoTTURB', 0.01).
-viagem(470, 512, 372, 'SCoTTURB', 0.82).
-viagem(470, 372, 520, 'SCoTTURB', 0.77).
-viagem(470, 520, 519, 'SCoTTURB', 0.01).
-viagem(470, 519, 265, 'SCoTTURB', 0.39).
-viagem(470, 265, 264, 'SCoTTURB', 0.24).
-viagem(470, 264, 263, 'SCoTTURB', 0.36).
-viagem(470, 263, 824, 'SCoTTURB', 0.25).
-viagem(470, 824, 262, 'SCoTTURB', 0.22).
-viagem(470, 262, 825, 'SCoTTURB', 0.23).
-viagem(479, 372, 375, 'SCoTTURB', 0.23).
-viagem(479, 375, 376, 'SCoTTURB', 0.01).
-viagem(479, 376, 825, 'SCoTTURB', 0.44).
-viagem(479, 825, 824, 'SCoTTURB', 0.05).
-viagem(479, 824, 495, 'SCoTTURB', 0.27).
-viagem(479, 495, 507, 'SCoTTURB', 0.24).
-viagem(479, 507, 509, 'SCoTTURB', 0.02).
-viagem(479, 509, 508, 'SCoTTURB', 0.57).
-viagem(479, 508, 924, 'SCoTTURB', 0.13).
-viagem(479, 924, 513, 'SCoTTURB', 0.31).
-viagem(479, 372, 375, 'SCoTTURB', 0.23).
-viagem(479, 375, 376, 'SCoTTURB', 0.01).
-viagem(479, 376, 825, 'SCoTTURB', 0.44).
-viagem(479, 825, 824, 'SCoTTURB', 0.05).
-viagem(479, 824, 495, 'SCoTTURB', 0.27).
-viagem(479, 495, 507, 'SCoTTURB', 0.24).
-viagem(479, 507, 509, 'SCoTTURB', 0.02).
-viagem(479, 509, 508, 'SCoTTURB', 0.57).
-viagem(479, 508, 924, 'SCoTTURB', 0.13).
-viagem(479, 924, 513, 'SCoTTURB', 0.31).
-viagem(714, 603, 685, 'Carris', 0.10).
-viagem(714, 685, 1032, 'Carris', 1.11).
-viagem(714, 1032, 980, 'Carris', 1.17).
-viagem(714, 980, 627, 'Carris', 1.05).
-viagem(714, 627, 43, 'Carris', 0.82).
-viagem(714, 43, 631, 'Carris', 0.59).
-viagem(714, 631, 619, 'Carris', 0.60).
-viagem(714, 619, 615, 'Carris', 0.57).
-viagem(714, 615, 623, 'Carris', 0.30).
-viagem(714, 623, 979, 'Carris', 0.20).
-viagem(714, 979, 978, 'Carris', 0.01).
-viagem(750, 54, 633, 'Carris', 0.25).
-viagem(750, 633, 677, 'Carris', 0.38).
-viagem(750, 677, 670, 'Carris', 0.04).
-viagem(750, 670, 676, 'Carris', 0.20).
-viagem(750, 676, 667, 'Carris', 0.06).
-viagem(750, 667, 673, 'Carris', 0.23).
-viagem(750, 673, 672, 'Carris', 0.02).
-viagem(750, 672, 656, 'Carris', 0.22).
-viagem(750, 656, 69, 'Carris', 0.10).
-viagem(750, 69, 456, 'Carris', 0.30).
-viagem(750, 54, 633, 'Carris', 0.25).
-viagem(750, 633, 677, 'Carris', 0.38).
-viagem(750, 677, 670, 'Carris', 0.04).
-viagem(750, 670, 676, 'Carris', 0.20).
-viagem(750, 676, 667, 'Carris', 0.06).
-viagem(750, 667, 673, 'Carris', 0.23).
-viagem(750, 673, 672, 'Carris', 0.02).
-viagem(750, 672, 656, 'Carris', 0.22).
-viagem(750, 656, 69, 'Carris', 0.10).
-viagem(750, 69, 456, 'Carris', 0.30).
-viagem(751, 21, 11, 'Carris', 0.02).
-viagem(751, 11, 650, 'Carris', 0.55).
-viagem(751, 650, 23, 'Carris', 0.17).
-viagem(751, 23, 13, 'Carris', 0.03).
-viagem(751, 13, 651, 'Carris', 0.21).
-viagem(751, 651, 15, 'Carris', 0.20).
-viagem(751, 15, 645, 'Carris', 0.05).
-viagem(751, 645, 54, 'Carris', 0.21).
-viagem(751, 54, 53, 'Carris', 0.02).
-viagem(751, 53, 640, 'Carris', 0.20).
-viagem(751, 640, 633, 'Carris', 0.06).
-viagem(751, 633, 677, 'Carris', 0.38).
-viagem(751, 677, 670, 'Carris', 0.04).
-viagem(751, 670, 676, 'Carris', 0.20).
-viagem(751, 676, 667, 'Carris', 0.06).
-viagem(751, 667, 673, 'Carris', 0.23).
-viagem(751, 673, 672, 'Carris', 0.02).
-viagem(751, 672, 656, 'Carris', 0.22).
-viagem(751, 656, 69, 'Carris', 0.10).
-viagem(751, 69, 1031, 'Carris', 0.23).
-viagem(751, 1031, 168, 'Carris', 0.09).
-viagem(776, 459, 481, 'Carris', 0.23).
-viagem(776, 481, 478, 'Carris', 0.15).
-viagem(776, 478, 479, 'Carris', 0.01).
-viagem(776, 479, 484, 'Carris', 0.20).
-viagem(776, 484, 906, 'Carris', 0.03).
-viagem(776, 906, 475, 'Carris', 0.44).
-viagem(776, 475, 477, 'Carris', 0.03).
-viagem(776, 477, 471, 'Carris', 0.24).
-viagem(776, 471, 474, 'Carris', 0.06).
-viagem(776, 474, 463, 'Carris', 0.51).
-viagem(776, 463, 493, 'Carris', 0.02).
-viagem(776, 493, 794, 'Carris', 0.73).
-viagem(776, 794, 144, 'Carris', 0.38).
-viagem(776, 144, 8, 'Carris', 0.06).
-viagem(776, 8, 187, 'Carris', 0.31).
-viagem(776, 187, 5, 'Carris', 0.29).
-viagem(776, 5, 895, 'Carris', 0.75).
-viagem(776, 895, 897, 'Carris', 0.02).
-viagem(776, 897, 681, 'Carris', 0.59).
-viagem(776, 459, 481, 'Carris', 0.23).
-viagem(776, 481, 478, 'Carris', 0.15).
-viagem(776, 478, 479, 'Carris', 0.01).
-viagem(776, 479, 484, 'Carris', 0.20).
-viagem(776, 484, 906, 'Carris', 0.03).
-viagem(776, 906, 475, 'Carris', 0.44).
-viagem(776, 475, 477, 'Carris', 0.03).
-viagem(776, 477, 471, 'Carris', 0.24).
-viagem(776, 471, 474, 'Carris', 0.06).
-viagem(776, 474, 463, 'Carris', 0.51).
-viagem(776, 463, 493, 'Carris', 0.02).
-viagem(776, 493, 794, 'Carris', 0.73).
-viagem(776, 794, 144, 'Carris', 0.38).
-viagem(776, 144, 8, 'Carris', 0.06).
-viagem(776, 8, 187, 'Carris', 0.31).
-viagem(776, 187, 5, 'Carris', 0.29).
-viagem(776, 5, 895, 'Carris', 0.75).
-viagem(776, 895, 897, 'Carris', 0.02).
-viagem(776, 897, 681, 'Carris', 0.59).
+:- dynamic viagem/4. 
+viagem(01, 183, 791, 0.09).
+viagem(01, 791, 595, 0.70).
+viagem(01, 595, 182, 0.42).
+viagem(01, 182, 499, 2.00).
+viagem(01, 499, 593, 0.25).
+viagem(01, 593, 181, 1.73).
+viagem(01, 181, 180, 0.13).
+viagem(01, 180, 594, 0.51).
+viagem(01, 594, 185, 0.49).
+viagem(01, 185, 89, 0.41).
+viagem(01, 89, 107, 0.66).
+viagem(01, 107, 250, 0.20).
+viagem(01, 250, 261, 0.36).
+viagem(01, 261, 597, 0.70).
+viagem(01, 597, 953, 0.07).
+viagem(01, 953, 609, 0.15).
+viagem(01, 609, 242, 0.78).
+viagem(01, 242, 255, 0.03).
+viagem(01, 255, 604, 1.37).
+viagem(01, 604, 628, 1.05).
+viagem(01, 628, 39, 0.93).
+viagem(01, 39, 50, 0.95).
+viagem(01, 50, 599, 1.72).
+viagem(01, 599, 40, 0.78).
+viagem(01, 40, 985, 0.34).
+viagem(01, 985, 608, 0.02).
+viagem(01, 608, 249, 1.32).
+viagem(01, 249, 254, 0.16).
+viagem(01, 254, 622, 1.60).
+viagem(01, 622, 51, 0.59).
+viagem(01, 51, 44, 0.60).
+viagem(01, 44, 251, 1.62).
+viagem(01, 251, 38, 2.19).
+viagem(01, 38, 620, 0.30).
+viagem(01, 620, 45, 0.01).
+viagem(01, 45, 614, 1.03).
+viagem(01, 614, 46, 0.02).
+viagem(01, 46, 42, 0.08).
+viagem(01, 42, 600, 0.02).
+viagem(01, 600, 602, 1.16).
+viagem(01, 602, 601, 0.01).
+viagem(01, 601, 48, 0.69).
+viagem(01, 48, 49, 0.06).
+viagem(01, 49, 612, 0.45).
+viagem(01, 612, 613, 0.02).
+viagem(01, 613, 611, 0.19).
+viagem(01, 611, 610, 0.01).
+viagem(01, 610, 336, 1.14).
+viagem(01, 336, 357, 0.10).
+viagem(01, 357, 334, 0.10).
+viagem(01, 334, 339, 0.13).
+viagem(01, 339, 347, 0.07).
+viagem(01, 347, 86, 0.15).
+viagem(01, 86, 85, 0.02).
+viagem(01, 85, 341, 0.16).
+viagem(01, 341, 342, 0.03).
+viagem(01, 342, 365, 0.21).
+viagem(01, 365, 366, 0.01).
+viagem(01, 366, 460, 0.28).
+viagem(01, 460, 468, 0.07).
+viagem(01, 468, 485, 0.16).
+viagem(01, 485, 486, 0.02).
+viagem(01, 486, 487, 0.17).
+viagem(01, 487, 488, 0.04).
+viagem(01, 488, 469, 0.20).
+viagem(01, 469, 462, 0.03).
+viagem(01, 462, 480, 0.14).
+viagem(01, 480, 494, 0.05).
+viagem(01, 494, 957, 0.11).
+viagem(01, 957, 465, 0.01).
+viagem(01, 465, 186, 0.67).
+viagem(01, 186, 466, 0.46).
+viagem(01, 466, 467, 0.02).
+viagem(01, 467, 78, 0.59).
+viagem(01, 78, 79, 0.28).
+viagem(02, 745, 736, 0.16).
+viagem(02, 736, 147, 0.23).
+viagem(02, 147, 156, 0.03).
+viagem(02, 156, 734, 0.31).
+viagem(02, 734, 161, 0.29).
+viagem(02, 161, 162, 0.03).
+viagem(02, 162, 172, 0.58).
+viagem(02, 172, 171, 0.01).
+viagem(02, 171, 595, 3.08).
+viagem(02, 595, 594, 0.27).
+viagem(02, 594, 185, 0.49).
+viagem(02, 185, 107, 0.26).
+viagem(02, 107, 237, 0.58).
+viagem(02, 237, 250, 0.39).
+viagem(02, 250, 261, 0.36).
+viagem(02, 261, 597, 0.70).
+viagem(02, 597, 953, 0.07).
+viagem(02, 953, 248, 1.01).
+viagem(02, 248, 244, 0.63).
+viagem(02, 244, 245, 0.02).
+viagem(02, 245, 243, 0.35).
+viagem(02, 243, 247, 0.23).
+viagem(02, 247, 609, 1.04).
+viagem(02, 609, 799, 2.52).
+viagem(02, 799, 599, 2.48).
+viagem(02, 599, 1010, 2.73).
+viagem(02, 1010, 246, 1.57).
+viagem(02, 246, 260, 0.02).
+viagem(02, 260, 227, 1.63).
+viagem(02, 227, 230, 0.33).
+viagem(02, 230, 234, 0.26).
+viagem(02, 234, 224, 0.26).
+viagem(02, 224, 239, 1.12).
+viagem(02, 239, 238, 0.01).
+viagem(02, 238, 226, 1.30).
+viagem(02, 226, 1001, 2.69).
+viagem(02, 1001, 607, 0.03).
+viagem(02, 607, 232, 2.46).
+viagem(02, 232, 52, 0.03).
+viagem(02, 52, 233, 0.13).
+viagem(02, 233, 231, 0.01).
+viagem(02, 231, 241, 0.96).
+viagem(02, 241, 240, 0.01).
+viagem(02, 240, 859, 1.23).
+viagem(02, 859, 858, 0.02).
+viagem(02, 858, 332, 1.37).
+viagem(02, 332, 331, 0.02).
+viagem(02, 331, 315, 0.76).
+viagem(02, 315, 312, 0.04).
+viagem(02, 312, 360, 1.85).
+viagem(02, 360, 313, 1.30).
+viagem(02, 313, 323, 0.03).
+viagem(02, 323, 351, 1.25).
+viagem(02, 351, 352, 0.12).
+viagem(02, 352, 339, 0.21).
+viagem(02, 339, 347, 0.07).
+viagem(02, 347, 86, 0.15).
+viagem(02, 86, 85, 0.02).
+viagem(02, 85, 341, 0.16).
+viagem(02, 341, 342, 0.03).
+viagem(02, 342, 346, 0.21).
+viagem(02, 346, 343, 0.05).
+viagem(02, 343, 345, 0.12).
+viagem(02, 345, 344, 0.04).
+viagem(02, 344, 363, 0.29).
+viagem(02, 363, 335, 0.02).
+viagem(02, 335, 457, 0.30).
+viagem(02, 457, 458, 0.09).
+viagem(02, 458, 490, 0.41).
+viagem(02, 490, 491, 0.05).
+viagem(02, 491, 56, 0.31).
+viagem(02, 56, 655, 0.01).
+viagem(02, 655, 654, 0.16).
+viagem(02, 654, 78, 0.09).
+viagem(02, 78, 80, 0.28).
+viagem(06, 745, 736, 0.16).
+viagem(06, 736, 147, 0.23).
+viagem(06, 147, 156, 0.03).
+viagem(06, 156, 161, 0.60).
+viagem(06, 161, 162, 0.03).
+viagem(06, 162, 172, 0.58).
+viagem(06, 172, 171, 0.01).
+viagem(06, 171, 799, 1.13).
+viagem(06, 799, 1010, 0.24).
+viagem(06, 1010, 227, 0.13).
+viagem(06, 227, 230, 0.33).
+viagem(06, 230, 234, 0.26).
+viagem(06, 234, 224, 0.26).
+viagem(06, 224, 226, 0.20).
+viagem(06, 226, 232, 0.28).
+viagem(06, 232, 52, 0.03).
+viagem(06, 52, 233, 0.13).
+viagem(06, 233, 231, 0.01).
+viagem(06, 231, 886, 1.81).
+viagem(06, 886, 473, 0.33).
+viagem(06, 473, 470, 0.02).
+viagem(06, 470, 483, 0.20).
+viagem(06, 483, 482, 0.01).
+viagem(06, 482, 476, 0.45).
+viagem(06, 476, 904, 0.02).
+viagem(06, 904, 472, 0.23).
+viagem(06, 472, 902, 0.05).
+viagem(06, 902, 893, 0.51).
+viagem(06, 893, 465, 0.08).
+viagem(06, 465, 186, 0.67).
+viagem(06, 186, 652, 0.32).
+viagem(06, 652, 6, 0.03).
+viagem(06, 6, 466, 0.77).
+viagem(06, 466, 9, 0.85).
+viagem(06, 9, 467, 0.86).
+viagem(06, 467, 78, 0.59).
+viagem(7, 183, 791, 0.09).
+viagem(7, 791, 595, 0.70).
+viagem(7, 595, 182, 0.42).
+viagem(7, 182, 181, 0.04).
+viagem(7, 181, 180, 0.13).
+viagem(7, 180, 594, 0.51).
+viagem(7, 594, 185, 0.49).
+viagem(7, 185, 89, 0.41).
+viagem(7, 89, 90, 0.03).
+viagem(7, 90, 107, 0.66).
+viagem(7, 107, 250, 0.20).
+viagem(7, 250, 597, 0.34).
+viagem(7, 597, 953, 0.07).
+viagem(7, 953, 609, 0.15).
+viagem(7, 609, 599, 0.08).
+viagem(7, 599, 1001, 0.38).
+viagem(7, 1001, 607, 0.03).
+viagem(10, 183, 791, 0.09).
+viagem(10, 791, 595, 0.70).
+viagem(10, 595, 182, 0.42).
+viagem(10, 182, 181, 0.04).
+viagem(10, 181, 180, 0.13).
+viagem(10, 180, 594, 0.51).
+viagem(10, 594, 185, 0.49).
+viagem(10, 185, 89, 0.41).
+viagem(10, 89, 107, 0.66).
+viagem(10, 107, 250, 0.20).
+viagem(10, 250, 261, 0.36).
+viagem(10, 261, 597, 0.70).
+viagem(10, 597, 953, 0.07).
+viagem(10, 953, 605, 0.28).
+viagem(10, 605, 606, 0.03).
+viagem(10, 606, 609, 0.30).
+viagem(10, 609, 82, 0.56).
+viagem(10, 82, 604, 0.06).
+viagem(10, 604, 628, 1.05).
+viagem(10, 628, 39, 0.93).
+viagem(10, 39, 50, 0.95).
+viagem(10, 50, 599, 1.72).
+viagem(10, 599, 40, 0.78).
+viagem(10, 40, 622, 0.19).
+viagem(10, 622, 51, 0.59).
+viagem(10, 51, 38, 0.05).
+viagem(10, 38, 620, 0.30).
+viagem(10, 620, 45, 0.01).
+viagem(10, 45, 602, 0.20).
+viagem(10, 602, 601, 0.01).
+viagem(10, 601, 860, 1.59).
+viagem(10, 860, 861, 0.04).
+viagem(10, 861, 359, 0.11).
+viagem(10, 359, 349, 0.03).
+viagem(10, 349, 29, 0.70).
+viagem(10, 29, 646, 0.17).
+viagem(10, 646, 642, 0.03).
+viagem(10, 642, 30, 0.21).
+viagem(10, 30, 17, 0.30).
+viagem(10, 17, 643, 0.50).
+viagem(10, 643, 20, 0.05).
+viagem(10, 20, 36, 0.46).
+viagem(10, 36, 638, 0.64).
+viagem(10, 638, 637, 0.02).
+viagem(10, 637, 361, 1.04).
+viagem(10, 361, 362, 0.03).
+viagem(10, 362, 37, 0.32).
+viagem(10, 37, 26, 0.01).
+viagem(10, 26, 27, 0.19).
+viagem(10, 27, 28, 0.03).
+viagem(10, 28, 641, 0.88).
+viagem(10, 641, 635, 0.06).
+viagem(10, 635, 679, 0.38).
+viagem(10, 679, 688, 0.04).
+viagem(10, 688, 675, 0.21).
+viagem(10, 675, 72, 0.05).
+viagem(10, 72, 75, 0.22).
+viagem(10, 75, 671, 0.02).
+viagem(10, 671, 657, 0.22).
+viagem(10, 657, 70, 0.10).
+viagem(10, 70, 526, 0.26).
+viagem(11, 859, 858, 0.02).
+viagem(11, 858, 360, 0.31).
+viagem(11, 360, 370, 0.40).
+viagem(11, 370, 351, 0.46).
+viagem(11, 351, 19, 0.61).
+viagem(11, 19, 371, 0.15).
+viagem(11, 371, 18, 0.17).
+viagem(11, 18, 352, 0.74).
+viagem(11, 352, 16, 0.84).
+viagem(11, 16, 339, 1.00).
+viagem(11, 339, 347, 0.07).
+viagem(11, 347, 362, 0.78).
+viagem(11, 362, 26, 0.32).
+viagem(11, 26, 27, 0.19).
+viagem(11, 27, 28, 0.03).
+viagem(11, 28, 86, 0.90).
+viagem(11, 86, 348, 0.76).
+viagem(11, 348, 85, 0.77).
+viagem(11, 85, 337, 0.51).
+viagem(11, 337, 338, 0.02).
+viagem(11, 338, 341, 0.43).
+viagem(11, 341, 342, 0.03).
+viagem(11, 342, 346, 0.21).
+viagem(11, 346, 345, 0.17).
+viagem(11, 345, 344, 0.04).
+viagem(11, 344, 363, 0.29).
+viagem(11, 363, 335, 0.02).
+viagem(11, 335, 492, 0.22).
+viagem(11, 492, 340, 0.03).
+viagem(11, 340, 468, 0.24).
+viagem(11, 468, 485, 0.16).
+viagem(11, 485, 486, 0.02).
+viagem(11, 486, 487, 0.17).
+viagem(11, 487, 488, 0.04).
+viagem(12, 712, 713, 0.02).
+viagem(12, 713, 714, 0.20).
+viagem(12, 714, 128, 0.04).
+viagem(12, 128, 745, 0.19).
+viagem(12, 745, 736, 0.16).
+viagem(12, 736, 147, 0.23).
+viagem(12, 147, 153, 0.27).
+viagem(12, 153, 149, 0.24).
+viagem(12, 149, 734, 0.05).
+viagem(12, 734, 159, 0.52).
+viagem(12, 159, 155, 0.04).
+viagem(12, 155, 741, 0.33).
+viagem(12, 741, 742, 0.02).
+viagem(12, 742, 686, 0.66).
+viagem(12, 686, 687, 0.01).
+viagem(12, 687, 87, 0.24).
+viagem(12, 87, 154, 0.03).
+viagem(12, 154, 709, 0.47).
+viagem(12, 709, 1014, 0.03).
+viagem(12, 1014, 68, 0.02).
+viagem(12, 68, 788, 0.29).
+viagem(12, 788, 170, 0.02).
+viagem(12, 170, 183, 1.28).
+viagem(12, 183, 791, 0.09).
+viagem(12, 791, 595, 0.70).
+viagem(12, 595, 182, 0.42).
+viagem(12, 182, 181, 0.04).
+viagem(12, 181, 180, 0.13).
+viagem(12, 180, 594, 0.51).
+viagem(12, 594, 185, 0.49).
+viagem(12, 185, 89, 0.41).
+viagem(12, 89, 90, 0.03).
+viagem(12, 90, 107, 0.66).
+viagem(12, 107, 250, 0.20).
+viagem(12, 250, 597, 0.34).
+viagem(12, 597, 953, 0.07).
+viagem(12, 953, 806, 1.34).
+viagem(12, 806, 609, 1.31).
+viagem(12, 609, 599, 0.08).
+viagem(12, 599, 860, 0.78).
+viagem(12, 860, 861, 0.04).
+viagem(12, 861, 359, 0.11).
+viagem(12, 359, 349, 0.03).
+viagem(12, 349, 643, 0.92).
+viagem(12, 643, 638, 0.19).
+viagem(12, 638, 637, 0.02).
+viagem(12, 637, 361, 1.04).
+viagem(12, 361, 362, 0.03).
+viagem(12, 362, 25, 0.83).
+viagem(12, 25, 37, 0.51).
+viagem(12, 37, 26, 0.01).
+viagem(12, 26, 24, 0.49).
+viagem(12, 24, 22, 0.31).
+viagem(12, 22, 27, 0.37).
+viagem(12, 27, 28, 0.03).
+viagem(12, 28, 34, 0.40).
+viagem(12, 34, 641, 0.49).
+viagem(12, 641, 635, 0.06).
+viagem(12, 635, 679, 0.38).
+viagem(12, 679, 688, 0.04).
+viagem(12, 688, 675, 0.21).
+viagem(12, 675, 72, 0.05).
+viagem(12, 72, 75, 0.22).
+viagem(12, 75, 671, 0.02).
+viagem(12, 671, 657, 0.22).
+viagem(12, 657, 70, 0.10).
+viagem(12, 70, 526, 0.26).
+viagem(13, 128, 745, 0.19).
+viagem(13, 745, 736, 0.16).
+viagem(13, 736, 147, 0.23).
+viagem(13, 147, 156, 0.03).
+viagem(13, 156, 734, 0.31).
+viagem(13, 734, 161, 0.29).
+viagem(13, 161, 162, 0.03).
+viagem(13, 162, 172, 0.58).
+viagem(13, 172, 171, 0.01).
+viagem(13, 171, 183, 2.46).
+viagem(13, 183, 791, 0.09).
+viagem(13, 791, 595, 0.70).
+viagem(13, 595, 182, 0.42).
+viagem(13, 182, 181, 0.04).
+viagem(13, 181, 180, 0.13).
+viagem(13, 180, 594, 0.51).
+viagem(13, 594, 185, 0.49).
+viagem(13, 185, 89, 0.41).
+viagem(13, 89, 90, 0.03).
+viagem(13, 90, 107, 0.66).
+viagem(13, 107, 250, 0.20).
+viagem(13, 250, 597, 0.34).
+viagem(13, 597, 953, 0.07).
+viagem(13, 953, 248, 1.01).
+viagem(13, 248, 243, 0.27).
+viagem(13, 243, 247, 0.23).
+viagem(13, 247, 609, 1.04).
+viagem(13, 609, 242, 0.78).
+viagem(13, 242, 255, 0.03).
+viagem(13, 255, 82, 1.31).
+viagem(13, 82, 604, 0.06).
+viagem(13, 604, 628, 1.05).
+viagem(13, 628, 799, 4.19).
+viagem(13, 799, 39, 3.26).
+viagem(13, 39, 50, 0.95).
+viagem(13, 50, 599, 1.72).
+viagem(13, 599, 40, 0.78).
+viagem(13, 40, 1010, 3.51).
+viagem(13, 1010, 246, 1.57).
+viagem(13, 246, 260, 0.02).
+viagem(13, 260, 985, 1.63).
+viagem(13, 985, 608, 0.02).
+viagem(13, 608, 249, 1.32).
+viagem(13, 249, 254, 0.16).
+viagem(13, 254, 227, 2.11).
+viagem(13, 227, 622, 3.71).
+viagem(13, 622, 230, 3.39).
+viagem(13, 230, 51, 3.98).
+viagem(13, 51, 44, 0.60).
+viagem(13, 44, 234, 3.64).
+viagem(13, 234, 38, 4.21).
+viagem(13, 38, 224, 3.96).
+viagem(13, 224, 620, 3.67).
+viagem(13, 620, 45, 0.01).
+viagem(13, 45, 614, 1.03).
+viagem(13, 614, 239, 1.51).
+viagem(13, 239, 238, 0.01).
+viagem(13, 238, 46, 1.52).
+viagem(13, 46, 226, 2.81).
+viagem(13, 226, 42, 2.89).
+viagem(13, 42, 600, 0.02).
+viagem(13, 600, 602, 1.16).
+viagem(13, 602, 601, 0.01).
+viagem(13, 601, 48, 0.69).
+viagem(13, 48, 49, 0.06).
+viagem(13, 49, 232, 3.06).
+viagem(13, 232, 52, 0.03).
+viagem(13, 52, 612, 2.63).
+viagem(13, 612, 613, 0.02).
+viagem(13, 613, 233, 2.65).
+viagem(13, 233, 231, 0.01).
+viagem(13, 231, 241, 0.96).
+viagem(13, 241, 240, 0.01).
+viagem(13, 240, 611, 1.78).
+viagem(13, 611, 610, 0.01).
+viagem(13, 610, 859, 0.55).
+viagem(13, 859, 858, 0.02).
+viagem(13, 858, 861, 0.07).
+viagem(13, 861, 332, 1.44).
+viagem(13, 332, 331, 0.02).
+viagem(13, 331, 315, 0.76).
+viagem(13, 315, 312, 0.04).
+viagem(13, 312, 313, 0.55).
+viagem(13, 313, 323, 0.03).
+viagem(13, 323, 351, 1.25).
+viagem(13, 351, 19, 0.61).
+viagem(13, 19, 371, 0.15).
+viagem(13, 371, 16, 0.27).
+viagem(13, 16, 339, 1.00).
+viagem(13, 339, 26, 1.05).
+viagem(13, 26, 27, 0.19).
+viagem(13, 27, 86, 0.93).
+viagem(13, 86, 338, 0.49).
+viagem(13, 338, 342, 0.41).
+viagem(13, 342, 345, 0.10).
+viagem(13, 345, 363, 0.33).
+viagem(13, 363, 492, 0.20).
+viagem(13, 492, 460, 0.21).
+viagem(13, 460, 468, 0.07).
+viagem(13, 468, 486, 0.15).
+viagem(13, 486, 487, 0.17).
+viagem(15, 706, 703, 0.03).
+viagem(15, 703, 719, 0.35).
+viagem(15, 719, 718, 0.03).
+viagem(15, 718, 728, 0.29).
+viagem(15, 728, 729, 0.02).
+viagem(15, 729, 724, 0.57).
+viagem(15, 724, 129, 0.03).
+viagem(15, 129, 763, 0.70).
+viagem(15, 763, 754, 0.04).
+viagem(15, 754, 183, 4.99).
+viagem(15, 183, 791, 0.09).
+viagem(15, 791, 595, 0.70).
+viagem(15, 595, 182, 0.42).
+viagem(15, 182, 181, 0.04).
+viagem(15, 181, 180, 0.13).
+viagem(15, 180, 594, 0.51).
+viagem(15, 594, 185, 0.49).
+viagem(15, 185, 89, 0.41).
+viagem(15, 89, 90, 0.03).
+viagem(15, 90, 107, 0.66).
+viagem(15, 107, 250, 0.20).
+viagem(15, 250, 597, 0.34).
+viagem(15, 597, 953, 0.07).
+viagem(15, 953, 248, 1.01).
+viagem(15, 248, 243, 0.27).
+viagem(15, 243, 247, 0.23).
+viagem(15, 247, 609, 1.04).
+viagem(15, 609, 242, 0.78).
+viagem(15, 242, 255, 0.03).
+viagem(15, 255, 82, 1.31).
+viagem(15, 82, 604, 0.06).
+viagem(15, 604, 798, 6.52).
+viagem(15, 798, 628, 7.57).
+viagem(15, 628, 799, 4.19).
+viagem(15, 799, 39, 3.26).
+viagem(15, 39, 50, 0.95).
+viagem(15, 50, 599, 1.72).
+viagem(15, 599, 40, 0.78).
+viagem(15, 40, 1010, 3.51).
+viagem(15, 1010, 246, 1.57).
+viagem(15, 246, 260, 0.02).
+viagem(15, 260, 985, 1.63).
+viagem(15, 985, 608, 0.02).
+viagem(15, 608, 249, 1.32).
+viagem(15, 249, 254, 0.16).
+viagem(15, 254, 205, 5.20).
+viagem(15, 205, 622, 6.80).
+viagem(15, 622, 230, 3.39).
+viagem(15, 230, 51, 3.98).
+viagem(15, 51, 44, 0.60).
+viagem(15, 44, 234, 3.64).
+viagem(15, 234, 38, 4.21).
+viagem(15, 38, 224, 3.96).
+viagem(15, 224, 620, 3.67).
+viagem(15, 620, 45, 0.01).
+viagem(15, 45, 614, 1.03).
+viagem(15, 614, 239, 1.51).
+viagem(15, 239, 238, 0.01).
+viagem(15, 238, 46, 1.52).
+viagem(15, 46, 226, 2.81).
+viagem(15, 226, 42, 2.89).
+viagem(15, 42, 600, 0.02).
+viagem(15, 600, 602, 1.16).
+viagem(15, 602, 601, 0.01).
+viagem(15, 601, 48, 0.69).
+viagem(15, 48, 192, 6.50).
+viagem(15, 192, 190, 0.02).
+viagem(15, 190, 49, 6.48).
+viagem(15, 49, 232, 3.06).
+viagem(15, 232, 52, 0.03).
+viagem(15, 52, 612, 2.63).
+viagem(15, 612, 613, 0.02).
+viagem(15, 613, 193, 6.05).
+viagem(15, 193, 233, 3.40).
+viagem(15, 233, 231, 0.01).
+viagem(15, 231, 241, 0.96).
+viagem(15, 241, 240, 0.01).
+viagem(15, 240, 611, 1.78).
+viagem(15, 611, 610, 0.01).
+viagem(15, 610, 286, 6.07).
+viagem(15, 286, 332, 4.15).
+viagem(15, 332, 331, 0.02).
+viagem(15, 331, 315, 0.76).
+viagem(15, 315, 312, 0.04).
+viagem(15, 312, 314, 0.10).
+viagem(15, 314, 292, 3.86).
+viagem(15, 292, 295, 0.02).
+viagem(15, 295, 313, 4.50).
+viagem(15, 313, 270, 4.74).
+viagem(15, 270, 293, 0.52).
+viagem(15, 293, 323, 4.21).
+viagem(15, 323, 291, 4.20).
+viagem(15, 291, 278, 0.64).
+viagem(15, 278, 280, 0.03).
+viagem(23, 706, 703, 0.03).
+viagem(23, 703, 100, 0.22).
+viagem(23, 100, 718, 0.24).
+viagem(23, 718, 729, 0.29).
+viagem(23, 729, 131, 0.30).
+viagem(23, 131, 129, 0.83).
+viagem(23, 129, 720, 0.57).
+viagem(101, 106, 711, 1.39).
+viagem(101, 711, 125, 0.02).
+viagem(101, 125, 1013, 1.41).
+viagem(101, 1013, 103, 0.20).
+viagem(101, 103, 127, 1.15).
+viagem(101, 127, 715, 0.04).
+viagem(101, 715, 102, 1.23).
+viagem(101, 102, 101, 0.03).
+viagem(101, 101, 134, 0.15).
+viagem(101, 134, 744, 1.00).
+viagem(101, 744, 135, 0.81).
+viagem(101, 135, 136, 0.02).
+viagem(101, 136, 152, 0.68).
+viagem(101, 152, 732, 0.23).
+viagem(101, 732, 740, 0.03).
+viagem(101, 740, 146, 0.16).
+viagem(101, 146, 737, 0.40).
+viagem(101, 737, 145, 0.44).
+viagem(101, 145, 160, 0.46).
+viagem(101, 160, 148, 0.19).
+viagem(101, 148, 733, 0.01).
+viagem(102, 711, 125, 0.02).
+viagem(102, 125, 127, 0.20).
+viagem(102, 127, 715, 0.04).
+viagem(102, 715, 744, 0.19).
+viagem(102, 744, 744, 0.00).
+viagem(102, 744, 152, 0.16).
+viagem(102, 152, 732, 0.23).
+viagem(102, 732, 733, 0.32).
+viagem(102, 733, 151, 0.05).
+viagem(102, 151, 743, 0.52).
+viagem(102, 743, 739, 0.04).
+viagem(102, 739, 158, 0.33).
+viagem(102, 158, 157, 0.02).
+viagem(102, 157, 84, 0.66).
+viagem(102, 84, 83, 0.01).
+viagem(102, 83, 690, 0.24).
+viagem(102, 690, 738, 0.03).
+viagem(102, 738, 708, 0.47).
+viagem(102, 708, 1015, 0.03).
+viagem(102, 1015, 1016, 0.02).
+viagem(102, 1016, 169, 0.29).
+viagem(102, 169, 789, 0.02).
+viagem(102, 789, 817, 1.24).
+viagem(102, 817, 815, 0.63).
+viagem(102, 815, 814, 0.02).
+viagem(102, 814, 813, 0.35).
+viagem(102, 813, 235, 0.08).
+viagem(102, 235, 816, 0.28).
+viagem(102, 816, 236, 0.11).
+viagem(102, 236, 223, 1.39).
+viagem(102, 223, 1009, 0.24).
+viagem(102, 1009, 801, 0.29).
+viagem(102, 801, 805, 0.26).
+viagem(102, 805, 808, 1.37).
+viagem(102, 808, 809, 0.01).
+viagem(102, 809, 800, 1.30).
+viagem(102, 800, 229, 0.68).
+viagem(102, 229, 803, 0.43).
+viagem(102, 803, 632, 0.03).
+viagem(102, 632, 804, 0.13).
+viagem(102, 804, 802, 0.01).
+viagem(102, 802, 811, 0.96).
+viagem(102, 811, 810, 0.01).
+viagem(102, 810, 841, 0.21).
+viagem(102, 841, 842, 0.02).
+viagem(102, 842, 837, 0.76).
+viagem(102, 837, 835, 0.04).
+viagem(102, 835, 836, 0.55).
+viagem(102, 836, 838, 0.03).
+viagem(102, 838, 454, 1.50).
+viagem(102, 454, 455, 0.01).
+viagem(102, 455, 453, 0.17).
+viagem(106, 711, 125, 0.02).
+viagem(106, 125, 127, 0.20).
+viagem(106, 127, 715, 0.04).
+viagem(106, 715, 744, 0.19).
+viagem(106, 744, 152, 0.16).
+viagem(106, 152, 732, 0.23).
+viagem(106, 732, 780, 1.17).
+viagem(106, 780, 752, 1.50).
+viagem(106, 752, 751, 0.01).
+viagem(106, 751, 779, 1.48).
+viagem(106, 779, 775, 0.95).
+viagem(106, 775, 776, 0.01).
+viagem(106, 776, 774, 0.87).
+viagem(106, 774, 773, 0.01).
+viagem(106, 773, 777, 0.55).
+viagem(106, 777, 778, 0.01).
+viagem(106, 778, 762, 1.12).
+viagem(106, 762, 756, 0.04).
+viagem(106, 756, 781, 1.46).
+viagem(106, 781, 785, 0.01).
+viagem(106, 785, 208, 1.67).
+viagem(106, 208, 797, 0.16).
+viagem(106, 797, 191, 0.30).
+viagem(106, 191, 795, 0.02).
+viagem(106, 795, 796, 0.17).
+viagem(106, 796, 828, 0.15).
+viagem(106, 828, 284, 0.38).
+viagem(106, 284, 285, 0.03).
+viagem(106, 285, 282, 0.17).
+viagem(106, 282, 283, 0.05).
+viagem(106, 283, 281, 0.30).
+viagem(106, 281, 294, 0.02).
+viagem(106, 294, 378, 0.35).
+viagem(106, 378, 379, 0.02).
+viagem(106, 379, 989, 0.31).
+viagem(106, 989, 869, 0.12).
+viagem(106, 869, 88, 2.84).
+viagem(106, 88, 419, 0.04).
+viagem(106, 419, 541, 2.72).
+viagem(106, 541, 542, 0.01).
+viagem(106, 542, 503, 0.41).
+viagem(106, 503, 516, 0.01).
+viagem(106, 516, 543, 0.15).
+viagem(106, 543, 10, 0.02).
+viagem(106, 10, 540, 0.28).
+viagem(106, 540, 518, 0.37).
+viagem(106, 518, 538, 0.28).
+viagem(106, 538, 310, 0.49).
+viagem(106, 310, 521, 0.32).
+viagem(106, 521, 505, 0.52).
+viagem(106, 505, 501, 0.26).
+viagem(106, 501, 967, 0.50).
+viagem(106, 967, 913, 0.11).
+viagem(106, 913, 577, 0.14).
+viagem(106, 577, 944, 0.36).
+viagem(106, 944, 969, 0.27).
+viagem(106, 969, 579, 0.48).
+viagem(106, 579, 581, 0.20).
+viagem(106, 581, 941, 0.18).
+viagem(106, 941, 576, 0.30).
+viagem(106, 576, 585, 0.16).
+viagem(106, 585, 584, 0.31).
+viagem(106, 584, 583, 0.01).
+viagem(108, 946, 590, 0.14).
+viagem(108, 590, 591, 0.46).
+viagem(108, 591, 592, 0.05).
+viagem(108, 592, 173, 1.07).
+viagem(108, 173, 174, 0.02).
+viagem(108, 174, 175, 0.59).
+viagem(108, 175, 176, 0.08).
+viagem(108, 176, 177, 0.32).
+viagem(108, 177, 178, 0.01).
+viagem(108, 178, 693, 0.23).
+viagem(108, 693, 692, 0.03).
+viagem(108, 692, 817, 0.19).
+viagem(108, 817, 813, 0.27).
+viagem(108, 813, 816, 0.23).
+viagem(108, 816, 236, 0.11).
+viagem(108, 236, 1009, 1.63).
+viagem(108, 1009, 801, 0.29).
+viagem(108, 801, 805, 0.26).
+viagem(108, 805, 808, 1.37).
+viagem(108, 808, 809, 0.01).
+viagem(108, 809, 800, 1.30).
+viagem(108, 800, 803, 0.28).
+viagem(108, 803, 632, 0.03).
+viagem(108, 632, 804, 0.13).
+viagem(108, 804, 802, 0.01).
+viagem(108, 802, 811, 0.96).
+viagem(108, 811, 810, 0.01).
+viagem(108, 810, 841, 0.21).
+viagem(108, 841, 842, 0.02).
+viagem(108, 842, 837, 0.76).
+viagem(108, 837, 835, 0.04).
+viagem(108, 835, 836, 0.55).
+viagem(108, 836, 838, 0.03).
+viagem(108, 838, 320, 1.33).
+viagem(108, 320, 324, 0.19).
+viagem(108, 324, 325, 0.02).
+viagem(108, 325, 317, 0.27).
+viagem(108, 317, 319, 0.13).
+viagem(108, 319, 318, 0.03).
+viagem(108, 318, 327, 0.49).
+viagem(108, 327, 326, 0.15).
+viagem(108, 326, 273, 0.63).
+viagem(108, 273, 274, 0.01).
+viagem(108, 274, 431, 0.12).
+viagem(108, 431, 437, 0.03).
+viagem(108, 437, 423, 0.28).
+viagem(108, 423, 439, 0.06).
+viagem(108, 439, 409, 0.54).
+viagem(111, 872, 391, 0.11).
+viagem(111, 391, 871, 0.22).
+viagem(111, 871, 407, 0.05).
+viagem(111, 407, 873, 0.11).
+viagem(111, 873, 394, 0.02).
+viagem(111, 394, 403, 0.10).
+viagem(111, 403, 404, 0.04).
+viagem(111, 404, 408, 0.16).
+viagem(111, 408, 390, 0.03).
+viagem(111, 390, 874, 0.15).
+viagem(111, 874, 875, 0.01).
+viagem(111, 875, 398, 0.18).
+viagem(111, 398, 399, 0.03).
+viagem(111, 399, 548, 0.19).
+viagem(111, 548, 549, 0.01).
+viagem(111, 549, 570, 0.82).
+viagem(111, 570, 564, 0.91).
+viagem(111, 564, 551, 0.15).
+viagem(111, 551, 565, 0.15).
+viagem(111, 565, 553, 0.34).
+viagem(111, 553, 552, 0.18).
+viagem(111, 552, 554, 0.18).
+viagem(111, 554, 540, 0.09).
+viagem(111, 540, 567, 0.14).
+viagem(111, 567, 919, 0.54).
+viagem(111, 919, 533, 0.47).
+viagem(111, 533, 920, 0.37).
+viagem(111, 920, 566, 0.23).
+viagem(111, 566, 534, 0.15).
+viagem(111, 534, 531, 0.12).
+viagem(111, 531, 539, 0.22).
+viagem(111, 539, 532, 0.05).
+viagem(111, 532, 530, 0.32).
+viagem(111, 530, 504, 0.09).
+viagem(111, 504, 517, 0.03).
+viagem(111, 517, 310, 0.28).
+viagem(111, 310, 925, 0.41).
+viagem(111, 925, 521, 0.10).
+viagem(111, 521, 505, 0.52).
+viagem(111, 505, 501, 0.26).
+viagem(111, 501, 1025, 0.48).
+viagem(112, 704, 717, 0.38).
+viagem(112, 717, 716, 0.03).
+viagem(112, 716, 726, 0.29).
+viagem(112, 726, 727, 0.02).
+viagem(112, 727, 722, 0.57).
+viagem(112, 722, 723, 0.03).
+viagem(112, 723, 751, 0.42).
+viagem(112, 751, 762, 0.40).
+viagem(112, 762, 756, 0.04).
+viagem(112, 756, 208, 0.70).
+viagem(112, 208, 797, 0.16).
+viagem(112, 797, 191, 0.30).
+viagem(112, 191, 795, 0.02).
+viagem(112, 795, 796, 0.17).
+viagem(112, 796, 828, 0.15).
+viagem(112, 828, 830, 0.58).
+viagem(112, 830, 832, 0.02).
+viagem(112, 832, 827, 0.24).
+viagem(112, 827, 831, 0.52).
+viagem(112, 831, 266, 0.57).
+viagem(112, 266, 829, 0.57).
+viagem(112, 829, 272, 0.80).
+viagem(112, 272, 271, 0.02).
+viagem(112, 271, 380, 0.63).
+viagem(112, 380, 381, 0.06).
+viagem(112, 381, 989, 0.29).
+viagem(112, 989, 869, 0.12).
+viagem(112, 869, 541, 0.42).
+viagem(112, 541, 542, 0.01).
+viagem(112, 542, 503, 0.41).
+viagem(112, 503, 516, 0.01).
+viagem(112, 516, 543, 0.15).
+viagem(112, 543, 10, 0.02).
+viagem(112, 10, 540, 0.28).
+viagem(112, 540, 518, 0.37).
+viagem(112, 518, 538, 0.28).
+viagem(112, 538, 310, 0.49).
+viagem(112, 310, 521, 0.32).
+viagem(112, 521, 505, 0.52).
+viagem(112, 505, 501, 0.26).
+viagem(112, 501, 577, 0.51).
+viagem(114, 946, 590, 0.14).
+viagem(114, 590, 591, 0.46).
+viagem(114, 591, 592, 0.05).
+viagem(114, 592, 173, 1.07).
+viagem(114, 173, 174, 0.02).
+viagem(114, 174, 175, 0.59).
+viagem(114, 175, 176, 0.08).
+viagem(114, 176, 950, 0.66).
+viagem(114, 950, 177, 0.85).
+viagem(114, 177, 178, 0.01).
+viagem(114, 178, 947, 1.07).
+viagem(114, 947, 792, 0.49).
+viagem(114, 792, 710, 0.26).
+viagem(114, 710, 807, 0.58).
+viagem(114, 807, 818, 0.39).
+viagem(114, 818, 823, 0.36).
+viagem(114, 823, 952, 0.70).
+viagem(114, 952, 954, 0.07).
+viagem(114, 954, 1002, 0.15).
+viagem(114, 1002, 977, 0.08).
+viagem(114, 977, 986, 0.38).
+viagem(114, 986, 983, 0.03).
+viagem(114, 983, 354, 0.46).
+viagem(114, 354, 353, 0.02).
+viagem(114, 353, 863, 0.31).
+viagem(114, 863, 856, 0.11).
+viagem(114, 856, 857, 0.12).
+viagem(114, 857, 367, 0.36).
+viagem(114, 367, 333, 0.38).
+viagem(114, 333, 846, 0.15).
+viagem(114, 846, 845, 0.02).
+viagem(114, 845, 330, 0.20).
+viagem(114, 330, 364, 0.40).
+viagem(114, 364, 33, 0.44).
+viagem(114, 33, 32, 0.05).
+viagem(114, 32, 60, 0.26).
+viagem(114, 60, 61, 0.03).
+viagem(114, 61, 64, 0.21).
+viagem(114, 64, 63, 0.02).
+viagem(114, 63, 62, 0.17).
+viagem(114, 62, 58, 0.04).
+viagem(114, 58, 57, 0.21).
+viagem(114, 57, 59, 0.03).
+viagem(114, 59, 654, 0.25).
+viagem(114, 654, 81, 0.35).
+viagem(115, 320, 324, 0.19).
+viagem(115, 324, 325, 0.02).
+viagem(115, 325, 317, 0.27).
+viagem(115, 317, 319, 0.13).
+viagem(115, 319, 318, 0.03).
+viagem(115, 318, 327, 0.49).
+viagem(115, 327, 326, 0.15).
+viagem(115, 326, 273, 0.63).
+viagem(115, 273, 274, 0.01).
+viagem(115, 274, 431, 0.12).
+viagem(115, 431, 437, 0.03).
+viagem(115, 437, 411, 1.17).
+viagem(115, 411, 442, 0.02).
+viagem(115, 442, 421, 0.15).
+viagem(115, 421, 420, 0.02).
+viagem(115, 420, 432, 0.90).
+viagem(115, 432, 413, 1.18).
+viagem(115, 413, 429, 0.84).
+viagem(115, 429, 428, 0.02).
+viagem(115, 428, 418, 0.88).
+viagem(115, 418, 439, 1.38).
+viagem(115, 439, 424, 0.33).
+viagem(115, 424, 436, 0.55).
+viagem(115, 436, 435, 0.01).
+viagem(115, 435, 415, 0.51).
+viagem(115, 415, 414, 0.02).
+viagem(115, 414, 426, 0.77).
+viagem(115, 426, 427, 0.01).
+viagem(115, 427, 425, 0.46).
+viagem(115, 425, 412, 1.26).
+viagem(115, 412, 1008, 0.02).
+viagem(115, 1008, 401, 0.41).
+viagem(115, 401, 402, 0.01).
+viagem(115, 402, 441, 0.40).
+viagem(115, 441, 564, 0.90).
+viagem(115, 564, 551, 0.15).
+viagem(115, 551, 565, 0.15).
+viagem(115, 565, 562, 0.55).
+viagem(115, 562, 553, 0.89).
+viagem(115, 553, 552, 0.18).
+viagem(115, 552, 558, 0.59).
+viagem(115, 558, 554, 0.77).
+viagem(115, 554, 563, 0.48).
+viagem(115, 563, 540, 0.57).
+viagem(115, 540, 1006, 0.63).
+viagem(115, 1006, 934, 0.68).
+viagem(115, 934, 518, 0.29).
+viagem(115, 518, 568, 0.44).
+viagem(115, 568, 310, 0.74).
+viagem(115, 310, 535, 0.51).
+viagem(115, 535, 521, 0.82).
+viagem(115, 521, 505, 0.52).
+viagem(115, 505, 501, 0.26).
+viagem(115, 501, 577, 0.51).
+viagem(116, 524, 987, 0.05).
+viagem(116, 987, 569, 0.31).
+viagem(116, 569, 1011, 0.04).
+viagem(116, 1011, 555, 0.20).
+viagem(116, 555, 525, 0.03).
+viagem(116, 525, 546, 0.38).
+viagem(116, 546, 547, 0.03).
+viagem(116, 547, 935, 0.23).
+viagem(116, 935, 545, 0.02).
+viagem(117, 124, 123, 0.03).
+viagem(117, 123, 117, 0.23).
+viagem(117, 117, 116, 0.04).
+viagem(117, 116, 119, 0.19).
+viagem(117, 119, 118, 0.02).
+viagem(117, 118, 120, 0.16).
+viagem(117, 120, 121, 0.02).
+viagem(117, 121, 122, 0.15).
+viagem(117, 122, 141, 0.01).
+viagem(117, 141, 143, 0.10).
+viagem(117, 143, 142, 0.02).
+viagem(117, 142, 139, 0.18).
+viagem(117, 139, 140, 0.01).
+viagem(117, 140, 137, 0.54).
+viagem(117, 137, 138, 0.03).
+viagem(117, 138, 770, 0.37).
+viagem(117, 770, 767, 0.10).
+viagem(117, 767, 779, 0.10).
+viagem(117, 779, 766, 0.26).
+viagem(117, 766, 691, 0.02).
+viagem(117, 691, 774, 0.32).
+viagem(117, 774, 773, 0.01).
+viagem(117, 773, 765, 0.50).
+viagem(117, 765, 764, 0.02).
+viagem(117, 764, 768, 0.10).
+viagem(117, 768, 769, 0.01).
+viagem(117, 769, 781, 0.67).
+viagem(117, 781, 785, 0.01).
+viagem(117, 785, 771, 0.74).
+viagem(117, 771, 787, 0.01).
+viagem(117, 787, 217, 0.44).
+viagem(117, 217, 218, 0.02).
+viagem(117, 218, 216, 0.24).
+viagem(117, 216, 215, 0.05).
+viagem(117, 215, 214, 0.28).
+viagem(117, 214, 452, 0.42).
+viagem(117, 452, 322, 0.20).
+viagem(117, 322, 321, 0.06).
+viagem(117, 321, 320, 0.19).
+viagem(117, 320, 317, 0.07).
+viagem(117, 317, 319, 0.13).
+viagem(117, 319, 318, 0.03).
+viagem(117, 318, 299, 0.24).
+viagem(117, 299, 273, 0.19).
+viagem(117, 273, 274, 0.01).
+viagem(117, 274, 444, 0.37).
+viagem(117, 444, 446, 0.25).
+viagem(117, 446, 445, 0.25).
+viagem(117, 445, 448, 0.26).
+viagem(117, 448, 431, 0.72).
+viagem(117, 431, 437, 0.03).
+viagem(117, 437, 423, 0.28).
+viagem(117, 423, 447, 0.70).
+viagem(117, 447, 439, 0.71).
+viagem(117, 439, 449, 0.29).
+viagem(117, 449, 450, 0.02).
+viagem(117, 450, 88, 0.35).
+viagem(117, 88, 419, 0.04).
+viagem(117, 419, 409, 0.31).
+viagem(119, 97, 98, 0.02).
+viagem(119, 98, 99, 0.23).
+viagem(119, 99, 707, 0.01).
+viagem(119, 707, 717, 0.25).
+viagem(119, 717, 716, 0.03).
+viagem(119, 716, 726, 0.29).
+viagem(119, 726, 727, 0.02).
+viagem(119, 727, 725, 0.30).
+viagem(119, 725, 132, 0.11).
+viagem(119, 132, 722, 0.84).
+viagem(119, 722, 723, 0.03).
+viagem(119, 723, 130, 0.62).
+viagem(119, 130, 731, 0.02).
+viagem(119, 731, 749, 0.21).
+viagem(119, 749, 750, 0.05).
+viagem(119, 750, 752, 0.55).
+viagem(119, 752, 751, 0.01).
+viagem(119, 751, 775, 0.54).
+viagem(119, 775, 776, 0.01).
+viagem(119, 776, 777, 0.32).
+viagem(119, 777, 778, 0.01).
+viagem(119, 778, 748, 1.19).
+viagem(119, 748, 757, 0.05).
+viagem(119, 757, 762, 0.06).
+viagem(119, 762, 756, 0.04).
+viagem(119, 756, 782, 1.39).
+viagem(119, 782, 786, 0.09).
+viagem(119, 786, 784, 0.03).
+viagem(119, 784, 772, 0.08).
+viagem(119, 772, 783, 0.11).
+viagem(119, 783, 694, 0.89).
+viagem(119, 694, 213, 0.12).
+viagem(119, 213, 259, 0.23).
+viagem(119, 259, 222, 0.25).
+viagem(119, 222, 109, 0.21).
+viagem(119, 109, 108, 0.03).
+viagem(119, 108, 257, 0.20).
+viagem(119, 257, 258, 0.02).
+viagem(119, 258, 276, 0.24).
+viagem(119, 276, 277, 0.02).
+viagem(119, 277, 287, 0.19).
+viagem(119, 287, 1004, 0.03).
+viagem(119, 1004, 290, 0.32).
+viagem(119, 290, 289, 0.15).
+viagem(119, 289, 288, 0.15).
+viagem(119, 288, 388, 0.14).
+viagem(119, 388, 387, 0.20).
+viagem(119, 387, 386, 0.02).
+viagem(119, 386, 385, 0.30).
+viagem(119, 385, 389, 0.10).
+viagem(119, 389, 441, 0.34).
+viagem(119, 441, 1018, 0.49).
+viagem(122, 746, 747, 0.19).
+viagem(122, 747, 165, 0.18).
+viagem(122, 165, 163, 0.15).
+viagem(122, 163, 164, 0.01).
+viagem(122, 164, 761, 0.34).
+viagem(122, 761, 760, 0.01).
+viagem(122, 760, 759, 0.16).
+viagem(122, 759, 758, 0.04).
+viagem(122, 758, 166, 0.24).
+viagem(122, 166, 204, 0.09).
+viagem(122, 204, 203, 0.01).
+viagem(122, 203, 198, 0.21).
+viagem(122, 198, 199, 0.04).
+viagem(122, 199, 207, 0.18).
+viagem(122, 207, 212, 0.17).
+viagem(122, 212, 206, 0.17).
+viagem(122, 206, 201, 0.14).
+viagem(122, 201, 200, 0.14).
+viagem(122, 200, 202, 0.15).
+viagem(122, 202, 211, 0.06).
+viagem(122, 211, 194, 0.30).
+viagem(122, 194, 195, 0.01).
+viagem(122, 195, 197, 0.15).
+viagem(122, 197, 196, 0.06).
+viagem(122, 196, 189, 0.42).
+viagem(122, 189, 188, 0.02).
+viagem(122, 188, 269, 0.21).
+viagem(122, 269, 268, 0.02).
+viagem(122, 268, 830, 0.31).
+viagem(122, 830, 832, 0.02).
+viagem(122, 832, 827, 0.24).
+viagem(122, 827, 831, 0.52).
+viagem(122, 831, 266, 0.57).
+viagem(122, 266, 829, 0.57).
+viagem(122, 829, 282, 0.24).
+viagem(122, 282, 283, 0.05).
+viagem(122, 283, 281, 0.30).
+viagem(122, 281, 294, 0.02).
+viagem(122, 294, 378, 0.35).
+viagem(122, 378, 989, 0.33).
+viagem(122, 989, 869, 0.12).
+viagem(122, 869, 541, 0.42).
+viagem(122, 541, 542, 0.01).
+viagem(122, 542, 503, 0.41).
+viagem(122, 503, 516, 0.01).
+viagem(122, 516, 543, 0.15).
+viagem(122, 543, 10, 0.02).
+viagem(122, 10, 540, 0.28).
+viagem(122, 540, 540, 0.00).
+viagem(122, 540, 538, 0.41).
+viagem(122, 538, 310, 0.49).
+viagem(122, 310, 310, 0.00).
+viagem(122, 310, 925, 0.41).
+viagem(122, 925, 521, 0.10).
+viagem(122, 521, 521, 0.00).
+viagem(122, 521, 505, 0.52).
+viagem(122, 505, 505, 0.00).
+viagem(122, 505, 501, 0.26).
+viagem(122, 501, 501, 0.00).
+viagem(122, 501, 1025, 0.48).
+viagem(125, 97, 98, 0.02).
+viagem(125, 98, 717, 0.28).
+viagem(125, 717, 716, 0.03).
+viagem(125, 716, 726, 0.29).
+viagem(125, 726, 727, 0.02).
+viagem(125, 727, 730, 0.53).
+viagem(125, 730, 133, 0.02).
+viagem(125, 133, 722, 0.94).
+viagem(125, 722, 723, 0.03).
+viagem(125, 723, 721, 0.70).
+viagem(125, 721, 753, 0.04).
+viagem(125, 753, 749, 0.24).
+viagem(125, 749, 750, 0.05).
+viagem(125, 750, 748, 0.33).
+viagem(125, 748, 757, 0.05).
+viagem(125, 757, 761, 0.70).
+viagem(125, 761, 760, 0.01).
+viagem(125, 760, 759, 0.16).
+viagem(125, 759, 758, 0.04).
+viagem(125, 758, 166, 0.24).
+viagem(125, 166, 204, 0.09).
+viagem(125, 204, 203, 0.01).
+viagem(125, 203, 198, 0.21).
+viagem(125, 198, 199, 0.04).
+viagem(125, 199, 209, 0.46).
+viagem(125, 209, 210, 0.03).
+viagem(125, 210, 207, 0.31).
+viagem(125, 207, 797, 0.44).
+viagem(125, 797, 191, 0.30).
+viagem(125, 191, 795, 0.02).
+viagem(125, 795, 796, 0.17).
+viagem(125, 796, 828, 0.15).
+viagem(125, 828, 287, 0.56).
+viagem(125, 287, 1004, 0.03).
+viagem(125, 1004, 290, 0.32).
+viagem(125, 290, 289, 0.15).
+viagem(125, 289, 288, 0.15).
+viagem(125, 288, 388, 0.14).
+viagem(125, 388, 387, 0.20).
+viagem(125, 387, 386, 0.02).
+viagem(125, 386, 385, 0.30).
+viagem(125, 385, 389, 0.10).
+viagem(125, 389, 440, 0.32).
+viagem(125, 440, 558, 0.47).
+viagem(129, 198, 209, 0.44).
+viagem(129, 209, 210, 0.03).
+viagem(129, 210, 207, 0.31).
+viagem(129, 207, 206, 0.02).
+viagem(129, 206, 200, 0.07).
+viagem(129, 200, 797, 0.42).
+viagem(129, 797, 202, 0.37).
+viagem(129, 202, 211, 0.06).
+viagem(129, 211, 191, 0.40).
+viagem(129, 191, 795, 0.02).
+viagem(129, 795, 194, 0.28).
+viagem(129, 194, 195, 0.01).
+viagem(129, 195, 197, 0.15).
+viagem(129, 197, 796, 0.39).
+viagem(129, 796, 196, 0.34).
+viagem(129, 196, 189, 0.42).
+viagem(129, 189, 188, 0.02).
+viagem(129, 188, 828, 0.82).
+viagem(129, 828, 269, 0.89).
+viagem(129, 269, 268, 0.02).
+viagem(129, 268, 827, 0.08).
+viagem(129, 827, 266, 0.05).
+viagem(129, 266, 287, 1.26).
+viagem(129, 287, 1004, 0.03).
+viagem(129, 1004, 290, 0.32).
+viagem(129, 290, 279, 0.23).
+viagem(129, 279, 289, 0.28).
+viagem(129, 289, 288, 0.15).
+viagem(129, 288, 388, 0.14).
+viagem(129, 388, 387, 0.20).
+viagem(129, 387, 386, 0.02).
+viagem(129, 386, 385, 0.30).
+viagem(129, 385, 389, 0.10).
+viagem(129, 389, 440, 0.32).
+viagem(129, 440, 558, 0.47).
+viagem(158, 219, 220, 0.20).
+viagem(158, 220, 221, 0.03).
+viagem(158, 221, 300, 0.18).
+viagem(158, 300, 301, 0.02).
+viagem(158, 301, 308, 0.52).
+viagem(158, 308, 307, 0.14).
+viagem(158, 307, 320, 0.35).
+viagem(158, 320, 317, 0.07).
+viagem(158, 317, 833, 1.20).
+viagem(158, 833, 826, 2.49).
+viagem(158, 826, 1005, 2.15).
+viagem(158, 1005, 302, 0.31).
+viagem(158, 302, 319, 1.17).
+viagem(158, 319, 304, 0.81).
+viagem(158, 304, 311, 0.63).
+viagem(158, 311, 318, 0.19).
+viagem(158, 318, 303, 0.85).
+viagem(158, 303, 299, 0.61).
+viagem(158, 299, 306, 1.18).
+viagem(158, 306, 297, 0.62).
+viagem(158, 297, 305, 0.37).
+viagem(158, 305, 316, 0.62).
+viagem(158, 316, 296, 0.71).
+viagem(158, 296, 273, 0.40).
+viagem(158, 273, 274, 0.01).
+viagem(158, 274, 396, 1.95).
+viagem(158, 396, 397, 0.02).
+viagem(158, 397, 884, 1.83).
+viagem(158, 884, 437, 0.03).
+viagem(158, 437, 388, 1.77).
+viagem(158, 388, 433, 1.14).
+viagem(158, 433, 434, 0.10).
+viagem(158, 434, 380, 2.32).
+viagem(158, 380, 405, 0.87).
+viagem(158, 405, 381, 0.82).
+viagem(158, 381, 406, 0.83).
+viagem(158, 406, 411, 0.83).
+viagem(158, 411, 442, 0.02).
+viagem(158, 442, 421, 0.15).
+viagem(158, 421, 872, 1.38).
+viagem(158, 872, 420, 1.37).
+viagem(158, 420, 387, 0.75).
+viagem(158, 387, 386, 0.02).
+viagem(158, 386, 413, 0.45).
+viagem(158, 413, 443, 0.71).
+viagem(158, 443, 423, 0.62).
+viagem(158, 423, 391, 2.32).
+viagem(158, 391, 418, 0.93).
+viagem(158, 418, 395, 0.73).
+viagem(158, 395, 400, 0.01).
+viagem(158, 400, 439, 2.12).
+viagem(158, 439, 430, 0.69).
+viagem(158, 430, 436, 0.19).
+viagem(158, 436, 435, 0.01).
+viagem(158, 435, 449, 1.15).
+viagem(158, 449, 450, 0.02).
+viagem(158, 450, 438, 0.51).
+viagem(158, 438, 415, 1.13).
+viagem(158, 415, 414, 0.02).
+viagem(158, 414, 426, 0.77).
+viagem(158, 426, 427, 0.01).
+viagem(158, 427, 385, 1.07).
+viagem(158, 385, 88, 1.61).
+viagem(158, 88, 419, 0.04).
+viagem(158, 419, 389, 1.54).
+viagem(158, 389, 412, 0.24).
+viagem(158, 412, 1008, 0.02).
+viagem(158, 1008, 401, 0.41).
+viagem(158, 401, 402, 0.01).
+viagem(158, 402, 410, 1.86).
+viagem(158, 410, 275, 0.04).
+viagem(158, 275, 440, 1.52).
+viagem(158, 440, 558, 0.47).
+viagem(158, 558, 298, 'N/A').
+viagem(162, 629, 626, 0.02).
+viagem(162, 626, 630, 0.28).
+viagem(162, 630, 616, 0.05).
+viagem(162, 616, 639, 1.15).
+viagem(162, 639, 636, 0.02).
+viagem(162, 636, 12, 0.20).
+viagem(162, 12, 634, 0.06).
+viagem(162, 634, 678, 0.38).
+viagem(162, 678, 669, 0.04).
+viagem(162, 669, 76, 0.21).
+viagem(162, 76, 668, 0.05).
+viagem(162, 668, 674, 0.22).
+viagem(162, 674, 73, 0.02).
+viagem(162, 73, 658, 0.22).
+viagem(162, 658, 666, 0.10).
+viagem(162, 666, 528, 0.29).
+viagem(171, 116, 119, 0.19).
+viagem(171, 119, 118, 0.02).
+viagem(171, 118, 104, 0.27).
+viagem(171, 104, 711, 1.33).
+viagem(171, 711, 105, 1.34).
+viagem(171, 105, 125, 1.34).
+viagem(171, 125, 115, 1.29).
+viagem(171, 115, 120, 0.36).
+viagem(171, 120, 121, 0.02).
+viagem(171, 121, 1012, 0.34).
+viagem(171, 1012, 127, 1.17).
+viagem(171, 127, 715, 0.04).
+viagem(171, 715, 134, 1.08).
+viagem(171, 134, 122, 0.31).
+viagem(171, 122, 141, 0.01).
+viagem(171, 141, 143, 0.10).
+viagem(171, 143, 744, 1.31).
+viagem(171, 744, 142, 1.32).
+viagem(171, 142, 135, 0.51).
+viagem(171, 135, 136, 0.02).
+viagem(171, 136, 152, 0.68).
+viagem(171, 152, 139, 1.30).
+viagem(171, 139, 140, 0.01).
+viagem(171, 140, 732, 1.13).
+viagem(171, 732, 740, 0.03).
+viagem(171, 740, 146, 0.16).
+viagem(171, 146, 737, 0.40).
+viagem(171, 737, 145, 0.44).
+viagem(171, 145, 160, 0.46).
+viagem(171, 160, 148, 0.19).
+viagem(171, 148, 733, 0.01).
+viagem(171, 733, 137, 1.15).
+viagem(171, 137, 138, 0.03).
+viagem(171, 138, 770, 0.37).
+viagem(171, 770, 767, 0.10).
+viagem(171, 767, 766, 0.19).
+viagem(171, 766, 691, 0.02).
+viagem(171, 691, 765, 0.24).
+viagem(171, 765, 764, 0.02).
+viagem(171, 764, 228, 1.26).
+viagem(171, 228, 805, 0.01).
+viagem(171, 805, 225, 0.13).
+viagem(171, 225, 800, 0.03).
+viagem(171, 800, 229, 0.68).
+viagem(184, 730, 133, 0.02).
+viagem(184, 133, 721, 0.36).
+viagem(184, 721, 753, 0.04).
+viagem(184, 753, 761, 0.61).
+viagem(184, 761, 760, 0.01).
+viagem(184, 760, 759, 0.16).
+viagem(184, 759, 758, 0.04).
+viagem(184, 758, 166, 0.24).
+viagem(184, 166, 204, 0.09).
+viagem(184, 204, 203, 0.01).
+viagem(184, 203, 198, 0.21).
+viagem(184, 198, 199, 0.04).
+viagem(184, 199, 209, 0.46).
+viagem(184, 209, 210, 0.03).
+viagem(184, 210, 207, 0.31).
+viagem(184, 207, 797, 0.44).
+viagem(184, 797, 259, 0.83).
+viagem(184, 259, 191, 0.76).
+viagem(184, 191, 795, 0.02).
+viagem(184, 795, 113, 0.39).
+viagem(184, 113, 112, 0.02).
+viagem(184, 112, 114, 0.15).
+viagem(184, 114, 111, 0.01).
+viagem(184, 111, 109, 0.56).
+viagem(184, 109, 796, 0.83).
+viagem(184, 796, 108, 0.85).
+viagem(184, 108, 110, 0.81).
+viagem(184, 110, 257, 0.72).
+viagem(184, 257, 258, 0.02).
+viagem(184, 258, 276, 0.24).
+viagem(184, 276, 277, 0.02).
+viagem(184, 277, 287, 0.19).
+viagem(184, 287, 1004, 0.03).
+viagem(184, 1004, 290, 0.32).
+viagem(184, 290, 279, 0.23).
+viagem(184, 279, 289, 0.28).
+viagem(184, 289, 288, 0.15).
+viagem(184, 288, 388, 0.14).
+viagem(184, 388, 387, 0.20).
+viagem(184, 387, 386, 0.02).
+viagem(184, 386, 385, 0.30).
+viagem(184, 385, 389, 0.10).
+viagem(184, 389, 440, 0.32).
+viagem(201, 11, 650, 0.55).
+viagem(201, 650, 23, 0.17).
+viagem(201, 23, 13, 0.03).
+viagem(201, 13, 651, 0.21).
+viagem(201, 651, 15, 0.20).
+viagem(201, 15, 645, 0.05).
+viagem(201, 645, 54, 0.21).
+viagem(201, 54, 53, 0.02).
+viagem(201, 53, 640, 0.20).
+viagem(201, 640, 633, 0.06).
+viagem(201, 633, 677, 0.38).
+viagem(201, 677, 670, 0.04).
+viagem(201, 670, 676, 0.20).
+viagem(201, 676, 667, 0.06).
+viagem(201, 667, 673, 0.23).
+viagem(201, 673, 672, 0.02).
+viagem(201, 672, 656, 0.22).
+viagem(201, 656, 69, 0.10).
+viagem(201, 69, 1031, 0.23).
+viagem(201, 1031, 168, 0.09).
+viagem(467, 825, 523, 0.21).
+viagem(467, 523, 824, 0.16).
+viagem(467, 824, 921, 0.17).
+viagem(467, 921, 495, 0.10).
+viagem(467, 495, 507, 0.24).
+viagem(467, 507, 509, 0.02).
+viagem(467, 509, 508, 0.57).
+viagem(467, 508, 924, 0.13).
+viagem(467, 924, 513, 0.31).
+viagem(468, 262, 263, 0.04).
+viagem(468, 263, 507, 0.35).
+viagem(468, 507, 509, 0.02).
+viagem(468, 509, 508, 0.57).
+viagem(468, 508, 924, 0.13).
+viagem(468, 924, 513, 0.31).
+viagem(470, 267, 513, 2.14).
+viagem(470, 513, 556, 0.24).
+viagem(470, 556, 522, 0.02).
+viagem(470, 522, 515, 0.40).
+viagem(470, 515, 500, 0.28).
+viagem(470, 500, 927, 0.16).
+viagem(470, 927, 511, 0.13).
+viagem(470, 511, 512, 0.01).
+viagem(470, 512, 372, 0.82).
+viagem(470, 372, 520, 0.77).
+viagem(470, 520, 519, 0.01).
+viagem(470, 519, 265, 0.39).
+viagem(470, 265, 264, 0.24).
+viagem(470, 264, 263, 0.36).
+viagem(470, 263, 824, 0.25).
+viagem(470, 824, 262, 0.22).
+viagem(470, 262, 825, 0.23).
+viagem(471, 960, 561, 0.17).
+viagem(471, 561, 537, 0.37).
+viagem(471, 537, 502, 0.47).
+viagem(471, 502, 560, 0.83).
+viagem(471, 560, 559, 0.17).
+viagem(471, 559, 834, 0.83).
+viagem(471, 834, 933, 0.51).
+viagem(471, 933, 924, 0.92).
+viagem(471, 924, 928, 0.10).
+viagem(471, 928, 506, 0.51).
+viagem(471, 506, 918, 0.26).
+viagem(471, 918, 1026, 0.48).
+viagem(471, 1026, 574, 0.05).
+viagem(471, 574, 914, 0.11).
+viagem(471, 914, 497, 0.31).
+viagem(471, 497, 575, 0.27).
+viagem(471, 575, 974, 0.30).
+viagem(471, 974, 971, 0.13).
+viagem(471, 971, 580, 0.35).
+viagem(471, 580, 939, 0.20).
+viagem(471, 939, 587, 0.26).
+viagem(479, 372, 375, 0.23).
+viagem(479, 375, 376, 0.01).
+viagem(479, 376, 825, 0.44).
+viagem(479, 825, 824, 0.05).
+viagem(479, 824, 495, 0.27).
+viagem(479, 495, 507, 0.24).
+viagem(479, 507, 509, 0.02).
+viagem(479, 509, 508, 0.57).
+viagem(479, 508, 924, 0.13).
+viagem(479, 924, 513, 0.31).
+viagem(714, 603, 685, 0.10).
+viagem(714, 685, 1032, 1.11).
+viagem(714, 1032, 980, 1.17).
+viagem(714, 980, 627, 1.05).
+viagem(714, 627, 43, 0.82).
+viagem(714, 43, 631, 0.59).
+viagem(714, 631, 619, 0.60).
+viagem(714, 619, 615, 0.57).
+viagem(714, 615, 623, 0.30).
+viagem(714, 623, 979, 0.20).
+viagem(714, 979, 978, 0.01).
+viagem(748, 21, 11, 0.02).
+viagem(748, 11, 650, 0.55).
+viagem(748, 650, 23, 0.17).
+viagem(748, 23, 13, 0.03).
+viagem(748, 13, 651, 0.21).
+viagem(748, 651, 15, 0.20).
+viagem(748, 15, 645, 0.05).
+viagem(748, 645, 14, 0.16).
+viagem(748, 14, 54, 0.09).
+viagem(748, 54, 633, 0.25).
+viagem(750, 54, 633, 0.25).
+viagem(750, 633, 677, 0.38).
+viagem(750, 677, 670, 0.04).
+viagem(750, 670, 676, 0.20).
+viagem(750, 676, 667, 0.06).
+viagem(750, 667, 673, 0.23).
+viagem(750, 673, 672, 0.02).
+viagem(750, 672, 656, 0.22).
+viagem(750, 656, 69, 0.10).
+viagem(750, 69, 456, 0.30).
+viagem(751, 21, 11, 0.02).
+viagem(751, 11, 650, 0.55).
+viagem(751, 650, 23, 0.17).
+viagem(751, 23, 13, 0.03).
+viagem(751, 13, 651, 0.21).
+viagem(751, 651, 15, 0.20).
+viagem(751, 15, 645, 0.05).
+viagem(751, 645, 54, 0.21).
+viagem(751, 54, 53, 0.02).
+viagem(751, 53, 640, 0.20).
+viagem(751, 640, 633, 0.06).
+viagem(751, 633, 677, 0.38).
+viagem(751, 677, 670, 0.04).
+viagem(751, 670, 676, 0.20).
+viagem(751, 676, 667, 0.06).
+viagem(751, 667, 673, 0.23).
+viagem(751, 673, 672, 0.02).
+viagem(751, 672, 656, 0.22).
+viagem(751, 656, 69, 0.10).
+viagem(751, 69, 1031, 0.23).
+viagem(751, 1031, 168, 0.09).
+viagem(776, 459, 481, 0.23).
+viagem(776, 481, 478, 0.15).
+viagem(776, 478, 479, 0.01).
+viagem(776, 479, 484, 0.20).
+viagem(776, 484, 906, 0.03).
+viagem(776, 906, 475, 0.44).
+viagem(776, 475, 477, 0.03).
+viagem(776, 477, 471, 0.24).
+viagem(776, 471, 474, 0.06).
+viagem(776, 474, 463, 0.51).
+viagem(776, 463, 493, 0.02).
+viagem(776, 493, 794, 0.73).
+viagem(776, 794, 144, 0.38).
+viagem(776, 144, 8, 0.06).
+viagem(776, 8, 187, 0.31).
+viagem(776, 187, 5, 0.29).
+viagem(776, 5, 895, 0.75).
+viagem(776, 895, 897, 0.02).
+viagem(776, 897, 681, 0.59).

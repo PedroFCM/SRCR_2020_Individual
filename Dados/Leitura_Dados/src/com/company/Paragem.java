@@ -31,7 +31,12 @@ public class Paragem
         float longI = Float.parseFloat(this.longitude);
         float longF = Float.parseFloat(pFIm.longitude);
 
+        // Assumindo que a latitude e longitude estão em metros...
+
+        double deltaLat = Math.pow((latF - latI), 2);  // em metros
+        double deltaLong = Math.pow((longF - longI), 2);  // em metros
+
         // Resultado em minutos
-        return String.format(Locale.US, "%.2f", (Math.sqrt( Math.pow(latF - latI, 2) + Math.pow(longI - longF, 2)))/1000);
+        return String.format(Locale.US, "%.2f", (Math.sqrt(deltaLat + deltaLong))/1000);
     }
 }

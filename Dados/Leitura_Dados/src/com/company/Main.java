@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main
 {
-    private static final String path = "Dados/lista_adjacencias_paragens";
+    private static final String path = "Dados/LAdj_";
 
     public static void main(String[] args)
     {
@@ -28,13 +28,14 @@ public class Main
             String paragem = "";
             String viagem = "";
 
-            paragens.write(":- dynamic paragem/9. \n");
-            viagens.write(":- dynamic viagem/5. \n");
+            paragens.write(":- dynamic paragem/10. \n");
+            viagens.write(":- dynamic viagem/4. \n");
 
             for (int i = 0; i < carreiras.size(); i++)
             {
-                BufferedReader csvReader = new BufferedReader(new FileReader(path + "" +
-                        carreiras.get(i) + extension));
+                String filePath = path + "" + carreiras.get(i) + extension;
+                System.out.println(filePath);
+                BufferedReader csvReader = new BufferedReader(new FileReader(filePath));
 
                 String row;
                 System.out.println("\nCarreira -> " + carreiras.get(i) + "\n");
@@ -43,9 +44,12 @@ public class Main
                 Paragem pInicio = null;
                 Paragem pFim = null;
 
+                int iteracao = 0;
+
                 while ((row = csvReader.readLine()) != null)
                 {
-                    String[] data = row.split(",");
+                    iteracao++;
+                    String[] data = row.split(";");
                     System.out.println("Data length -> " + data.length);
 
                     if (pInicio != null)
@@ -67,12 +71,12 @@ public class Main
                         paragensId.add(Integer.parseInt(data[0]));
 
                         // paragem(gid, latitude, longitude, estado de conservação, tipo de abrigo, abrigo com publicidade,
-                        //         codigo de rua, nome da rua, freguesia).
+                        //         operadora, codigo de rua, nome da rua, freguesia).
 
                         paragem = "paragem(" + data[0] + ", " + data[1] + ", " + data[2] + ", '"
-                                + data[3] + "', '" + data[4] + "', '" + data[5] + "', " + data[8] + ", '" +
-                                data[9].replace("'", "") + "', '"
-                                + data[10].replace("\"", "") + "').";
+                                + data[3] + "', '" + data[4] + "', '" + data[5] + "', '" + data[6]
+                                + "', " + data[8] + ", '" + data[9].replace("'", "")
+                                + "', '" + data[10].replace("\"", "") + "').";
 
                         paragens.write(paragem + "\n");
                     }
@@ -81,16 +85,17 @@ public class Main
 
                     String tempoViagem = pInicio.calculaTempo(pFim);
 
-                    // viagem(carreira, paragemInicio, paragemFim, operadora, tempo de viagem).
-                    viagem = "viagem(" + data[7] + ", " + pInicio.gid + ", " + pFim.gid + ", '" +
-                            pInicio.operadoraViagem + "', " + tempoViagem + ").";
+                    // viagem(carreira, paragemInicio, paragemFim, tempo de viagem).
+                    viagem = "viagem(" + data[7] + ", " + pInicio.gid + ", " + pFim.gid
+                            + ", " + tempoViagem + ").";
 
-                    //System.out.println(viagem);
-                    System.out.println(paragem);
+                    if (carreiras.get(i) == 6 || carreiras.get(i) == 7 || carreiras.get(i) == 10)
+                    System.out.println(viagem);
+                    //System.out.println(paragem);
 
                     pInicio = pFim;
 
-                    if (!tempoViagem.equals("0.00"))
+                    if (iteracao > 1)
                         viagens.write(viagem + "\n");
                 }
                 csvReader.close();

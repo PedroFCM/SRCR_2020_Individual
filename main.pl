@@ -33,151 +33,154 @@
 
 % PESQUISA EM PROFUNDIDADE
 pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem) :-
-	profundidade_func(Origem, Destino, [Origem], Caminho, TempoViagem).
+    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
+	profundidade_func(Origem, Destino, [(Origem, Operadora, 'Inicio')], Caminho, TempoViagem).
 
 profundidade_func(Destino, Destino, His, Caminho, T) :-
 	inverso(His, Caminho), 
     T is 0.
 
 profundidade_func(Origem, Destino, His, Caminho, TempoViagem) :-
-    adjacente_func(Origem, Prox, T1),
+    adjacente_func(Origem, Prox, Carreira, T1),
 	\+ member(Prox, His),
     ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
-    profundidade_func(Prox, Destino, [Prox|His], Caminho, T),                 
-    TempoViagem is T + TLimpo.
+    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
+    profundidade_func(Prox, Destino, [(Prox, Operadora, Carreira)|His], Caminho, T),                 
+    TempoViagem is T + TLimpo + 5.  % Adiciona 5 min entre paragens de autocarros
 
-adjacente_func(Nodo, ProxNodo, TempoViagem) :-
-    viagem(_, Nodo, ProxNodo, _, TempoViagem).
+adjacente_func(Nodo, ProxNodo, Carreira, TempoViagem) :-
+    viagem(Carreira, Nodo, ProxNodo, TempoViagem).
 
 % pesquisaProfundidade(183, 791, Caminho, Tempo).
 % pesquisaProfundidade(183, 595, Caminho, Tempo).
 
+% -----------------------------------------------------------------------------
+% PESQUISA EM LARGURA
+
+
+pesquisaLargura(Origem, Destino, Caminho) :-
+    pesquisaLargura_fun([[Origem]], Destino, C),
+    inverso(C, Caminho).
+
+pesquisaLargura_fun([[Destino|Path]|_], Destino, [Destino|Path]) :-
+    TempoViagem is 0.
+
+pesquisaLargura_fun([[Nodo|Path]|Paths], Destino, Caminho) :-
+    bagof(
+        [M,Nodo|Path],
+        (viagem(_, Nodo, M, T), \+ member(M, [Nodo | Path])),
+        NewPaths
+        ),
+    append(Paths, NewPaths, Pathsl), !,
+    pesquisaLargura_fun(Pathsl, Destino, Caminho);
+    pesquisaLargura_fun(Paths, Destino, Caminho).
+
+% pesquisaLargura(183, 78, Caminho, Tempo).
+
+
+
+
+% -----------------------------------------------------------------------------
+% PESQUISA ESTRELA
+
+tempoEstimado((LatX, LongX), (LatY, LongY), Estima) :- 
+    ((LatX == 'N/A') -> LatLimpoX is 0.0; LatLimpoX is LatX),
+    ((LongX == 'N/A') -> LongLimpoX is 0.0; LongLimpoX is LongX),
+    ((LatY == 'N/A') -> LatLimpoY is 0.0; LatLimpoY is LatY),
+    ((LongY == 'N/A') -> LongLimpoY is 0.0; LongLimpoY is LongY),
+    DeltaLat is LatLimpoX - LatLimpoY,
+    DeltaLong is LongLimpoX - LongLimpoY,
+    Estima is (sqrt(DeltaLat^2 + DeltaLong^2))/1000.
+
+
+resolve_aestrela(Origem, Destino, Caminho/Tempo) :-
+    paragem(Origem, LatX, LongX, _, _, _, _, _, _, _),
+    paragem(Destino, LatY, LongY, _, _, _, _, _, _, _),
+    tempoEstimado((LatX, LongX), (LatY, LongY), Estima),
+	aestrela([[Origem]/0/Estima], InvCaminho/Tempo/_, Destino),
+	inverso(InvCaminho, Caminho).
+
+aestrela(Caminhos, Caminho, Destino) :-
+	obtem_melhor(Caminhos, Caminho, Destino),
+	Caminho = [Nodo|_]/_/_, 
+    Destino == Nodo.
+
+aestrela(Caminhos, SolucaoCaminho, Destino) :-
+	obtem_melhor(Caminhos, MelhorCaminho, Destino),
+	seleciona(MelhorCaminho, Caminhos, OutrosCaminhos),
+	expande_aestrela(MelhorCaminho, ExpCaminhos, Destino),
+	append(OutrosCaminhos, ExpCaminhos, NovoCaminhos),
+    aestrela(NovoCaminhos, SolucaoCaminho, Destino).		
+
+
+obtem_melhor([Caminho], Caminho, Destino) :- !.
+
+obtem_melhor([Caminho1/Tempo1/Est1, _/Tempo2/Est2|Caminhos], MelhorCaminho, Destino) :-
+	Tempo1 + Est1 =< Tempo2 + Est2, !,
+	obtem_melhor([Caminho1/Tempo1/Est1|Caminhos], MelhorCaminho, Destino).
+	
+obtem_melhor([_|Caminhos], MelhorCaminho, Destino) :- 
+	obtem_melhor(Caminhos, MelhorCaminho, Destino).
+
+expande_aestrela(Caminho, ExpCaminhos, Destino) :-
+	findall(NovoCaminho, 
+    adjacente(Caminho,NovoCaminho, Destino), ExpCaminhos).
+
+adjacente([Nodo|Caminho]/Tempo/_, [ProxNodo,Nodo|Caminho]/NovoTempo/Est, Destino) :-
+	viagem(_, Nodo, ProxNodo, PassoTempo),
+    \+ member(ProxNodo, Caminho),
+	NovoTempo is Tempo + PassoTempo,
+	paragem(ProxNodo, LatX, LongX, _, _, _, _, _, _, _),
+    paragem(Destino, LatY, LongY, _, _, _, _, _, _, _),
+    tempoEstimado((LatX, LongX), (LatY, LongY), Est).
+
+
+seleciona(E, [E|Xs], Xs).
+seleciona(E, [X|Xs], [X|Ys]) :- 
+    seleciona(E, Xs, Ys).
+
+
+% resolve_aestrela(183, 78, Caminho/Tempo).
+
+
+% --------------------------------------------------------------------------
+% Queries
+
+% Trajeto entre 2 pontos com apenas algumas operadoras
+trajetoCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
+    pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem, Operadoras).
+
+
+pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
+    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
+    pertence(Operadora, Operadoras),
+	profundidade_func(Origem, Destino, [(Origem, Operadora, 'Inicio')], Caminho, TempoViagem).
+
+profundidade_func(Destino, Destino, His, Caminho, T, Operadoras) :-
+	inverso(His, Caminho), 
+    T is 0.
+
+profundidade_func(Origem, Destino, His, Caminho, TempoViagem) :-
+    adjacente_func(Origem, Prox, Carreira, T1),
+	\+ member(Prox, His),
+    ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
+    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
+    pertence(Operadora, Operadoras),
+    profundidade_func(Prox, Destino, [(Prox, Operadora, Carreira)|His], Caminho, T),                 
+    TempoViagem is T + TLimpo + 5.  % Adiciona 5 min entre paragens de autocarros
+
+%trajetoCertasOperadoras(183, 595, Caminho, TempoViagem, ['Vimeca']).
 
 
 
 
 
-% FORMA USADA NA FICHA 9
-%-----------------------------------------------------
 
-g(grafo([a,b,c,d,e,f,g], [aresta(a,b),aresta(c,d),aresta(c,f),aresta(d,f),aresta(f,g)])).	
-
-g1(grafo([a,b,c,d,e,f,g], [aresta(a,b),aresta(c,d),aresta(c,f),aresta(d,f),aresta(f,g), aresta(f,e), aresta(e,d)])).	
-
-
-% Iremos usar a representação b)
-
-% 1
-adjacente(X,Y,grafo(_,Es)) :- member(aresta(X,Y),Es).
-adjacente(X,Y,grafo(_,Es)) :- member(aresta(Y,X),Es).
-
-
-% 2
-caminho(G, A, B, P) :- caminho1(G, A, [B], P).
-
-caminho1(G, A, [A|P1], [A|P1]).
-caminho1(G, A, [Y|P1], P) :- 
-    adjacente(X, Y, G),
-    \+ member(X, [Y|P1]),  % \+ é igual a not
-    caminho1(G, A, [X, Y|P1], P).
-
-
-% 3
-ciclo(G, A, P) :- 
-    adjacente(B, A, G),
-    caminho(G, A, B, P1), 
-    length(P1, L),
-    L > 2,
-    append(P1, [A], P).
-
-
-%---------------------------------  dados do problema ---------
-
-% Problema de estado único
-
-% estado inicial
-inicial(jarros(0, 0)).
-
-% estados finais
-final(jarros(4, _)).
-final(jarros(_, 4)).
-
-% transições possíveis transicao: Einicial x Op x Efinal
-
-% encher balde 1
-transicao(jarros(V1, V2), encher(1), jarros(8, V2)) :-
-    V1 < 8.
-% encher balde 2
-transicao(jarros(V1, V2), encher(2), jarros(V1, 5)) :-
-    V2 < 5.
-% encher balde 2 a partir do 1
-transicao(jarros(V1, V2), encher(1, 2), jarros(NV1, NV2)) :-
-    V1 > 0,
-    NV1 is max(V1 - 5 + V2, 0),
-    NV1 < V1,
-    NV2 is V2 + V1 - NV1.
-
-%----------------------------------------------------
-
-% Pesquisa em profundidade
-resolvedf(Solucao) :-
-    inicial(InicialEstado),
-    resolvedf(InicialEstado, [InicialEstado], Solucao).
-
-resolvedf(Estado, _, []) :-
-    final(Estado), !.
-
-resolvedf(Estado, Historico, [Move|Solucao]) :-
-    transicao(Estado, Move, Estado1),
-    nao(membro(Estado1, Historico)),
-    resolvedf(Estado1, [Estado1|Historico], Solucao).
-
-% Par de uma solução com o seu custo (comprimento da lista)
-todos(L) :-
-    findall((S, C), (resolvedf(S), length(S, C)), L).
-
-melhor(S, Custo) :- 
-    findall((S,C), (resolvedf(S), length(S, C)), L),
-    minimo(L, (S, Custo)).
-
-minimo([(P, X)], (P, X)).
-minimo([(Px, X)|L], (Py, Y)) :- 
-    minimo(L, (Py, Y)),
-    X > Y.
-minimo([(Px, X)|L], (Px, X)) :- 
-    minimo(L, (Py, Y)),
-    X =< Y.
-
-
-% Pesquisa em largura (acaba quando encontro na cabeça da lista o estado final esperado)
-resolvebf(Solucao) :-
-    inicial(InicialEstado),
-    resolvebf([(InicialEstado, [])|Xs]-Xs, [], Solucao).
-
-resolvebf([(Estado, Vs)|_]-_, _, Rs) :-
-    final(Estado), !, inverso(Vs, Rs).
-
-resolvebf([(Estado, _)|Xs]-Ys, Historico, Solucao) :-
-    membro(Estado, Historico), !,
-    resolvebf(Xs-Ys, Historico, Solucao).
-
-resolvebf([(Estado, Vs)|Xs]-Ys, Historico, Solucao) :-
-    setof((Move, Estado1), transicao(Estado, Move, Estado1), Ls),
-    atualizar(Ls, Vs, [Estado|Historico], Yx-Zs),
-    resolvebf(Xs-Zs, [Estado|Historico], Solucao).
-
-atualizar([], _, _, X-X).
-atualizar([(_, Estado)|Ls], Vs, Historico, Xs-Ys) :-
-    membro(Estado, Historico), !,
-    atualizar(Ls, Vs, Historico, Xs-Ys).
-
-atualizar([(Move, Estado)|Ls], Vs, Historico, [(Estado, [Move|Vs])|Xs]-Ys) :-
-    atualizar(Ls, Vs, Historico, Xs-Ys).
 
 % Escrever as soluções todas
 escrever([]).
 escrever([X|L]) :- 
-    write(X), write(' - '), write(Y), nl, escrever(L).
+    write(X), nl, escrever(L).
 
 membro(X, [X|_]).
 membro(X, [_|Xs]) :-
@@ -197,3 +200,8 @@ inverso([X|Xs], Ys, Zs) :-
 nao(Questao) :-
     Questao, !, fail.
 nao(Questao).
+
+pertence( X,[X|L] ).
+pertence( X,[Y|L] ) :-
+    X \= Y,
+    pertence( X,L ).
