@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main
@@ -30,6 +31,9 @@ public class Main
 
             paragens.write(":- dynamic paragem/10. \n");
             viagens.write(":- dynamic viagem/4. \n");
+
+            // Viagens agrupadas por Carreiras
+            HashMap<String, Viagem> viagensC = new HashMap<>();
 
             for (int i = 0; i < carreiras.size(); i++)
             {
@@ -89,14 +93,15 @@ public class Main
                     viagem = "viagem(" + data[7] + ", " + pInicio.gid + ", " + pFim.gid
                             + ", " + tempoViagem + ").";
 
-                    if (carreiras.get(i) == 6 || carreiras.get(i) == 7 || carreiras.get(i) == 10)
                     System.out.println(viagem);
                     //System.out.println(paragem);
 
-                    pInicio = pFim;
-
                     if (iteracao > 1)
+                    {
                         viagens.write(viagem + "\n");
+                    }
+
+                    pInicio = pFim;
                 }
                 csvReader.close();
             }

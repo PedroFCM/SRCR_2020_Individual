@@ -23,7 +23,7 @@ public class Paragem
         if (this.latitude.equals("'N/A'") || pFIm.latitude.equals("'N/A'")
             || this.longitude.equals("'N/A'") || pFIm.longitude.equals("'N/A'"))
         {
-            return "'N/A'";
+            return "999.9";
         }
 
         float latI = Float.parseFloat(this.latitude);
