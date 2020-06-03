@@ -31,10 +31,7 @@ public class Main
 
             paragens.write(":- dynamic paragem/10. \n");
             viagens.write(":- dynamic viagem/4. \n");
-
-            // Viagens agrupadas por Carreiras
-            HashMap<String, Viagem> viagensC = new HashMap<>();
-
+            
             for (int i = 0; i < carreiras.size(); i++)
             {
                 String filePath = path + "" + carreiras.get(i) + extension;

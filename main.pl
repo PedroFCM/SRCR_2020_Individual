@@ -1,4 +1,3 @@
-
 %--------------------------------- - - - - - - - - - -  -  -  -  -   -
 % SIST. REPR. CONHECIMENTO E RACIOCINIO - MiEI
 
@@ -12,6 +11,7 @@
 :- [paragens].
 :- [viagens].
 :- [algoritmosProcura].
+:- [funcAux].
 
 % -----------------------------------------------------------------------------------------
 % SICStus PROLOG: Declaracoes iniciais
@@ -23,106 +23,110 @@
 
 
 % -----------------------------------------------------------------------------------------
-% Predicados usados
+/* Predicados usados
 
-% paragem -> gid, latitude, longitude, estado de conservação, tipo de abrigo, abrigo com publicidade,
-%            codigo de rua, nome da rua, freguesia, operadora                                              ORDEM ESTÁ MAL
+% paragem -> Gid, Latitude, Longitude, Estado de Conservação, Tipo de Abrigo, Abrigo com Publicidade,
+%            Operadora, Codigo de Rua, Nome da Rua, Freguesia                                              
 
 % viagem -> carreira, paragemInicio(gid), paragemFim(gid), tempo de viagem (em minutos)
-% as viagens são entre paragens adjacentes
+*/
 
-
-
-
-
-
-
-
-
-% --------------------------------------------------------------------------
+% -----------------------------------------------------------------------------------------
 
 % Query 1
 % "Calcular um trajeto entre dois pontos"
 
-% usar o pesquisaProfundiade p.e.
+trajetoEntre2Pontos(Origem, Destino, 'Profundidade') :-
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem), 
+    printCaminhoTempo(Caminho, TempoViagem).
 
+trajetoEntre2Pontos(Origem, Destino, 'Largura') :-
+    pesquisaLargura(Origem, Destino, Caminho), 
+    printCaminhoMaisInfo(Caminho).
 
-% --------------------------------------------------------------------------
+trajetoEntre2Pontos(Origem, Destino, 'LarguraSimplificado') :-
+    pesquisaLarguraSimplificado(Origem, Destino, Caminho), 
+    printLista(Caminho).
+
+trajetoEntre2Pontos(Origem, Destino, 'AEstrela') :-
+    pesquisaAEstrela(Origem, Destino, Caminho, Tempo),
+    printCaminhoTempo(Caminho, Tempo).
+
+trajetoEntre2Pontos(Origem, Destino, 'Gulosa') :-
+    pesquisaGulosa(Origem, Destino, Caminho, Tempo),
+    printCaminhoTempo(Caminho, Tempo).
+
+% trajetoEntre2Pontos(354, 79, 'Profundidade'). Este trajeto anda em 3 carreiras diferentes
+% trajetoEntre2Pontos(354, 79, 'Largura').
+% trajetoEntre2Pontos(183, 250, 'LarguraSimplificado').
+% trajetoEntre2Pontos(183, 595, 'AEstrela').
+% trajetoEntre2Pontos(183, 595, 'Gulosa').
+
+% -----------------------------------------------------------------------------------------
 
 % Query 2
 % "Selecionar apenas algumas das operadoras de transporte para um determinado percurso"
 
+trajetoCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-    
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem, Operadoras),
+    printCaminhoTempo(Caminho, TempoViagem).
 
-trajetoCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
-    pesquisaProfundidadeQ2(Origem, Destino, Caminho, TempoViagem, Operadoras).
+
+% trajetoCertasOperadoras(183, 595, Caminho, TempoViagem, ['Carris']).
 
 
-pesquisaProfundidadeQ2(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
-    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
-    pertence(Operadora, Operadoras),
-	profundidade_func(Origem, Destino, [(Origem, Operadora, 'Inicio')], Caminho, TempoViagem).
 
-profundidade_funcQ2(Destino, Destino, His, Caminho, T, Operadoras) :-
-	inverso(His, Caminho), 
-    T is 0.
-
-profundidade_funcQ2(Origem, Destino, His, Caminho, TempoViagem) :-
-    adjacente_func(Origem, Prox, Carreira, T1),
-	\+ member(Prox, His),
-    ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
-    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
-    pertence(Operadora, Operadoras),
-    profundidade_func(Prox, Destino, [(Prox, Operadora, Carreira)|His], Caminho, T),                 
-    TempoViagem is T + TLimpo + 5.  % Adiciona 5 min entre paragens de autocarros
-
-%trajetoCertasOperadoras(183, 595, Caminho, TempoViagem, ['Vimeca']).
-
-% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------------------
 
 % Query 3
 % "Excluir um ou mais operadores de transporte para o percurso"
 
+
 % Trajeto entre 2 pontos  excluindo algumas operadoras
 trajetoSemCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
-    pesquisaProfundidadeQ3(Origem, Destino, Caminho, TempoViagem, Operadoras).
+    findall(
+        Op,
+        (paragem(_, _, _, _, _, _, Op, _, _, _), \+ member(Op, Operadoras)),
+        ListaOpt
+    ),
+    sort(ListaOpt, OperadorasPossiveis),                                % retira todas as operadoras possiveis para uma lista sem repetidos 
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem, OperadorasPossiveis),
+    printCaminhoTempo(Caminho, TempoViagem).
+
+% trajetoSemCertasOperadoras(183, 595, Caminho, TempoViagem, ['Carris']).
 
 
-pesquisaProfundidadeQ3(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
-    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
-    \+ pertence(Operadora, Operadoras),
-	profundidade_func(Origem, Destino, [(Origem, Operadora, 'Inicio')], Caminho, TempoViagem).
 
-profundidade_funcQ3(Destino, Destino, His, Caminho, T, Operadoras) :-
-	inverso(His, Caminho), 
-    T is 0.
 
-profundidade_funcQ3(Origem, Destino, His, Caminho, TempoViagem) :-
-    adjacente_func(Origem, Prox, Carreira, T1),
-	\+ member(Prox, His),
-    ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
-    paragem(Origem, _, _, _, _, _, Operadora, _, _, _),
-    \+ pertence(Operadora, Operadoras),
-    profundidade_func(Prox, Destino, [(Prox, Operadora, Carreira)|His], Caminho, T),                 
-    TempoViagem is T + TLimpo + 5.  % Adiciona 5 min entre paragens de autocarros
-
-% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------------------
 
 % Query 4 
 % "Identificar quais as paragens com o maior número de carreiras num determinado percurso"
 
-paragemMaisCarreiras(Percurso, (Paragem, NumCarreiras)) :-
-    paragemMaisCarreiras_fun(Percurso, [], (Paragem, NumCarreiras)).
+paragemMaisCarreiras(Origem, Destino) :-
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem),
+    printCaminhoTempo(Caminho, TempoViagem),
+    nl, write('----------------'), nl, nl,
+    write('Paragem com mais carreiras...'), nl, nl,
+    calculaCarreiras(Caminho, (Paragem, NumCarreiras)),
+    write('Paragem -> '), format('~w', Paragem), nl,
+    write('Numero de Carreiras -> '), format('~w', NumCarreiras), nl,
+    write('\tTempo -> '), format('~w', TempoViagem).
 
-paragemMaisCarreiras_fun([], His, (Paragem, NumCarreiras)) :-
+
+calculaCarreiras(Percurso, (Paragem, NumCarreiras)) :-
+    calculaCarreiras_fun(Percurso, [], (Paragem, NumCarreiras)).
+
+calculaCarreiras_fun([], His, (Paragem, NumCarreiras)) :-
     maisCarreiras(His, (Paragem, NumCarreiras)).
 
-paragemMaisCarreiras_fun([ParagemId|Tail], His, Resultado) :-
+calculaCarreiras_fun([(ParagemId, _)|Tail], His, Resultado) :-
     findall(C, viagem(C, ParagemId, _, _), ListaCarreirasInicio),
     findall(C, viagem(C, _, ParagemId, _), ListaCarreirasFim),
     length(ListaCarreirasInicio, Li),
     length(ListaCarreirasFim, Lf),
     (Li > Lf -> L is Li ; L is Lf),
-    paragemMaisCarreiras_fun(
+    calculaCarreiras_fun(
         Tail, 
         [(ParagemId, L)|His],
         Resultado
@@ -136,98 +140,142 @@ maisCarreiras([(ParagemId, NumCarreiras), (P1, NC1)|Tail], Resultado) :-
 
 maisCarreiras([(ParagemId, NumCarreiras), (P1, NC1)|Tail], Resultado) :-
     NumCarreiras > NC1,
-    maisCarreiras([(ParagemId, NumCarreiras)|Tail], Resultado).
+    maisCarreiras([(ParagemId, NumCarreiras)|Tail], Resultado).                                    % TESTAR MELHOR
 
-% paragemMaisCarreiras([79, 44], (P, N)).
+% paragemMaisCarreiras(595, 182).
 
+% calculaCarreiras([79, 44], (P, N)).
 % maisCarreiras([(1,2), (3,5), (0, 100), (23, 200), (25, 2)], R).
 
-% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------------------
 
 % Query 5
 % "Escolher o menor percurso (usando critério menor número de paragens)"
-% Através do algoritmo AEstrela
 menorPercurso(ParagemInicio, ParagemFim, Caminho, NParagens) :-
-    menorPercurso_fun(ParagemInicio, ParagemFim, Caminho/NP),
-    NParagens is NP + 1.        % compensar a contagem da primeira paragem
-
-menorPercurso_fun(Origem, Destino, Caminho/Tempo) :-
-	aestrela_MenorPercurso([[Origem]/0/Estima], InvCaminho/Tempo/_, Destino),               % VER SE ESTÁ A TER UM COMPORTAMENTO CORRETO
-	inverso(InvCaminho, Caminho).
-
-aestrela_MenorPercurso(Caminhos, Caminho, Destino) :-
-	obtem_MenorPercurso(Caminhos, Caminho, Destino),
-	Caminho = [Nodo|_]/_/_, 
-    Destino == Nodo.
-
-aestrela_MenorPercurso(Caminhos, SolucaoCaminho, Destino) :-
-	obtem_MenorPercurso(Caminhos, MelhorCaminho, Destino),
-	seleciona(MelhorCaminho, Caminhos, OutrosCaminhos),
-	expande_aestrela_MP(MelhorCaminho, ExpCaminhos, Destino),
-	append(OutrosCaminhos, ExpCaminhos, NovoCaminhos),
-    aestrela_MenorPercurso(NovoCaminhos, SolucaoCaminho, Destino).		
+    findall(
+        (Caminho, L),
+        (pesquisaProfundidade_varios(ParagemInicio, ParagemFim, Caminho, _), length(Caminho, L)),
+        ListaCaminho
+    ),
+    menosParagens(ListaCaminho, ([], 9999.9), (Caminho, NParagens)). 
 
 
-obtem_MenorPercurso([Caminho], Caminho, Destino) :- 
-    !.
+menosParagens([], (Caminho, NParagens), (Caminho, NParagens)).
+menosParagens([(Caminho, NParagens)|Tail], (Caminho1, NParagens1), Resultado) :- 
+    NParagens =< NParagens1,
+    menosParagens(Tail, (Caminho, NParagens), Resultado).
+menosParagens([(Caminho, NParagens)|Tail], (Caminho1, NParagens1), Resultado) :- 
+    NParagens > NParagens1,
+    menosParagens(Tail, (Caminho1, NParagens1), Resultado).
 
-obtem_MenorPercurso([Caminho1/Nparagens/Est1, _/Nparagens2/Est2|Caminhos], MelhorCaminho, Destino) :-
-	Nparagens + Est1 =< Nparagens2 + Est2, 
-    !,
-	obtem_MenorPercurso([Caminho1/Nparagens/Est1|Caminhos], MelhorCaminho, Destino).
-	
-obtem_MenorPercurso([_|Caminhos], MelhorCaminho, Destino) :- 
-	obtem_MenorPercurso(Caminhos, MelhorCaminho, Destino).
-
-expande_aestrela_MP(Caminho, ExpCaminhos, Destino) :-
-	findall(
-        NovoCaminho, 
-        adjacente_MP(Caminho, NovoCaminho, Destino),
-        ExpCaminhos
-        ).
-
-adjacente_MP([Nodo|Caminho]/Nparagens/_, [ProxNodo,Nodo|Caminho]/Novo_Nparagens/Novo_Nparagens, Destino) :-
-	viagem(C, Nodo, ProxNodo, _),
-    \+ member(ProxNodo, Caminho),
-	Novo_Nparagens is Nparagens + 1.
+% menorPercurso(183, 595, C, P).
 
 
-% ----------------------------------------------------------------------------------------------------------
+% -----------------------------------------------------------------------------------------
 
 % Query 6
 % "Escolher o percurso mais rápido (usando critério da distância)"
+trajetoMaisRapido(Origem, Destino) :-
+    pesquisaAEstrela(Origem, Destino, Caminho, Tempo),
+    printCaminhoTempo(Caminho, Tempo).
+
+
+% trajetoMaisRapido(183, 182).
 
 
 
+% -----------------------------------------------------------------------------------------
+
+% Query 7
+% "Escolher o percurso que passe apenas por abrigos com publicidade"
+trajetoAbrigosPub(Origem, Destino) :-
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, Tempo, 'Flag7'),
+    printCaminhoTempo(Caminho, Tempo).
 
 
-% Escrever as soluções todas
-escrever([]).
-escrever([X|L]) :- 
-    write(X), nl, escrever(L).
+% trajetoAbrigosPub(183, 185).
 
-membro(X, [X|_]).
-membro(X, [_|Xs]) :-
-    membro(X,Xs).
 
-membros([], _).
-membros([X|Xs], Members) :-
-    membro(X, Members),
-    membros(Xs, Members).
 
-inverso(Xs, Ys) :-
-    inverso(Xs, [], Ys).
-inverso([], Xs, Xs).
-inverso([X|Xs], Ys, Zs) :-
-    inverso(Xs, [X|Ys], Zs).
+% -----------------------------------------------------------------------------------------
 
-nao(Questao) :-
-    Questao, !, fail.
-nao(Questao).
+% Query 8
+% "Escolher o percurso que passe apenas por paragens abrigadas"
+% Esta query não aceita paragens com o "N/A"
+trajetoParagemAbrigada(Origem, Destino) :-
+    findall(
+        Abrigo,
+        (paragem(_, _, _, _, Abrigo, _, _, _, _, _), Abrigo \== 'Sem Abrigo', Abrigo \== 'N/A'),
+        ListaComAbrigo
+    ),
+    sort(ListaComAbrigo, ParagensComAbrigo),                       % retira todas as paragens possiveis para uma lista sem repetidos 
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, Tempo, ParagensComAbrigo, 'Flag8'),
+    printCaminhoTempo(Caminho, Tempo).
 
-pertence( X,[X|L] ).
-pertence( X,[Y|L] ) :-
-    X \= Y,
-    pertence( X,L ).
+
+% trajetoParagemAbrigada(628, 39).
+% trajetoParagemAbrigada(593, 180).
+% trajetoParagemAbrigada(89, 597).
+
+
+% -----------------------------------------------------------------------------------------
+
+% Query 9
+% "Escolher um ou mais pontos intermédios por onde o percurso deverá passar"
+trajetoComPontosInterm(Origem, Destino, Interm) :-
+    findall(
+        Caminho,
+        (pesquisaProfundidade_varios(Origem, Destino, Caminho, _)),
+        ListaCaminho
+    ),
+    Interm \= [],
+    tiraCarreirasList(ListaCaminho, [], NovaListaCaminho),
+    intermedioLista(NovaListaCaminho, [], L),
+    temInterm(L, Interm, CaminhoEscolhido),
+    printParagem(CaminhoEscolhido).
+    
+tiraCarreirasList([], Acc, NovaList) :-
+    inverso(Acc, NovaList).
+tiraCarreirasList([Caminho|Tail], Acc, NovaList) :-
+    tiraCarreiras(Caminho, [], C),
+    tiraCarreirasList(Tail, [C|Acc], NovaList).
+
+tiraCarreiras([], Acc, R) :-
+    inverso(Acc, R).
+tiraCarreiras([(P, C)|Tail], Acc, R) :-
+    tiraCarreiras(Tail, [P|Acc], R).
+
+intermedioLista([], His, His).
+intermedioLista([Caminho|Tail], His, R) :-
+    caminhoIntermedio(Caminho, CInterm),
+    intermedioLista(Tail, [CInterm|His], R).
+
+caminhoIntermedio(Caminho, Res) :-
+    tiraFirst(Caminho, SemFirst),
+    tiraLast(SemFirst, [], Res).
+
+tiraFirst([H|Tail], Tail).
+
+tiraLast([H], Acc, SemLast) :-
+    inverso(Acc, SemLast).
+tiraLast([H|Tail], Acc, SemLast) :-
+    tiraLast(Tail, [H|Acc], SemLast).
+
+
+temInterm([C], Interm, C) :-
+    subLista(Interm, C).
+
+temInterm([Caminho|Tail], Interm, C) :-
+    \+ subLista(Interm, Caminho),
+    temInterm(Interm, Tail).
+
+temInterm([Caminho|Tail], Interm, Caminho) :-
+    subLista(Interm, Caminho).
+
+
+
+% trajetoComPontosInterm(183, 595, [791]).
+% trajetoComPontosInterm(183, 595, []).
+% trajetoComPontosInterm(183, 595, [121]).
 
 
