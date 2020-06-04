@@ -1,4 +1,3 @@
-
 %--------------------------------------------------------------------------------------------------------
 % PESQUISA EM PROFUNDIDADE
 
@@ -7,7 +6,7 @@ pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem) :-
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
 	profundidade_func(Origem, Destino, [(Origem, 'Inicio')], Caminho, TempoViagem, ListaParagens).
 
 profundidade_func(Destino, Destino, His, Caminho, T, _) :-
@@ -41,7 +40,7 @@ pesquisaProfundidade_varios(Origem, Destino, [(Origem, 'Inicio')|Caminho], Tempo
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
 	profundidade_func_varios(Origem, Destino, Caminho, TempoViagem, ListaParagens).
 
 % Função de pesquisa para a Query 2 e 3
@@ -55,8 +54,18 @@ pesquisaProfundidade_varios(Origem, Destino, [(Origem, 'Inicio')|Caminho], Tempo
         paragem(G, L, Lo, E, T, 'Yes', Op, C, N, F),
         paragem(G, L, Lo, E, T, 'Yes', Op, C, N, F),
         ListaParagens
-        ),
+    ),
 	profundidade_func_varios(Origem, Destino, Caminho, TempoViagem, ListaParagens).
+
+% Função de pesquisa para a Query 10
+pesquisaProfundidade_varios(Origem, Destino, [(Origem, 'Inicio')|Caminho], TempoViagem, 'Flag10') :-
+    findall(
+        paragem(G, L, Lo, 'Bom', T, Pub, Op, C, N, F),
+        paragem(G, L, Lo, 'Bom', T, Pub, Op, C, N, F),
+        ListaParagens
+    ),
+	profundidade_func_varios(Origem, Destino, Caminho, TempoViagem, ListaParagens).
+
 
 % Função de pesquisa para a Query 8
 pesquisaProfundidade_varios(Origem, Destino, [(Origem, 'Inicio')|Caminho], TempoViagem, AbrigosPossiveis, 'Flag8') :-
@@ -71,7 +80,7 @@ profundidade_func_varios(Paragem, Destino, [(ProxParagem, Carreira)|Caminho], Te
     adjacente(Paragem, ProxParagem, Carreira, T1, ListaParagens),
     ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
     profundidade_func_varios(ProxParagem, Destino, Caminho, T, ListaParagens),
-    TempoViagem is T + TLimpo + 5.
+    TempoViagem is T + TLimpo + 5.                          % Adiciona 5 min entre paragens de autocarros
 
 % pesquisaProfundidade_varios(183, 608, Caminho, Tempo).
 
@@ -106,7 +115,7 @@ pesquisaLargura(Origem, Destino, Caminho) :-
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
     paragem(Origem, _, _, Estado, _, _, Operadora, _, NomeRua, _),
     pesquisaLargura_fun([[(Origem, 'Inicio', Operadora, Estado, NomeRua)]], Destino, C, ListaParagens),
     inverso(C, Caminho).
@@ -122,7 +131,7 @@ pesquisaLargura_fun([[(Paragem, Carreira, Operadora, Estado, NomeRua)|Path]|Path
             [(Paragem, Carreira, Operadora, Estado, NomeRua) | Path])
         ),
         NewPaths
-        ),
+    ),
     append(Paths, NewPaths, Pathsl), !,
     pesquisaLargura_fun(Pathsl, Destino, Caminho, ListaParagens);
     pesquisaLargura_fun(Paths, Destino, Caminho, ListaParagens).
@@ -148,7 +157,7 @@ pesquisaLarguraSimplificado(Origem, Destino, Caminho) :-
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
     pesquisaLarguraSimplificado_fun([[(Origem, 'Inicio')]], Destino, C, ListaParagens),
     inverso(C, Caminho).
 
@@ -163,7 +172,7 @@ pesquisaLarguraSimplificado_fun([[(Paragem, Carreira)|Path]|Paths], Destino, Cam
             [(Paragem, Carreira) | Path])
         ),
         NewPaths
-        ),
+    ),
     append(Paths, NewPaths, Pathsl), !,
     pesquisaLarguraSimplificado_fun(Pathsl, Destino, Caminho, ListaParagens);
     pesquisaLarguraSimplificado_fun(Paths, Destino, Caminho, ListaParagens).
@@ -192,7 +201,7 @@ pesquisaAEstrela(Origem, Destino, Caminho, Tempo) :-
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
     resolve_aestrela((Origem, 'Inicio'), Destino, Caminho/Tempo, ListaParagens).    
 
 
@@ -230,7 +239,7 @@ expande_aestrela(Caminho, ExpCaminhos, Destino, ListaParagens) :-
         NovoCaminho, 
         adjacente_aestrela(Caminho, NovoCaminho, Destino, ListaParagens), 
         ExpCaminhos
-        ).
+    ).
 
 % A adição dos 5 min serve como tempo médio de espera entre viagens
 adjacente_aestrela([(Paragem, Carreira1)|Caminho]/Tempo/_, [(ProxParagem, Carreira2), (Paragem, Carreira1)|Caminho]/NovoTempo/Est, 
@@ -259,7 +268,7 @@ pesquisaGulosa(Origem, Destino, Caminho, Tempo) :-
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
         ListaParagens
-        ),
+    ),
     resolve_gulosa((Origem, 'Inicio'), Destino, Caminho/Tempo, ListaParagens).    
 
 

@@ -193,8 +193,7 @@ trajetoAbrigosPub(Origem, Destino) :-
     printCaminhoTempo(Caminho, Tempo).
 
 
-% trajetoAbrigosPub(183, 185).
-
+% trajetoAbrigosPub(180, 185).
 
 
 % -----------------------------------------------------------------------------------------
@@ -273,9 +272,35 @@ temInterm([Caminho|Tail], Interm, Caminho) :-
     subLista(Interm, Caminho).
 
 
-
 % trajetoComPontosInterm(183, 595, [791]).
 % trajetoComPontosInterm(183, 595, []).
 % trajetoComPontosInterm(183, 595, [121]).
 
 
+% -----------------------------------------------------------------------------------------
+
+% Queries Extra
+
+% Query 10
+% "Escolher um percurso que passe apenas por paragens em Bom estado de conservação"
+
+trajetoParagemBomEst(Origem, Destino) :-
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, Tempo, 'Flag10'),
+    printCaminhoTempo(Caminho, Tempo).
+
+
+% trajetoParagemBomEst(183, 595).
+
+% Query 11
+% "Identificar qual o Nome das Ruas iniciais e finais de um trajeto"
+trajetoNomeRua(Origem, Destino) :-
+    paragem(Origem, _, _, _, _, _, _, _, NomeRuaOrig, _),
+    paragem(Destino, _, _, _, _, _, _, _, NomeRuaDest, _),
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, Tempo),
+    printCaminhoTempo(Caminho, Tempo),
+    write('\tNome da Rua da Paragem Inicial: '),
+    format('~w', NomeRuaOrig), nl,
+    write('\tNome da Rua da Paragem Final: '),
+    format('~w', NomeRuaDest), nl.
+
+% trajetoNomeRua(183, 79).
