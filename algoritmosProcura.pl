@@ -1,6 +1,7 @@
 %--------------------------------------------------------------------------------------------------------
 % PESQUISA EM PROFUNDIDADE
 
+% Algoritmo de Pesquisa em profundidade básico 
 pesquisaProfundidade(Origem, Destino, Caminho, TempoViagem) :-
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
@@ -35,6 +36,7 @@ adjacente(Paragem, ProxParagem, Carreira, TempoViagem, ListaParagens) :-
 % pesquisaProfundidade(183, 595, Caminho, Tempo).
 
 % Função de pesquisa em profundidade geral
+% Este algoritmo difere do anterior, pois permite saber todos os diferentes caminhos possíveis
 pesquisaProfundidade_varios(Origem, Destino, [(Origem, 'Inicio')|Caminho], TempoViagem) :-
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
@@ -110,6 +112,8 @@ paragensComAbrigo([Abrigo|Tail], His, NovaListaParagens) :-
 %--------------------------------------------------------------------------------------------------------
 % PESQUISA EM LARGURA
 
+% Algoritmo de Pesquisa em Largura
+% Este algoritmo apresenta várias informações relativas à paragem
 pesquisaLargura(Origem, Destino, Caminho) :-
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
@@ -149,9 +153,11 @@ adjacente_largura(Paragem, ProxParagem, Carreira, Operadora, Estado, NomeRua, Li
 
 % pesquisaLargura(183, 595, Caminho).
 % pesquisaLargura(183, 250, Caminho).
-
 % pesquisaLargura(354, 79, Caminho).
 
+
+% Algoritmo de Pesquisa em Largura
+% Este algoritmo difere do anterior, pois apresenta menos informações relativas às paragens do caminho resultante
 pesquisaLarguraSimplificado(Origem, Destino, Caminho) :-
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
@@ -196,6 +202,7 @@ tempoEstimado((LatX, LongX), (LatY, LongY), Estima) :-
     Estima is (sqrt(DeltaLat^2 + DeltaLong^2))/1000.
 
 
+% Algoritmo de Pesquisa informada AEstrela (a*)
 pesquisaAEstrela(Origem, Destino, Caminho, Tempo) :-            
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),
@@ -263,6 +270,7 @@ seleciona(E, [X|Xs], [X|Ys]) :-
 
 % PESQUISA GULOSA
 
+% Algoritmo de Pesquisa informada Gulosa (Greedy)
 pesquisaGulosa(Origem, Destino, Caminho, Tempo) :-            
     findall(
         paragem(Gid, Lat, Long, Estado, TipoAbrigo, Publicidade, Operadora, Codigo, NomeRua, Freguesia),

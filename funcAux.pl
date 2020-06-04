@@ -7,20 +7,24 @@ clear :- write('\33\[2J').
 % ------------------------------------------------
 % Funções auxiliares para as queries
 
+% Indica se uma lista é sublista de outra, ou seja, se está contida nela.
 subLista([], _).
-subLista([X|XS], [X|XSS]) :-
-    subLista( XS, XSS ).
-subLista([X|XS], [_|XSS]) :- 
-    subLista([X|XS], XSS).
+subLista([H|Tail1], [H|Tail2]) :-
+    subLista(Tail1, Tail2).
+subLista([H|Tail1], [_|Tail2]) :- 
+    subLista([H|Tail1], Tail2).
 
 % ------------------------------------------------
 % Funções de print 
+
+% Dá print a uma lista de Paragens 
 printParagem([]).
 printParagem([Paragem|Tail]) :-
     write('Paragem -> '),
     format('~w', Paragem), nl,
     printParagem(Tail).
 
+% Dá print a um caminho e o seu respetivo tempo
 printCaminhoTempo(Caminho, Tempo) :-
     write('Trajeto efetuado: '), nl,
     printLista(Caminho),
@@ -28,6 +32,7 @@ printCaminhoTempo(Caminho, Tempo) :-
     format('~w', Tempo), write(' minutos'),
     nl.
 
+% Dá print a uma lista de Paragens e suas respetivas carreiras
 printLista([]).
 printLista([(Paragem, Carreira)|Tail]) :-
     write('\tParagem: '),
@@ -36,7 +41,7 @@ printLista([(Paragem, Carreira)|Tail]) :-
     format('~w', Carreira), nl,
     printLista(Tail).
 
-
+% Dá print a uma lista de paragens, bem como a algumas das informações dessa paragem
 printCaminhoMaisInfo([]).
 printCaminhoMaisInfo([(Paragem, Carreira, Operadora, Estado, NomeRua)|Tail]) :-
     write('Paragem: '),
@@ -54,12 +59,14 @@ printCaminhoMaisInfo([(Paragem, Carreira, Operadora, Estado, NomeRua)|Tail]) :-
 % ------------------------------------------------
 % Funções auxiliares gerais
 
+% Retorna o inverso de uma lista
 inverso(Xs, Ys) :-
     inverso(Xs, [], Ys).
 inverso([], Xs, Xs).
 inverso([X|Xs], Ys, Zs) :-
     inverso(Xs, [X|Ys], Zs).
 
+% Verfica se um elemento pertence a uma lista
 pertence(X,[X|_]).
 pertence(X,[Y|_]) :-
     X \= Y,
