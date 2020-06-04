@@ -124,9 +124,9 @@ pesquisaLargura(Origem, Destino, Caminho) :-
     pesquisaLargura_fun([[(Origem, 'Inicio', Operadora, Estado, NomeRua)]], Destino, C, ListaParagens),
     inverso(C, Caminho).
 
-pesquisaLargura_fun([[(Destino, Carreira, _, _, _)|Path]|_], Destino, [(Destino, Carreira, _, _, _)|Path], _).
+pesquisaLargura_fun([[(Destino, Carreira, _, _, _)|Tail]|_], Destino, [(Destino, Carreira, _, _, _)|Tail], _).
 
-pesquisaLargura_fun([[(Paragem, Carreira, Operadora, Estado, NomeRua)|Path]|Paths], Destino, Caminho, ListaParagens) :-
+pesquisaLargura_fun([[(Paragem, Carreira, Operadora, Estado, NomeRua)|Path]|Caminhos], Destino, Caminho, ListaParagens) :-
     bagof(
         [(M, C1, Op1, E1, Nom1), (Paragem, Carreira, Operadora, Estado, NomeRua)|Path],
         (
@@ -134,11 +134,11 @@ pesquisaLargura_fun([[(Paragem, Carreira, Operadora, Estado, NomeRua)|Path]|Path
             \+ member((M, C1, Op1, E1, Nom1), 
             [(Paragem, Carreira, Operadora, Estado, NomeRua) | Path])
         ),
-        NewPaths
+        NovoCaminho
     ),
-    append(Paths, NewPaths, Pathsl), !,
-    pesquisaLargura_fun(Pathsl, Destino, Caminho, ListaParagens);
-    pesquisaLargura_fun(Paths, Destino, Caminho, ListaParagens).
+    append(Caminhos, NovoCaminho, CaminhoEsq), !,
+    pesquisaLargura_fun(CaminhoEsq, Destino, Caminho, ListaParagens);
+    pesquisaLargura_fun(Caminhos, Destino, Caminho, ListaParagens).
 
 adjacente_largura(Paragem, ProxParagem, Carreira, Operadora, Estado, NomeRua, ListaParagens) :-
     member( 
@@ -167,9 +167,9 @@ pesquisaLarguraSimplificado(Origem, Destino, Caminho) :-
     pesquisaLarguraSimplificado_fun([[(Origem, 'Inicio')]], Destino, C, ListaParagens),
     inverso(C, Caminho).
 
-pesquisaLarguraSimplificado_fun([[(Destino, Carreira)|Path]|_], Destino, [(Destino, Carreira)|Path], _).
+pesquisaLarguraSimplificado_fun([[(Destino, Carreira)|Tail]|_], Destino, [(Destino, Carreira)|Tail], _).
 
-pesquisaLarguraSimplificado_fun([[(Paragem, Carreira)|Path]|Paths], Destino, Caminho, ListaParagens) :-
+pesquisaLarguraSimplificado_fun([[(Paragem, Carreira)|Path]|Caminhos], Destino, Caminho, ListaParagens) :-
     bagof(
         [(M, C1), (Paragem, Carreira)|Path],
         (
@@ -177,11 +177,11 @@ pesquisaLarguraSimplificado_fun([[(Paragem, Carreira)|Path]|Paths], Destino, Cam
             \+ member((M, C1), 
             [(Paragem, Carreira) | Path])
         ),
-        NewPaths
+        NovoCaminho
     ),
-    append(Paths, NewPaths, Pathsl), !,
-    pesquisaLarguraSimplificado_fun(Pathsl, Destino, Caminho, ListaParagens);
-    pesquisaLarguraSimplificado_fun(Paths, Destino, Caminho, ListaParagens).
+    append(Caminhos, NovoCaminho, CaminhoEsq), !,
+    pesquisaLarguraSimplificado_fun(CaminhoEsq, Destino, Caminho, ListaParagens);
+    pesquisaLarguraSimplificado_fun(Caminhos, Destino, Caminho, ListaParagens).
 
 % pesquisaLarguraSimplificado(183, 595, Caminho).
 % pesquisaLarguraSimplificado(354, 79, Caminho).

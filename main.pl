@@ -32,6 +32,8 @@
 
 */
 
+
+
 % -----------------------------------------------------------------------------------------
 
 % Query 1
@@ -39,21 +41,21 @@
 
 % Resolver a Query1 através de um algoritmo de Procura em Profundidade (DFS)
 % Trata-se de uma procura não informada
-trajetoEntre2Pontos(Origem, Destino, 'Profundidade') :-
+trajetoEntre2Pontos(Origem, Destino, 'Profundidade') :-   
     pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem), 
     printCaminhoTempo(Caminho, TempoViagem).
 
 % Resolver a Query1 através de um algoritmo de Procura em Largura (BFS)
 % Trata-se de uma procura não informada
 trajetoEntre2Pontos(Origem, Destino, 'Largura') :-
-    pesquisaLargura(Origem, Destino, Caminho), 
+    pesquisaLargura(Origem, Destino, Caminho),
     printCaminhoMaisInfo(Caminho).
 
 % Resolver a Query1 através de um algoritmo de Procura em Largura (BFS)
 % Trata-se de uma procura não informada
 % Este algoritmo difere do anterior, pois dá resultados mais simples
 trajetoEntre2Pontos(Origem, Destino, 'LarguraSimplificado') :-
-    pesquisaLarguraSimplificado(Origem, Destino, Caminho), 
+    pesquisaLarguraSimplificado(Origem, Destino, Caminho),
     printLista(Caminho).
 
 % Resolver a Query1 através de um algoritmo de Procura por a* (AEstrela)
@@ -69,9 +71,9 @@ trajetoEntre2Pontos(Origem, Destino, 'Gulosa') :-
     printCaminhoTempo(Caminho, Tempo).
 
 
-% trajetoEntre2Pontos(354, 79, 'Profundidade').
+% trajetoEntre2Pontos(354, 79, 'Profundidade').                     trajetoEntre2Pontos(183, 595, 'Profundidade', R).
 % trajetoEntre2Pontos(354, 79, 'Largura').
-% trajetoEntre2Pontos(183, 250, 'LarguraSimplificado').
+% trajetoEntre2Pontos(183, 250, 'LarguraSimplificado').             trajetoEntre2Pontos(183, 595, 'LarguraSimplificado', R).
 % trajetoEntre2Pontos(183, 595, 'AEstrela').
 % trajetoEntre2Pontos(183, 595, 'Gulosa').
 
@@ -343,3 +345,19 @@ trajetoNomeRua(Origem, Destino) :-
     format('~w', NomeRuaDest), nl.
 
 % trajetoNomeRua(183, 79).
+
+% -----------------------------------------------------------------------------------------
+% Funções para comparar Tempo de execução de diferentes algoritmos
+trajetoEntre2Pontos(Origem, Destino, 'Profundidade', R) :-   % R em milisegundos
+    statistics(runtime,[Start|_]),
+    pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem), 
+    statistics(runtime,[Stop|_]),
+    R is Stop - Start,
+    printCaminhoTempo(Caminho, TempoViagem).
+
+trajetoEntre2Pontos(Origem, Destino, 'LarguraSimplificado', R) :-
+    statistics(runtime,[Start|_]),
+    pesquisaLarguraSimplificado(Origem, Destino, Caminho),
+    statistics(runtime,[Stop|_]),
+    R is Stop - Start, 
+    printLista(Caminho).
