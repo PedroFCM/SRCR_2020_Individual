@@ -19,7 +19,7 @@ profundidade_func(Origem, Destino, His, Caminho, TempoViagem, ListaParagens) :-
 	\+ member((Prox, Carreira), His),
     ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
     profundidade_func(Prox, Destino, [(Prox, Carreira)|His], Caminho, T, ListaParagens),                 
-    TempoViagem is T + TLimpo + 5.                      % Adiciona 5 min entre paragens de autocarros
+    TempoViagem is T + TLimpo + 2.                      % Adiciona 2 min entre paragens de autocarros
 
 adjacente(Paragem, ProxParagem, Carreira, TempoViagem, ListaParagens) :-
     member( 
@@ -82,7 +82,7 @@ profundidade_func_varios(Paragem, Destino, [(ProxParagem, Carreira)|Caminho], Te
     adjacente(Paragem, ProxParagem, Carreira, T1, ListaParagens),
     ((T1 == 'N/A') -> TLimpo is 0.0 ; TLimpo is T1),
     profundidade_func_varios(ProxParagem, Destino, Caminho, T, ListaParagens),
-    TempoViagem is T + TLimpo + 5.                          % Adiciona 5 min entre paragens de autocarros
+    TempoViagem is T + TLimpo + 2.                          % Adiciona 2 min entre paragens de autocarros
 
 % pesquisaProfundidade_varios(183, 608, Caminho, Tempo).
 
@@ -248,12 +248,12 @@ expande_aestrela(Caminho, ExpCaminhos, Destino, ListaParagens) :-
         ExpCaminhos
     ).
 
-% A adição dos 5 min serve como tempo médio de espera entre viagens
+% A adição dos 2 min serve como tempo médio de espera entre viagens
 adjacente_aestrela([(Paragem, Carreira1)|Caminho]/Tempo/_, [(ProxParagem, Carreira2), (Paragem, Carreira1)|Caminho]/NovoTempo/Est, 
 Destino, ListaParagens) :-
 	adjacente(Paragem, ProxParagem, Carreira2, PassoTempo, ListaParagens),
     \+ member((ProxParagem, Carreira2), Caminho),
-	NovoTempo is Tempo + PassoTempo + 5,                    
+	NovoTempo is Tempo + PassoTempo + 2,                    
 	paragem(ProxParagem, LatX, LongX, _, _, _, _, _, _, _),
     paragem(Destino, LatY, LongY, _, _, _, _, _, _, _),
     tempoEstimado((LatX, LongX), (LatY, LongY), Est).

@@ -25,11 +25,18 @@ public class Main
             FileWriter paragens = new FileWriter("../../paragens.pl");
             FileWriter viagens = new FileWriter("../../viagens.pl");
 
+            FileWriter paragensGrafo = new FileWriter("paragensGrafo.csv");
+            FileWriter viagensGrafo = new FileWriter("viagensGrafo.csv");
+
             String paragem = "";
             String viagem = "";
 
             paragens.write(":- dynamic paragem/10. \n");
             viagens.write(":- dynamic viagem/4. \n");
+
+            viagensGrafo.write("carreira;origem;destino;tempo\n");
+            paragensGrafo.write("gid;lat; long; estado de conservação; tipo de abrigo; abrigo com publicidade;" +
+                    " operadora; codigo de rua; nome da rua; freguesia");
             
             for (int i = 0; i < carreiras.size(); i++)
             {
@@ -79,6 +86,7 @@ public class Main
                                 + "', '" + data[10].replace("\"", "") + "').";
 
                         paragens.write(paragem + "\n");
+                        paragensGrafo.write(row + "\n");
                     }
 
                     pFim = new Paragem(data[0], data[1], data[2], data[6]);
@@ -95,6 +103,8 @@ public class Main
                     if (iteracao > 1)
                     {
                         viagens.write(viagem + "\n");
+                        viagensGrafo.write(data[7] + "; " + pInicio.gid + "; " + pFim.gid
+                                + "; " + tempoViagem + "\n");
                     }
 
                     pInicio = pFim;

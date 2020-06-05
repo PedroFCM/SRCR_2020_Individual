@@ -334,33 +334,54 @@ trajetoParagemBomEst(Origem, Destino) :-
 
 % trajetoParagemBomEst(183, 595).
 
+
 % Query 11
-% "Identificar qual o Nome das Ruas iniciais e finais de um trajeto"
-
-trajetoNomeRua(Origem, Destino) :-
-    paragem(Origem, _, _, _, _, _, _, _, NomeRuaOrig, _),
-    paragem(Destino, _, _, _, _, _, _, _, NomeRuaDest, _),
+% Trajeto entre duas ruas
+trajetoEntreDuasRuas(RuaOrigem, RuaDestino) :-
+    paragem(Origem, _, _, _, _, _, _, _, RuaOrigem, _),
+    paragem(Destino, _, _, _, _, _, _, _, RuaDestino, _),
     pesquisaProfundidade_varios(Origem, Destino, Caminho, Tempo),
-    printCaminhoTempo(Caminho, Tempo),
-    write('\tNome da Rua da Paragem Inicial: '),
-    format('~w', NomeRuaOrig), nl,
-    write('\tNome da Rua da Paragem Final: '),
-    format('~w', NomeRuaDest), nl.
+    printCaminhoTempo(Caminho, Tempo).
 
-% trajetoNomeRua(183, 79).
+
+% trajetoEntreDuasRuas('Rua Aquilino Ribeiro', 'Avenida dos Cavaleiros').
+
+
+
 
 % -----------------------------------------------------------------------------------------
 % Funções para comparar Tempo de execução de diferentes algoritmos
-trajetoEntre2Pontos(Origem, Destino, 'Profundidade', R) :-   % R em milisegundos
+
+trajetoEntre2Pontos(Origem, Destino, 'Profundidade', TempoExecucao) :-   % R em milisegundos
     statistics(runtime,[Start|_]),
     pesquisaProfundidade_varios(Origem, Destino, Caminho, TempoViagem), 
     statistics(runtime,[Stop|_]),
-    R is Stop - Start,
+    TempoExecucao is Stop - Start,
     printCaminhoTempo(Caminho, TempoViagem).
 
-trajetoEntre2Pontos(Origem, Destino, 'LarguraSimplificado', R) :-
+trajetoEntre2Pontos(Origem, Destino, 'LarguraSimplificado', TempoExecucao) :-
     statistics(runtime,[Start|_]),
     pesquisaLarguraSimplificado(Origem, Destino, Caminho),
     statistics(runtime,[Stop|_]),
-    R is Stop - Start, 
+    TempoExecucao is Stop - Start, 
     printLista(Caminho).
+
+trajetoEntre2Pontos(Origem, Destino, 'AEstrela', TempoExecucao) :-
+    statistics(runtime,[Start|_]),
+    pesquisaAEstrela(Origem, Destino, Caminho, Tempo),
+    statistics(runtime,[Stop|_]),
+    TempoExecucao is Stop - Start, 
+    printLista(Caminho).
+
+trajetoEntre2Pontos(Origem, Destino, 'Gulosa', TempoExecucao) :-
+    statistics(runtime,[Start|_]),
+    pesquisaGulosa(Origem, Destino, Caminho, Tempo),
+    statistics(runtime,[Stop|_]),
+    TempoExecucao is Stop - Start, 
+    printLista(Caminho).
+    
+
+% trajetoEntre2Pontos(183, 595, 'Profundidade', TempoExecucao).                     
+% trajetoEntre2Pontos(183, 595, 'LarguraSimplificado', TempoExecucao).             
+% trajetoEntre2Pontos(183, 595, 'AEstrela', TempoExecucao).
+% trajetoEntre2Pontos(183, 595, 'Gulosa', TempoExecucao).
