@@ -14,6 +14,11 @@ subLista([H|Tail1], [H|Tail2]) :-
 subLista([H|Tail1], [_|Tail2]) :- 
     subLista([H|Tail1], Tail2).
 
+
+addUltimoElem(X, [], [X]).
+addUltimoElem(X, [Y|Tail], [Y|Tail1]):-
+    addUltimoElem(X, Tail, Tail1).
+
 % ------------------------------------------------
 % Funções de print 
 

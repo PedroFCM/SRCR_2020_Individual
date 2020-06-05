@@ -90,7 +90,7 @@ trajetoCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
 
 
 % trajetoCertasOperadoras(183, 595, Caminho, TempoViagem, ['Carris']).
-
+% trajetoCertasOperadoras(183, 595, Caminho, TempoViagem, ['Vimeca']).
 
 
 % -----------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@ trajetoSemCertasOperadoras(Origem, Destino, Caminho, TempoViagem, Operadoras) :-
 
 
 % trajetoSemCertasOperadoras(183, 595, Caminho, TempoViagem, ['Carris']).
-
+% trajetoSemCertasOperadoras(183, 595, Caminho, TempoViagem, ['Vimeca']).
 
 
 % -----------------------------------------------------------------------------------------
@@ -177,7 +177,8 @@ menorPercurso(ParagemInicio, ParagemFim, Caminho, NParagens) :-
         (pesquisaProfundidade_varios(ParagemInicio, ParagemFim, Caminho, _), length(Caminho, L)),
         ListaCaminho
     ),
-    menosParagens(ListaCaminho, ([], 9999.9), (Caminho, NParagens)). 
+    menosParagens(ListaCaminho, ([], 9999.9), (Caminho, NParagens)),
+    printParagem(Caminho). 
 
 
 % Dado uma lista de caminhos, indica o menor número de paragens e o respetivo caminho
@@ -190,7 +191,7 @@ menosParagens([(Caminho, NParagens)|Tail], (Caminho1, NParagens1), Resultado) :-
     menosParagens(Tail, (Caminho1, NParagens1), Resultado).
 
 
-% menorPercurso(183, 595, C, P).
+% menorPercurso(183, 595, Caminho, NumeroParagens).
 
 
 
@@ -265,7 +266,9 @@ trajetoComPontosInterm(Origem, Destino, Interm) :-
     tiraCarreirasList(ListaCaminho, [], NovaListaCaminho),
     intermedioLista(NovaListaCaminho, [], L),
     temInterm(L, Interm, CaminhoEscolhido),
-    printParagem(CaminhoEscolhido).
+    append([Origem], CaminhoEscolhido, R),
+    addUltimoElem(Destino, R, Res),
+    printParagem(Res).
     
 % Função que recebe uma lista de caminhos e retira para cada elemento (caminho),
 % as carreiras de cada paragem. Ficamos, assim, com uma lista de caminhos representados apenas
@@ -307,7 +310,7 @@ temInterm([C], Interm, C) :-
     subLista(Interm, C).
 temInterm([Caminho|Tail], Interm, C) :-
     \+ subLista(Interm, Caminho),
-    temInterm(Interm, Tail).
+    temInterm(Tail, Interm, C).
 temInterm([Caminho|Tail], Interm, Caminho) :-
     subLista(Interm, Caminho).
 
